@@ -1,0 +1,119 @@
+#ft{}
+#ft .ft-area{}
+#ft .ft-area .grid-list-area{
+    max-width: 1800px;
+    padding: 60px 20px 75px;
+}
+#ft .ft-area .grid-list-area .list-wrap{
+    display: flex;
+}
+#ft .ft-area .grid-list-area .list-con{
+    width: 26.5%;
+}
+#ft .ft-area .grid-list-area .list-con:last-child{
+    width: 20.5%;
+}
+#ft .ft-area .grid-list-area .list-inner{}
+#ft .ft-area .grid-list-area .grid-title-area{}
+#ft .ft-area .grid-list-area .grid-title-area.mt45{
+    margin-top: 45px;
+}
+#ft .ft-area .grid-list-area .grid-title-area .title-wrap{}
+#ft .ft-area .grid-list-area .grid-title-area .title-wrap .title{
+    font-size: 16px;
+    font-weight: 700;
+}
+#ft .ft-area .grid-list-area .grid-title-area .text-wrap{
+    margin: 20px 0 0;
+}
+#ft .ft-area .grid-list-area .grid-title-area .text-wrap .text{
+    margin: 7px 0 0;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+}
+#ft .ft-area .grid-list-area .grid-title-area .text-wrap .text-small{
+    margin: 10px 0 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+#ft .ft-area .grid-list-area .grid-title-area .btn-wrap{
+    margin: 15px 0 0;
+    font-size: 0;
+}
+#ft .ft-area .grid-list-area .grid-title-area .btn-wrap .btn{
+    display: inline-block;
+    padding: 7px 15px;
+    border: 1px solid #000;
+    transition: .25s;
+}
+#ft .ft-area .grid-list-area .grid-title-area .btn-wrap .btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+#ft .ft-area .grid-list-area .grid-title-area .btn-wrap .text{
+    font-size: 13px;
+    font-weight: 400;
+}
+#ft .ft-area .grid-list-area .nav-wrap{
+    display: flex;
+}
+#ft .ft-area .grid-list-area .nav-wrap .ft-nav{
+    width: 50%;
+}
+#ft .ft-area .grid-list-area .nav-wrap .dep1-wrap{
+    margin: -20px 0 0;
+}
+#ft .ft-area .grid-list-area .nav-wrap .dep1-con{
+    padding: 20px 0 0;
+}
+#ft .ft-area .grid-list-area .nav-wrap .dep1{
+    font-size: 15px;
+    font-weight: 700;
+}
+#ft .ft-area .grid-list-area .sns-list-wrap{}
+#ft .ft-area .grid-list-area .sns-list-wrap .ft-sns{}
+#ft .ft-area .grid-list-area .sns-list-wrap .dep1-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: -8px;
+}
+#ft .ft-area .grid-list-area .sns-list-wrap .dep1-con{
+    padding-left: 8px;
+}
+#ft .ft-area .grid-list-area .sns-list-wrap .dep1{
+    display: block;
+}
+#ft .ft-area .ft-info-area{
+    padding: 35px 0 75px;
+    border-top: 1px solid #aaaaaa;
+}
+#ft .ft-area .ft-info-area .text-wrap{
+    max-width: 1800px;
+    padding: 35px 20px 75px;
+}
+#ft .ft-area .ft-info-area .text-wrap .text{
+    color: #aaa;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+#ft .ft-area .ft-info-area .text-wrap .text a{
+    transition: .25s;
+}
+#ft .ft-area .ft-info-area .text-wrap .text a:hover{
+    color: #222;
+}
+#ft .ft-area .ft-info-area .text-wrap .text .bar{
+    margin: 0 5px;
+}
+#ft .ft-area .ft-info-area .text-wrap .copyright{
+    display: block;
+    margin: 20px 0 0;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}

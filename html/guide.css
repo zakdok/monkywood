@@ -1,0 +1,335 @@
+.order-guide{
+    height: 100%;
+}
+/* 인트로 */
+.guide-intro{}
+.guide-intro .area{
+    display: flex;
+}
+.guide-intro .area .left{
+    width: 50%;
+}
+.guide-intro .area .left-inner{}
+.guide-intro .area .right{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    border-bottom: 1px solid #000;
+}
+.guide-intro .area .right-inner{}
+.guide-intro .area .bg-area{}
+.guide-intro .area .bg-area .bg-wrap{}
+.guide-intro .area .bg-area .bg{
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    font-size: 0;
+}
+.guide-intro .area .content-title-area{
+    position: absolute;
+    left: 0;
+    top: 121px;
+    padding: 60px 0 0 65px;
+}
+.guide-intro .area .content-title-area .title-wrap{}
+.guide-intro .area .content-title-area .title-wrap .text{
+    color: #555;
+    font-size: 22px;
+    line-height: 1.54;
+    font-weight: 400;
+}
+.guide-intro .area .content-title-area .title-wrap .title{
+    margin: 13px 0 0;
+    font-size: 48px;
+    line-height: 1.04;
+    font-weight: 700;
+}
+.guide-intro .area .content-text-area{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 60px 65px;
+}
+.guide-intro .area .content-text-area .text-wrap{}
+.guide-intro .area .content-text-area .text-wrap .text{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+/* // 인트로 */
+/* 식탁 마스터 / 내게 맞는 식탁 */
+.guide-info-section{}
+.guide-info-section .top-title-area{}
+.guide-info-section .top-title-area.dummy{
+    height: 350px;
+}
+.guide-info-section .top-title-area .title-wrap{
+    height: 350px;
+    text-align: center;
+    padding-top: 180px;
+}
+.guide-info-section .top-title-area.fixed .title-wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.guide-info-section .top-title-area .title-con{}
+.guide-info-section .top-title-area .title{
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.42;
+}
+.guide-info-section .top-title-area .title strong{
+    font-weight: 700;
+}
+.guide-info-section .area{
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.guide-info-section.row-reverse .area{
+    flex-direction: row-reverse;
+}
+.guide-info-section .area .left{
+    width: 66.66%;
+}
+.guide-info-section .area .right{
+    width: 33.33%;
+}
+.guide-info-section .area .thumb-list-area{
+    position: relative;
+    overflow: hidden;
+}
+.guide-info-section .area .thumb-list-area .list-wrap{}
+.guide-info-section .area .thumb-list-area .list-con{}
+.guide-info-section .area .thumb-list-area .list-inner{}
+.guide-info-section .area .thumb-list-area .thumb-wrap{}
+.guide-info-section .area .thumb-list-area .thumb{}
+.guide-info-section .area .thumb-list-area .thumb img{
+    display: block;
+    width: 100%;
+    height: calc(100vh - 352px);
+    object-fit: cover;
+}
+.guide-info-section.row-reverse .area .thumb-list-area .thumb img{
+    object-fit: unset;
+}
+.guide-info-section .area .text-list-area{}
+.guide-info-section .area .text-list-area .list-wrap{
+    position: relative;
+    height: calc(100vh - 352px);
+    border-left: 1px solid #000;
+}
+.guide-info-section.row-reverse .area .text-list-area .list-wrap{
+    border-left-width: 0;
+    border-right: 1px solid #000;
+}
+.guide-info-section .area .text-list-area .list-con{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.guide-info-section .area .text-list-area .list-con:first-child{
+    display: block;
+}
+.guide-info-section .area .text-list-area .list-inner{}
+.guide-info-section .area .text-list-area .title-area{
+    display: flex;
+    height: 122px;
+    border-bottom: 1px solid #000;
+    align-items: center;
+    padding: 24px 0 0 50px;
+}
+.guide-info-section .area .text-list-area .title-area .title-wrap{
+    display: flex;
+    align-items: center;
+}
+.guide-info-section .area .text-list-area .title-area .title-wrap .en-title{
+    margin-right: 14px;
+    font-weight: 700;
+    font-size: 36px;
+}
+.guide-info-section .area .text-list-area .title-area .title-wrap .title{
+    position: relative;
+    bottom: 2px;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 36px;
+}
+.guide-info-section .area .text-list-area .title-area .text-wrap{}
+.guide-info-section .area .text-list-area .title-area .text-wrap .text{
+    position: relative;
+    top: 4px;
+    color: #555;
+    font-weight: 600;
+    font-size: 18px;
+}
+.guide-info-section .area .text-list-area .title-area .text-wrap .text-medium{
+    font-size: 24px;
+}
+.guide-info-section .area .text-list-area .text-area{
+    padding: 47px 0 0 50px;
+    margin: -20px 0 0;
+}
+.guide-info-section .area .text-list-area .text-area .text-wrap .text{
+    padding: 20px 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.guide-info-section .area .text-list-area .text-area .text-wrap .dot-text{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+}
+.guide-info-section .area .text-list-area .text-area .btn-wrap{
+    margin: 25px 0 0;
+}
+.guide-info-section .area .text-list-area .text-area .btn-wrap .btn{
+    color: #7a3547;
+    text-decoration: underline;
+}
+.guide-info-section .area .text-list-area .text-area .btn-wrap .btn.green{
+    color: #24302b;
+}
+.guide-info-section .area .text-list-area .text-area .btn-wrap .btn .text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.guide-info-section .area .control-btn{
+    position: absolute;
+    top: 50%;
+    width: 21px;
+    height: 39px;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    font-size: 0;
+    text-indent: -9999px;
+}
+.guide-info-section .area .control-btn.swiper-button-prev{
+    left: 19px;
+    background-image: url('/images/guide-slide-prev.png');
+}
+.guide-info-section .area .control-btn.swiper-button-next{
+    right: 19px;
+    background-image: url('/images/guide-slide-next.png');
+}
+.guide-info-section .area .control-btn.swiper-button-disabled{
+    display: none;
+}
+/* //식탁 마스터 / 내게 맞는 식탁 */
+/* 식탁 추천 */
+.guide-personal{}
+.guide-personal .area{}
+.guide-personal .visual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    height: 40vh;
+    background: url('/images/guide-personal-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.guide-personal .visual .content-text-area{
+    color: #fff;
+    text-align: center;
+}
+.guide-personal .visual .content-text-area .title-wrap{}
+.guide-personal .visual .content-text-area .title-wrap .title{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.13;
+}
+.guide-personal .visual .content-text-area .title-wrap .text{
+    margin: 12px 0 0;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+.guide-personal .type-list-area{}
+.guide-personal .type-list-area .list-wrap{
+    font-size: 0;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.guide-personal .type-list-area .list-con{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    font-size: 10px;
+}
+.guide-personal .type-list-area .list-inner{
+    border-right: 1px solid #000;
+}
+.guide-personal .type-list-area .list-con:last-child .list-con{
+    border-right-width: 0;
+}
+.guide-personal .type-list-area .link{
+    position: relative;
+    display: block;
+    padding-bottom: 110px;
+}
+.guide-personal .type-list-area .thumb-area{}
+.guide-personal .type-list-area .thumb-area .thumb-wrap{}
+.guide-personal .type-list-area .thumb-area .thumb{
+    position: relative;
+    font-size: 0;
+}
+.guide-personal .type-list-area .thumb-area .thumb img{
+    width: 100%;
+    object-fit: cover;
+}
+.guide-personal .type-list-area .thumb-area .thumb .img{
+    height: calc(60vh - 112px);
+}
+.guide-personal .type-list-area .thumb-area .thumb .hover-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+.guide-personal .type-list-area .link:hover .thumb-area .thumb .hover-img{
+    opacity: 1;
+}
+.guide-personal .type-list-area .content-text-area{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    border-top: 1px solid #000;
+}
+.guide-personal .type-list-area .content-text-area .text-wrap{}
+.guide-personal .type-list-area .content-text-area .text-wrap .text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+}
+.guide-personal .type-list-area .content-text-area .tag-wrap{}
+.guide-personal .type-list-area .content-text-area .tag-wrap .tag{
+    color: #555;
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 16px;
+}
+/* //식탁 추천 */

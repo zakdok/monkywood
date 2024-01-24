@@ -1,0 +1,109 @@
+body{
+    padding-top: 121px;
+}
+.hide-info{
+    display: none;
+}
+.hd-area{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99999;
+    border-bottom: 1px solid #000;
+}
+.hd-area .vertical-rolling{
+    position: relative;
+    padding-bottom: 50px;
+    transition: .5s;
+    overflow: hidden;
+}
+.hd-area .vertical-rolling.hide{
+    padding-bottom: 0;
+    opacity: 0;
+}
+.hd-area .vertical-rolling .slide-area{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.hd-area .vertical-rolling .slide-wrap{}
+.hd-area .vertical-rolling .slide-con{
+    height: 50px;
+}
+.hd-area .vertical-rolling .slide-inner{}
+.hd-area .vertical-rolling .link{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+.hd-area .vertical-rolling .link .text-wrap{}
+.hd-area .vertical-rolling .link .text-wrap .text{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+#hd .hd-wrap{
+    position: relative;
+    display: flex;
+    max-width: 1820px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+#hd .gnb{}
+#hd .gnb .dep1-wrap{
+    display: flex;
+    align-items: center;
+    margin-right: -22px;
+}
+#hd .gnb .dep1-con{
+    padding-right: 22px;
+}
+#hd .gnb .dep1-inner{}
+#hd .gnb .dep1{
+    display: block;
+}
+#hd .gnb .active .dep1{
+    color: #7a3547;
+}
+#hd .gnb .dep1 .text{
+    font-weight: 600;
+    font-size: 16px;
+}
+#hd .logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);
+    z-index: 20;
+    font-size: 0;
+}
+#hd .logo a{}
+#hd .logo a img{
+    height: 24px;
+}
+#hd .location-menu{}
+#hd .location-menu .dep1-wrap{
+    display: flex;
+    align-items: center;
+    margin-left: -22px;
+}
+#hd .location-menu .dep1-con{
+    padding-left: 22px;
+}
+#hd .location-menu .dep1-inner{}
+#hd .location-menu .dep1{
+    display: block;
+}
+#hd .location-menu .dep1 .text{
+    font-weight: 600;
+    font-size: 16px;
+}

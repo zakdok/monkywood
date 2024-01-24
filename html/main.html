@@ -1,0 +1,411 @@
+<!--@layout(/layout/basic/main.html)-->
+<!--@css(/layout/basic/css/main.css)-->
+<!-- 메인 구성 시작 -->
+<article class="swc_wrap">
+	<div id="fullpage">
+		<section class="section fp-auto-height-responsive visual_wrap" id="section0">
+            <!-- 메인 비주얼 -->
+			<div class="main-visual">
+                <div class="swiper slide-area">
+                    <div class="swiper-wrapper slide-wrap" js-banner-module="mainVisual" js-hide>
+                        <!-- 슬라이드 반복 -->
+                        <div class="swiper-slide slide-con" js-banner>
+                            <div class="slide-inner">
+                                <a href="#;" class="link" target="{$js-target}">
+                                    <div class="bg-wrap"><p class="bg">background image</p></div>
+                                    <div class="content-text-area">
+                                        <div class="text-wrap">
+                                            <p class="category lk"></p>
+                                            <p class="title"></p>
+                                            <p class="text"></p>
+                                        </div>
+                                    </div>
+                                    <div class="hide-info">
+                                        <p class="info-text">{$js-href}</p>
+                                        <p class="info-image">{$js-banner}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- // 슬라이드 반복 -->
+                    </div>
+                    <div class="paging-wrap">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 메인 비주얼 -->
+		</section>
+        <section class="section fp-auto-height-responsive" id="section1">
+            <!-- 프로모션 상품 -->
+            <div class="main-promotion" js-banner-module="mainPromotion" js-hide>
+                <div class="area" js-banner>
+                    <div class="left">
+                        <div class="content-text-area">
+                            <div class="text-wrap">
+                                <p class="text"></p>
+                            </div>
+                            <div class="border-btn-wrap">
+                                <a href="#;" class="btn" target="{$js-target}">
+                                    <p class="text lk">
+                                        SHOP NOW
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="hide-info">
+                                <p class="info-text">{$js-href}</p>
+                                <p class="info-image">{$js-banner}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="bg-area">
+                            <div class="bg-wrap"><p class="bg">promotion product image</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 프로모션 상품 -->
+        </section>
+        <section class="section fp-auto-height-responsive" id="section2">
+            <!-- 베스트 셀러 -->
+            <div class="main-product">
+                <div class="left border-box">
+                    <div class="content-title-area">
+                        <div class="title-wrap">
+                            <p class="title lk">
+                                BEST <br>
+                                SELLERS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <div class="border-btn-wrap black">
+                            <a href="/shopinfo/best_sellers.html" class="btn">
+                                <p class="text lk">
+                                    SHOP NOW
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="swiper slide-area">
+                        <div class="swiper-wrapper slide-wrap" module="product_listmain_4">
+                            <!-- 슬라이드 반복 -->
+                            <div class="swiper-slide slide-con">
+                                <div class="slide-inner">
+                                    <div class="thumb-area">
+                                        <div class="thumb-wrap">
+                                            <a href="{$link_product_detail}" class="thumb">
+                                                <img src="{$image_medium}" alt="product thumbnail" class="img">
+                                                <img src="/images/hover/product-hover-{$product_no}.jpg" alt="product thumbnail" class="hover-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-text-area">
+                                        <div class="subject-wrap">
+                                            <a href="#;" class="subject">
+                                                {$product_name}
+                                            </a>
+                                        </div>
+                                        <div class="price-wrap">
+                                            <p class="old-price {$product_custom|display}">
+                                                {$disp_product_custom}
+                                            </p>
+                                            <p class="price">
+                                                {$disp_product_price}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-con">
+                                <div class="slide-inner">
+                                    <div class="thumb-area">
+                                        <div class="thumb-wrap">
+                                            <a href="{$link_product_detail}" class="thumb">
+                                                <img src="{$image_medium}" alt="product thumbnail" class="img">
+                                                <img src="/images/hover/product-hover-{$product_no}.jpg" alt="product thumbnail" class="hover-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-text-area">
+                                        <div class="subject-wrap">
+                                            <a href="#;" class="subject">
+                                                {$product_name}
+                                            </a>
+                                        </div>
+                                        <div class="price-wrap">
+                                            <p class="old-price {$product_custom|display}">
+                                                {$disp_product_custom}
+                                            </p>
+                                            <p class="price">
+                                                {$disp_product_price}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 슬라이드 반복 -->
+                        </div>
+                        <div class="swiper-button-prev control-btn"></div>
+                        <div class="swiper-button-next control-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <!--// 베스트 셀러 -->
+        </section>
+        <section class="section fp-auto-height-responsive" id="section3">
+            <!-- 저널 -->
+            <div class="main-double-block journal">
+                <div class="df-title-area border-box">
+                    <div class="title-wrap">
+                        <p class="title lk">
+                            JOURNAL
+                        </p>
+                    </div>
+                    <div class="text-wrap">
+                        <p class="text">
+                            식탁과 사람에 대한 이야기
+                        </p>
+                    </div>
+                </div>
+                <div class="block-wrap" js-banner-module="mainJournal" js-hide>
+                    <!-- 반복 -->
+                    <div class="block" js-banner>
+                        <a href="#;" class="link">
+                            <div class="content-title-area">
+                                <div class="title-wrap">
+                                    <p class="title">
+                                        저널 포스트명
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-text-area">
+                                <div class="text-wrap">
+                                    <p class="text">
+                                        
+                                    </p>
+                                </div>
+                                <div class="btn-area">
+                                    <div class="border-btn-wrap">
+                                        <div class="btn">
+                                            <p class="text lk">
+                                                READ MORE
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <p class="info-text">{$js-href}</p>
+                                <p class="info-image">{$js-banner}</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--// 반복 -->
+                </div>
+            </div>
+            <!--// 저널 -->
+        </section>
+        <section class="section fp-auto-height-responsive" id="section4">
+            <!-- 공간 -->
+            <div class="main-double-block space">
+                <div class="df-title-area border-box">
+                    <div class="title-wrap">
+                        <p class="title lk">
+                            SPACE
+                        </p>
+                    </div>
+                    <div class="text-wrap">
+                        <p class="text">
+                            몽키우드가 정의하는 공간의 역할
+                        </p>
+                    </div>
+                </div>
+                <div class="block-wrap" js-banner-module="mainSpace" js-hide>
+                    <!-- 반복 -->
+                    <div class="block" js-banner>
+                        <a href="#;" class="link">
+                            <div class="content-title-area">
+                                <div class="title-wrap">
+                                    <p class="title">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-text-area">
+                                <div class="btn-area">
+                                    <div class="border-btn-wrap">
+                                        <div class="btn">
+                                            <p class="text lk">
+                                                READ MORE
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <p class="info-text">{$js-href}</p>
+                                <p class="info-image">{$js-banner}</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--// 반복 -->
+                </div>
+            </div>
+            <!--// 공간 -->
+        </section>
+        <section class="section fp-auto-height-responsive fp-auto-height" id="section5">
+            <div class="main-instagram">
+                <div class="area">
+                    <div class="top-title-area">
+                        <div class="title-wrap">
+                            <p class="title">
+                                #몽키우드 #몽키우드식탁
+                            </p>
+                        </div>
+                    </div>
+                    <div class="insta-list-area">
+                        <ul class="list-wrap" js-banner-module="mainInstagram" js-hide>
+                            <li class="list-con border-box" js-banner>
+                                <div class="list-inner">
+                                    <div class="thumb-wrap">
+                                        <a href="#;" class="thumb"><img src="" alt="instagram thumbnail"></a>
+                                    </div>
+                                    <div class="content-text-area">
+                                        <div class="text-wrap">
+                                            <p class="text">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="hide-info">
+                                        <p class="info-text">{$js-href}</p>
+                                        <p class="info-image">{$js-banner}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section fp-auto-height-responsive fp-auto-height" id="sectionFooter">
+            <!--@import(/layout/basic/footer.html)-->
+        </section>
+	</div>
+</article>
+<script>
+jQuery(function($){
+    $(document).on('ready', function(){
+        // 메인 비주얼 롤링
+        var mainVisualSwiper = new Swiper(".main-visual .slide-area", {
+            loop: true,
+            speed: 600,
+            autoplay: {
+                delay: 7500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+
+        // 메인 비주얼 정보 추출
+        $('.main-visual .slide-con').each(function(){
+            var infoText = $(this).find('.hide-info .info-text').html().trim();
+            var splitText = infoText.split('`');
+            $(this).find('.link').attr({'href': splitText[0]});
+            $(this).find('.category').html(splitText[1]);
+            $(this).find('.title').html(splitText[2]);
+            $(this).find('.text').html(splitText[3]);
+
+            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+            $(this).find('.bg').css({
+                'background-image': 'url('+infoBg+')'
+            })
+        })
+
+        // 메인 프로모션 정보 추출
+        $('.main-promotion .area').each(function(){
+            var infoText = $(this).find('.hide-info .info-text').html().trim();
+            var splitText = infoText.split('`');
+            $(this).find('.link').attr({'href': splitText[0]});
+            $(this).find('.text-wrap .text').html(splitText[1]);
+            $(this).css({'background-color' : splitText[2]});
+
+            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+            $(this).find('.bg').css({
+                'background-image': 'url('+infoBg+')'
+            })
+        })
+
+        // 베스트 셀러 슬라이드
+        var bestSellersSwiper = new Swiper(".main-product .slide-area", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".main-product .swiper-button-next",
+                prevEl: ".main-product .swiper-button-prev",
+            },
+        });
+
+        // 메인 저널 정보 추출
+        $('.main-double-block.journal .block').each(function(){
+            var infoText = $(this).find('.hide-info .info-text').html().trim();
+            var splitText = infoText.split('`');
+            $(this).find('.link').attr({'href': splitText[0]});
+            $(this).find('.text-wrap .text').html(splitText[1]);
+
+            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+            $(this).css({
+                'background-image': 'url('+infoBg+')'
+            })
+        })
+
+        // 메인 스페이스 정보 추출
+        $('.main-double-block.space .block').each(function(){
+            var infoText = $(this).find('.hide-info .info-text').html().trim();
+            $(this).find('.link').attr({'href': infoText});
+
+            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+            $(this).css({
+                'background-image': 'url('+infoBg+')'
+            })
+        })
+        
+        // 메인 인스타그램 정보 추출
+        $('.main-instagram .insta-list-area .list-con').each(function(){
+            var infoText = $(this).find('.hide-info .info-text').html().trim();
+            var splitText = infoText.split('`');
+            $(this).find('.thumb').attr({'href': splitText[0]});
+            $(this).find('.text-wrap .text').html(splitText[1]);
+
+            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+            $(this).find('.thumb img').attr({
+                'src': infoBg
+            })
+        })
+    });
+})
+</script>
+
+<!--@define(cmc_log)-->
+
+<!-- 하단 스와이프 설정 -->
+<!--@js(/layout/skin/js/myoyoun_main_sw.js)-->
+
+<!--@js(/js/module/product/vimeo_setting.js)--> 
+
+<!-- 풀페이지 설정 js -->
+<script type="text/javascript">window.mfullpage = jQuery.noConflict(true);</script>
+<!--@js(/layout/skin/js/jquery.fullPage.js)-->
+
+<!-- timer 메인 타이세일 설정 js -->
+<!--@import(/layout/basic/footer_comm_js.html)-->
+<!--@js(/js/module/product/timesale_count_main.js)--> 
+
+<!-- sale 할인율 계산 설정 js -->
+<!--@js(/js/module/product/sale_price_main.js)--> 
+<!--@js(/js/module/layout/product_bot.js)--> 
+

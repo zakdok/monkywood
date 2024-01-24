@@ -1,0 +1,103 @@
+<!--@css(/layout/basic/css/header.css)-->
+<!-- 헤더 레이아웃 -->
+    <!-- 띠 배너 -->
+    <div class="vertical-rolling">
+        <div class="swiper slide-area">
+            <div class="swiper-wrapper slide-wrap" js-banner-module="headerRollingBanner" js-hide>
+                <!-- 슬라이드 반복 -->
+                <div class="swiper-slide slide-con" js-banner>
+                    <div class="slide-inner">
+                        <a href="#;" class="link" target="{$js-target}">
+                            <div class="text-wrap">
+                                <p class="text">
+                                    
+                                </p>
+                            </div>
+                            <div class="hide-info">{$js-href}</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- // 슬라이드 반복 -->
+            </div>
+        </div>
+    </div>
+    <!-- // 띠 배너 -->
+    <!-- 헤더 -->
+    <header id="hd">
+        <div class="hd-wrap">
+            <!-- GNB -->
+            <nav class="gnb">
+                <ul class="dep1-wrap">
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/product/guide.html" class="dep1"><p class="text">구매가이드</p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/board/review/list.html?board_no=4" class="dep1"><p class="text">구매후기</p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/product/product_custom.html" class="dep1"><p class="text">맞춤식탁</p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/shopinfo/about_showroom.html" class="dep1"><p class="text">쇼룸</p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/shopinfo/about_info.html" class="dep1"><p class="text">브랜드</p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/shopinfo/inspiration.html" class="dep1"><p class="text">영감</p></a></div></li>
+                </ul>
+            </nav>
+            <!-- // GNB -->
+            <!-- logo -->
+            <h1 class="logo">
+                <a href="/"><img src="/images/logo.png" alt="logo"></a>
+            </h1>
+            <!-- // logo -->
+            <!-- location menu -->
+            <nav class="location-menu">
+                <ul class="dep1-wrap">
+                    <li class="dep1-con" module="Layout_stateLogon"><div class="dep1-inner"><a href="/member/modify.html" class="dep1"><p class="text">멤버</p></a></div></li>
+                    <li class="dep1-con" module="Layout_stateLogon"><div class="dep1-inner"><a href="{$action_logout}" class="dep1"><p class="text">로그아웃</p></a></div></li>
+                    <li class="dep1-con" module="Layout_statelogoff"><div class="dep1-inner"><a href="/member/login.html" class="dep1"><p class="text">회원가입</p></a></div></li>
+                    <li class="dep1-con" module="Layout_statelogoff"><div class="dep1-inner"><a href="/member/join_sns.html" class="dep1"><p class="text">로그인</p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/order/basket.html" module="Layout_orderBasketcount" class="dep1"><p class="text">장바구니({$basket_count})</p></a></div></li>
+                </ul>
+            </nav>
+            <!-- // location menu -->
+        </div>
+    </header>
+    <!-- // 헤더 -->
+<!-- // 헤더 레이아웃 -->
+<script>
+jQuery(function($){
+    // gnb 활성화
+    var gnbActive = function(){
+        var href = location.href;
+        if(href.indexOf('product/guide.html') !== -1){
+            $('#hd .gnb .dep1-con').eq(0).addClass('active');
+        } else if(href.indexOf('board_no=4') !== -1){
+            $('#hd .gnb .dep1-con').eq(1).addClass('active');
+        } else if(href.indexOf('product/product_custom.html') !== -1){
+            $('#hd .gnb .dep1-con').eq(2).addClass('active');
+        } else if(href.indexOf('shopinfo/about_showroom.html') !== -1){
+            $('#hd .gnb .dep1-con').eq(3).addClass('active');
+        } else if(href.indexOf('shopinfo/about_info.html') !== -1){
+            $('#hd .gnb .dep1-con').eq(4).addClass('active');
+        } else if(href.indexOf('shopinfo/inspiration') !== -1){
+            $('#hd .gnb .dep1-con').eq(5).addClass('active');
+        }
+    }
+
+    $(document).on('ready', function(){
+        gnbActive();
+
+        // 헤더 띠 배너 롤링
+        var swiper = new Swiper(".hd-area .vertical-rolling .slide-area", {
+            direction: "vertical",
+            loop: true,
+            speed: 600,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            }
+        });
+
+        // 헤더 띠 배너 텍스트 추출
+        $('.hd-area .vertical-rolling .slide-con').each(function(){
+            var infoText = $(this).find('.hide-info').text().trim();
+            var splitInfo = infoText.split('`');
+            $(this).find('.link').attr({'href': splitInfo[0]});
+            $(this).find('.text').text(splitInfo[1]);
+        })
+    });
+})
+</script>

@@ -1,0 +1,65 @@
+.best-sellers{}
+.best-sellers .list-wrap{}
+.best-sellers .list-con{
+    border-top: 1px solid #000;
+}
+.best-sellers .list-con:first-child{
+    border-top-width: 0;
+}
+.best-sellers .list-inner{
+    position: relative;
+}
+.best-sellers .bg-wrap{}
+.best-sellers .bg-wrap .bg{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 800px;
+    text-indent: -9999px;
+    font-size: 0;
+}
+.best-sellers .content-text-area{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.best-sellers .content-text-area .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+.best-sellers .content-text-area .text-wrap{
+    color: #fff;
+}
+.best-sellers .content-text-area .text-wrap .text{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.46;
+}
+.best-sellers .content-text-area .btn-wrap{}
+.best-sellers .content-text-area .btn-wrap .btn{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .25s;
+}
+.best-sellers .content-text-area .btn-wrap .btn:hover{
+    background-color: #fff;
+    color: #222;
+}
+.best-sellers .content-text-area .btn-wrap .btn .text{
+    font-size: 20px;
+    font-weight: 400;
+}

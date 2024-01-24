@@ -1,0 +1,423 @@
+/* 메인 공통 */
+.border-btn-wrap .btn{
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.border-btn-wrap.black .btn{
+    border-bottom-color: #222;
+    color: #222;
+}
+.border-btn-wrap .btn .text{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+}
+.df-title-area{
+    display: flex;
+    align-items: center;
+    padding: 0 65px;
+}
+.main-double-block .df-title-area{
+    height: 180px;
+    padding-top: 95px;
+}
+.df-title-area .title-wrap{}
+.df-title-area .title-wrap .title{
+    font-size: 44px;
+    font-weight: 400;
+}
+.df-title-area .text-wrap{
+    margin-left: 20px;
+}
+.df-title-area .text-wrap .text{
+    color: #6a6a6a;
+    font-weight: 400;
+}
+/* //메인 공통 */
+/* 메인 비주얼 */
+.main-visual{}
+.main-visual .slide-area{
+    position: relative;
+}
+.main-visual .slide-wrap{}
+.main-visual .slide-con{}
+.main-visual .slide-inner{
+    position: relative;
+}
+.main-visual .link{
+    display: block;
+}
+.main-visual .bg-wrap{}
+.main-visual .bg-wrap .bg{
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    font-size: 0;
+}
+.main-visual .content-text-area{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px 150px;
+}
+.main-visual .content-text-area .text-wrap{
+    max-width: 1720px;
+    padding: 0 20px;
+    margin: 0 auto;
+    color: #fff;
+}
+.main-visual .content-text-area .category{
+    font-size: 18px;
+    font-weight: 400;
+}
+.main-visual .content-text-area .title{
+    margin: 35px 0 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+.main-visual .content-text-area .text{
+    margin: 20px 0 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.fp-tableCell .main-visual .paging-wrap{
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+    z-index: 90;
+}
+.fp-tableCell .main-visual .swiper-pagination{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    max-width: 1720px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.fp-tableCell .main-visual .swiper-pagination .swiper-pagination-bullet{
+    position: relative;
+    flex-grow: 1;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    flex-basis: 30px;
+    background: none;
+    opacity: 1;
+    border-width: 0;
+}
+.fp-tableCell .main-visual .swiper-pagination .swiper-pagination-bullet::before,
+.fp-tableCell .main-visual .swiper-pagination .swiper-pagination-bullet::after{
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 0;
+    display: block;
+    height: 100%;
+}
+.fp-tableCell .main-visual .swiper-pagination .swiper-pagination-bullet::before{
+    width: 90%;
+    background-color: rgba(149, 149, 149, 0.5);
+}
+.fp-tableCell .main-visual .swiper-pagination .swiper-pagination-bullet::after{
+    width: 0;
+    z-index: 20;
+    background-color: #fff;
+}
+@keyframes start {
+    0% {
+      width:0%
+    }
+    100% {
+      width:90%
+    }
+  }
+.fp-tableCell .main-visual .swiper-pagination .swiper-pagination-bullet-active::after{
+    animation: 7.8s start linear;
+}
+/* // 메인 비주얼 */
+/* 메인 프로모션 */
+.main-promotion{}
+.main-promotion .area{
+    display: flex;
+    align-items: flex-end;
+    background-color: #7a3547;
+}
+.main-promotion .area .left{
+    width: 50%;
+}
+.main-promotion .area .right{
+    width: 50%;
+}
+.main-promotion .area .content-text-area{
+    color: #fff;
+    padding: 0 0 110px 65px;
+}
+.main-promotion .area .content-text-area .text-wrap{}
+.main-promotion .area .content-text-area .text-wrap .text{
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.47;
+}
+.main-promotion .area .content-text-area .border-btn-wrap{
+    margin: 75px 0 0;
+}
+.main-promotion .area .bg-area{}
+.main-promotion .area .bg-area .bg-wrap{}
+.main-promotion .area .bg-area .bg{
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    font-size: 0;
+}
+/* // 메인 프로모션 */
+/* 메인 상품 */
+.main-product{
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+.main-product .left{
+    display: flex;
+    width: 25%;
+    height: 100vh;
+    flex-direction: column;
+    padding: 181px 65px 60px;
+    justify-content: space-between;
+}
+.main-product .right{
+    width: 75%;
+}
+.main-product .content-title-area{}
+.main-product .content-title-area .title-wrap{}
+.main-product .content-title-area .title-wrap .title{
+    font-size: 42px;
+    font-weight: 400;
+}
+.main-product .btn-area{}
+.main-product .btn-area .border-btn-wrap{}
+.main-product .btn-area .border-btn-wrap .btn{}
+.main-product .btn-area .border-btn-wrap .btn .text{}
+.main-product .slide-area{
+    position: relative;
+    overflow: hidden;
+}
+.main-product .slide-area .slide-wrap{}
+.main-product .slide-area .slide-con{}
+.main-product .slide-area .slide-inner{
+    position: relative;
+    border-left: 1px solid #000;
+}
+.main-product .slide-area .thumb-area{}
+.main-product .slide-area .thumb-area .thumb-wrap{}
+.main-product .slide-area .thumb-area .thumb-wrap .thumb{
+    position: relative;
+    display: flex;
+    height: calc(100vh - 110px);
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+}
+.main-product .slide-area .thumb-area .thumb-wrap .thumb img{
+    transition: .25s;
+}
+.main-product .slide-area .thumb-area .thumb-wrap .thumb .img{
+    max-width: 100%;
+}
+.main-product .slide-area .thumb-area .thumb-wrap .thumb:hover .img{
+    opacity: 0;
+}
+.main-product .slide-area .thumb-area .thumb-wrap .thumb .hover-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+}
+.main-product .slide-area .thumb-area .thumb-wrap .thumb:hover .hover-img{
+    opacity: 1;
+}
+.main-product .slide-area .product-text-area{
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.main-product .slide-area .product-text-area .subject-wrap{}
+.main-product .slide-area .product-text-area .subject-wrap .subject span{
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: inherit !important;
+}
+.main-product .slide-area .product-text-area .price-wrap{
+    display: flex;
+    align-items: center;
+    margin: 8px 0 0;
+}
+.main-product .slide-area .product-text-area .price-wrap .old-price{
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #a1a1a1;
+    text-decoration: line-through;
+}
+.main-product .slide-area .product-text-area .price-wrap .price{
+    font-weight: 600;
+    font-size: 16px;
+}
+.main-product .slide-area .control-btn{
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 9999;
+}
+.main-product .slide-area .control-btn.swiper-button-prev{
+    left: 0;
+    background-image: url('/images/product-prev.png');
+}
+.main-product .slide-area .control-btn.swiper-button-next{
+    right: 0;
+    background-image: url('/images/product-next.png');
+}
+.main-product .slide-area .control-btn.swiper-button-disabled{
+    display: none;
+}
+/* //메인 상품 */
+/* 저널, 공간 */
+.main-double-block{}
+.main-double-block .block-wrap{
+    display: flex;
+}
+.main-double-block .block{
+    width: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-double-block .link{
+    position: relative;
+    display: block;
+    height: calc(100vh - 180px);
+    color: #fff;
+}
+.main-double-block .link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .25s;
+}
+.main-double-block .block:hover .link::before{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.main-double-block .content-title-area{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 100px 0 0 65px;
+}
+.main-double-block .content-title-area .title-wrap{}
+.main-double-block .content-title-area .title-wrap .title{
+    font-size: 40px;
+    font-weight: 600;
+}
+.main-double-block .content-text-area{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 60px 65px;
+}
+.main-double-block .content-text-area .text-wrap{}
+.main-double-block .content-text-area .text-wrap .text{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.56;
+}
+.main-double-block .content-text-area .btn-area{
+    margin: 45px 0 0;
+}
+.main-double-block .content-text-area .border-btn-wrap{}
+.main-double-block .content-text-area .border-btn-wrap .btn{}
+.main-double-block .content-text-area .border-btn-wrap .btn .text{}
+/* // 저널, 공간 */
+/* 인스타그램 */
+.main-instagram{
+    padding: 100px 20px 85px;
+    background-color: #000;
+}
+.main-instagram .area{
+    max-width: 1720px;
+    margin: 0 auto;
+}
+.main-instagram .top-title-area{
+    text-align: center;
+    color: #fff;
+}
+.main-instagram .top-title-area .title-wrap{}
+.main-instagram .top-title-area .title-wrap .title{
+    font-size: 42px;
+    font-weight: 700;
+}
+.main-instagram .insta-list-area{
+    margin: 35px 0 0;
+}
+.main-instagram .insta-list-area .list-wrap{
+    font-size: 0;
+    margin: -26px -13px 0;
+}
+.main-instagram .insta-list-area .list-con{
+    display: inline-block;
+    width: 25%;
+    padding: 26px 13px 0;
+    vertical-align: top;
+}
+.main-instagram .insta-list-area .list-inner{}
+.main-instagram .insta-list-area .thumb-wrap{}
+.main-instagram .insta-list-area .thumb-wrap .thumb{
+    display: block;
+    overflow: hidden;
+}
+.main-instagram .insta-list-area .thumb-wrap .thumb img{
+    width: 100%;
+    transition: .25s;
+    -moz-transition: .25s;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+}
+.main-instagram .insta-list-area .thumb-wrap .thumb:hover img{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.main-instagram .insta-list-area .content-text-area{
+    padding: 15px 5px 0;
+    color: #fff;
+}
+.main-instagram .insta-list-area .content-text-area .text-wrap{}
+.main-instagram .insta-list-area .content-text-area .text-wrap .text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+/* // 인스타그램 */

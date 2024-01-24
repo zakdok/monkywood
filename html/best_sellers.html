@@ -1,0 +1,56 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/layout/basic/css/best_sellers.css)-->
+<!-- 베스트 셀러 -->
+<div class="best-sellers">
+    <ul class="list-wrap" js-banner-module="bestSellers" js-hide>
+        <!-- 리스트 반복 -->
+        <li class="list-con" js-banner>
+            <div class="list-inner">
+                <div class="bg-wrap">
+                    <p class="bg">background image</p>
+                </div>
+                <div class="content-text-area border-box">
+                    <div class="box">
+                        <div class="text-wrap">
+                            <p class="text">
+                                TUNE 무게감 있는 연출과 여유로운 공간감으로<br>
+                                소중한 이들과의 자리를 마련하세요
+                            </p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="#;" class="btn border-box" target="{$js-target}">
+                                <p class="text lk">
+                                    SHOP NOW
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hide-info">
+                        <p class="info-text">{$js-href}</p>
+                        <p class="info-image">{$js-banner}</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- //리스트 반복 -->
+    </ul>
+</div>
+<!-- //베스트 셀러 -->
+<script>
+    jQuery(function($){
+        $(document).on('ready', function(){
+            // 베스트셀러 정보 추출
+            $('.best-sellers .list-con').each(function(){
+                var infoText = $(this).find('.hide-info .info-text').html().trim();
+                var splitText = infoText.split('`');
+                $(this).find('.btn').attr({'href': splitText[0]});
+                $(this).find('.text-wrap .text').html(splitText[1]);
+    
+                var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+                $(this).find('.bg').css({
+                    'background-image': 'url('+infoBg+')'
+                })
+            })
+        });
+    })
+    </script>
