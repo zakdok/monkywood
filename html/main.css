@@ -28,11 +28,38 @@
     font-weight: 400;
 }
 .df-title-area .text-wrap{
+    position: relative;
+    top: 8px;
     margin-left: 20px;
 }
 .df-title-area .text-wrap .text{
     color: #6a6a6a;
     font-weight: 400;
+}
+
+@media all and (max-width: 1020px){
+    .border-btn-wrap .btn .text{
+        font-size: 14px;
+    }
+    .df-title-area{
+        display: block;
+        padding: 35px 0 30px;
+        text-align: center;
+    }
+    .main-double-block .df-title-area{
+        height: auto;
+        padding: 35px 0 30px;
+    }
+    .df-title-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .df-title-area .text-wrap{
+        top: 0;
+        margin: 8px 0 0;
+    }
+    .df-title-area .text-wrap .text{
+        font-size: 14px;
+    }
 }
 /* //메인 공통 */
 /* 메인 비주얼 */
@@ -57,6 +84,9 @@
     text-indent: -9999px;
     font-size: 0;
 }
+.main-visual .bg-wrap .bg-m{
+    display: none;
+}
 .main-visual .content-text-area{
     position: absolute;
     left: 0;
@@ -80,6 +110,7 @@
     font-weight: 700;
 }
 .main-visual .content-text-area .text{
+    word-break: keep-all;
     margin: 20px 0 0;
     font-size: 20px;
     font-weight: 400;
@@ -130,6 +161,9 @@
     z-index: 20;
     background-color: #fff;
 }
+.main-visual-mobile{
+    display: none;
+}
 @keyframes start {
     0% {
       width:0%
@@ -140,6 +174,51 @@
   }
 .fp-tableCell .main-visual .swiper-pagination .swiper-pagination-bullet-active::after{
     animation: 7.8s start linear;
+}
+
+@media all and (max-width: 1200px){
+    .main-visual .content-text-area .category{
+        font-size: 14px;
+    }
+    .main-visual .content-text-area .title{
+        font-size: 48px;
+    }
+    .main-visual .content-text-area .text{
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .main-visual .bg-wrap .bg-pc{
+        display: none;
+    }
+    .main-visual .bg-wrap .bg-m{
+        display: block;
+    }
+    .main-visual .content-text-area{
+        padding: 0 25px 100px;
+    }
+    .main-visual .content-text-area .text-wrap{
+        padding: 0;
+    }
+    .main-visual .content-text-area .category{
+        font-size: 12px;
+    }
+    .main-visual .content-text-area .title{
+        margin: 20px 0 0;
+        font-size: 42px;
+    }
+    .main-visual .content-text-area .text{
+        margin: 10px 0 0;
+        font-size: 16px;
+        line-height: 1.53;
+    }
+    .fp-tableCell .main-visual .paging-wrap{
+        bottom: 40px;
+    }
+    .fp-tableCell .main-visual .swiper-pagination{
+        padding: 0 25px;
+    }
 }
 /* // 메인 비주얼 */
 /* 메인 프로모션 */
@@ -178,6 +257,40 @@
     text-indent: -9999px;
     font-size: 0;
 }
+
+@media all and (max-width: 1200px){
+    .main-promotion .area .content-text-area .text-wrap .text{
+        font-size: 28px;
+    }
+}
+
+@media all and (max-width: 1020px){
+    .main-promotion .area{
+        display: block;
+    }
+    .main-promotion .area .left{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .main-promotion .area .right{
+        width: 100%;
+    }
+    .main-promotion .area .content-text-area{
+        padding: 0 25px 50px;
+    }
+    .main-promotion .area .content-text-area .text-wrap .text{
+        font-size: 18px;
+    }
+    .main-promotion .area .content-text-area .border-btn-wrap{
+        margin: 20px 0 0;
+    }
+    .main-promotion .area .bg-area .bg{
+        height: 0;
+        padding-bottom: 100%;
+    }
+}
 /* // 메인 프로모션 */
 /* 메인 상품 */
 .main-product{
@@ -210,8 +323,10 @@
 .main-product .slide-area{
     position: relative;
     overflow: hidden;
+    padding: 0 0 45px;
 }
-.main-product .slide-area .slide-wrap{}
+.main-product .slide-area .slide-wrap{
+}
 .main-product .slide-area .slide-con{}
 .main-product .slide-area .slide-inner{
     position: relative;
@@ -299,14 +414,106 @@
 .main-product .slide-area .control-btn.swiper-button-disabled{
     display: none;
 }
+.main-product .slide-area .paging-wrap{
+    display: none;
+}
+.main-product .slide-area .paging-wrap .swiper-pagination{
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0 0;
+    text-align: center;
+    font-size: 0;
+    margin: 0 -4px 0 0;
+}
+.main-product .slide-area .paging-wrap .swiper-pagination-bullet{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px 0 0;
+    border-radius: 50%;
+    border: 1px solid #000;
+    opacity: 1;
+    background-color: transparent;
+}
+.main-product .slide-area .paging-wrap .swiper-pagination-bullet-active{
+    background-color: #000;
+}
+@media all and (max-width: 1020px){
+    .main-product{
+        display: block;
+        border-bottom-width: 0;
+    }
+    .main-product .left{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .main-product .content-title-area .title-wrap .title br{
+        display: none;
+    }
+    .main-product .right{
+        width: 100%;
+    }
+    .main-product .slide-area{
+        border-top: 1px solid #000;
+    }
+    .main-product .slide-area::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 45px;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        z-index: 20;
+    }
+    .main-product .slide-area .slide-con.swiper-slide-active .slide-inner{
+        border-left-width: 0;
+    }
+    .main-product .content-title-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .main-product .slide-area .thumb-area .thumb-wrap .thumb{
+        height: auto;
+    }
+    .main-product .slide-area .thumb-area .thumb-wrap .thumb img{
+        width: 100%;
+    }
+    .main-product .slide-area .product-text-area{
+        height: 100px;
+        padding: 0 15px;
+    }
+    .main-product .slide-area .product-text-area .subject-wrap .subject span{
+        font-size: 14px !important;
+    }
+    .main-product .slide-area .product-text-area .price-wrap{
+        margin: 4px 0 0;
+    }
+    .main-product .slide-area .product-text-area .price-wrap .old-price{
+        margin-right: 4px;
+        font-size: 12px;
+    }
+    .main-product .slide-area .product-text-area .price-wrap .price{
+        font-size: 12px;
+    }
+    .main-product .slide-area .control-btn{
+        display: none;
+    }
+    .main-product .slide-area .paging-wrap{
+        display: block;
+    }
+}
 /* //메인 상품 */
 /* 저널, 공간 */
 .main-double-block{}
-.main-double-block .block-wrap{
-    display: flex;
-}
+.main-double-block .block-wrap{}
+.main-double-block .block-wrap .slide-area{}
 .main-double-block .block{
-    width: 50%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -359,6 +566,72 @@
 .main-double-block .content-text-area .border-btn-wrap{}
 .main-double-block .content-text-area .border-btn-wrap .btn{}
 .main-double-block .content-text-area .border-btn-wrap .btn .text{}
+.main-double-block .slide-area .paging-wrap{
+    display: none;
+}
+.main-double-block .slide-area .paging-wrap .swiper-pagination{
+    left: 0;
+    top: auto;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin: 0 -4px 0 0;
+}
+.main-double-block .slide-area .paging-wrap .swiper-pagination-bullet{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px 0 0;
+    border-radius: 50%;
+    border: 1px solid #000;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.main-double-block .slide-area .paging-wrap .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+
+@media all and (max-width: 1200px){
+    .main-double-block .content-title-area .title-wrap .title{
+        font-size: 32px;
+    }
+    .main-double-block .content-text-area .text-wrap .text{
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 1021px){
+    .main-double-block .slide-wrap{
+        transform: translate3d(0, 0, 0) !important;
+    }
+}
+
+@media all and (max-width: 1020px){
+    .main-double-block .link{
+        height: 0;
+        padding-bottom: 100%;
+    }
+    .main-double-block .content-title-area{
+        padding: 50px 0 0 25px;
+    }
+    .main-double-block .content-title-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .main-double-block .content-text-area{
+        padding: 0 0 40px 25px;
+    }
+    .main-double-block .content-text-area .text-wrap .text{
+        font-size: 16px;
+    }
+    .main-double-block .content-text-area .btn-area{
+        margin: 30px 0 0;
+    }
+    .main-double-block .slide-area .paging-wrap{
+        display: block;
+    }
+}
+
 /* // 저널, 공간 */
 /* 인스타그램 */
 .main-instagram{
@@ -381,16 +654,12 @@
 .main-instagram .insta-list-area{
     margin: 35px 0 0;
 }
-.main-instagram .insta-list-area .list-wrap{
-    font-size: 0;
-    margin: -26px -13px 0;
+.main-instagram .slide-area{
+    position: relative;
+    overflow: hidden;
 }
-.main-instagram .insta-list-area .list-con{
-    display: inline-block;
-    width: 25%;
-    padding: 26px 13px 0;
-    vertical-align: top;
-}
+.main-instagram .insta-list-area .list-wrap{}
+.main-instagram .insta-list-area .list-con{}
 .main-instagram .insta-list-area .list-inner{}
 .main-instagram .insta-list-area .thumb-wrap{}
 .main-instagram .insta-list-area .thumb-wrap .thumb{
@@ -419,5 +688,55 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
+}
+.main-instagram .slide-area .paging-wrap{
+    display: none;
+}
+.main-instagram .slide-area .paging-wrap .swiper-pagination{
+    left: 0;
+    top: auto;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin: 0 -4px 0 0;
+}
+.main-instagram .slide-area .paging-wrap .swiper-pagination-bullet{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 4px 0 0;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.main-instagram .slide-area .paging-wrap .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+
+@media all and (max-width: 1020px){
+    .main-instagram{
+        padding: 50px 25px 25px;
+        background-color: #000;
+    }
+    .main-instagram .top-title-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .main-instagram .slide-area{
+        padding: 0 0 35px;
+    }
+    .main-instagram .insta-list-area{
+        margin: 25px 0 0;
+    }
+    .main-instagram .insta-list-area .content-text-area{
+        padding: 10px 0 0;
+        text-align: center;
+    }
+    .main-instagram .insta-list-area .content-text-area .text-wrap .text{
+        font-size: 13px;
+    }
+    .main-instagram .slide-area .paging-wrap{
+        display: block;
+    }
 }
 /* // 인스타그램 */

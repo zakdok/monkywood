@@ -117,3 +117,74 @@
     font-weight: 400;
     line-height: 20px;
 }
+
+@media all and (max-width: 1020px){
+    #ft .ft-area .grid-list-area{
+        padding: 50px 25px;
+    }
+    #ft .ft-area .grid-list-area .list-wrap{
+        display: block;
+        overflow: hidden;
+    }
+    #ft .ft-area .grid-list-area .list-con{
+        float: left;
+    }
+    #ft .ft-area .grid-list-area .list-con,
+    #ft .ft-area .grid-list-area .list-con:last-child{
+        width: 50%;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area.mt45{
+        margin-top: 30px;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area .title-wrap .title{
+        font-size: 14px;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area .text-wrap{
+        margin: 15px 0 0;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area .text-wrap .text{
+        margin: 4px 0 0;
+        font-size: 11px;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area .text-wrap .text-small{
+        margin: 4px 0 0;
+        font-size: 11px;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area .btn-wrap{
+        margin: 7px 0 0;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area .btn-wrap .btn{
+        padding: 5px 10px;
+    }
+    #ft .ft-area .grid-list-area .grid-title-area .btn-wrap .text{
+        font-size: 12px;
+    }
+    #ft .ft-area .grid-list-area .nav-wrap{
+        display: none;
+    }
+    #ft .ft-area .grid-list-area .sns-list-wrap{
+        margin: 40px 0 0;
+    }
+    #ft .ft-area .grid-list-area .sns-list-wrap .dep1-wrap{
+        justify-content: flex-start;
+    }
+    #ft .ft-area .grid-list-area .sns-list-wrap .dep1 img{
+        width: 24px;
+    }
+    #ft .ft-area .ft-info-area{
+        padding: 40px 25px 50px;
+    }
+    #ft .ft-area .ft-info-area .text-wrap{
+        padding: 0;
+    }
+    #ft .ft-area .ft-info-area .text-wrap .text{
+        font-size: 11px;
+    }
+    #ft .ft-area .ft-info-area .text-wrap .text .bar{
+        margin: 0 3px;
+    }
+    #ft .ft-area .ft-info-area .text-wrap .copyright{
+        margin: 12px 0 0;
+        font-size: 11px;
+    }
+}

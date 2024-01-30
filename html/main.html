@@ -12,8 +12,11 @@
                         <div class="swiper-slide slide-con" js-banner>
                             <div class="slide-inner">
                                 <a href="#;" class="link" target="{$js-target}">
-                                    <div class="bg-wrap"><p class="bg">background image</p></div>
-                                    <div class="content-text-area">
+                                    <div class="bg-wrap">
+                                        <p class="bg bg-pc">background image</p>
+                                        <p class="bg bg-m">background image</p>
+                                    </div>
+                                    <div class="content-text-area border-box">
                                         <div class="text-wrap">
                                             <p class="category lk"></p>
                                             <p class="title"></p>
@@ -35,6 +38,20 @@
                 </div>
             </div>
             <!-- // 메인 비주얼 -->
+            <!-- 모바일 메인 비주얼 / image 정보만 추출 -->
+			<div class="main-visual-mobile">
+                <div js-banner-module="mainVisualMobile" js-hide>
+                    <!-- 리스트 반복 -->
+                    <div class="list-con" js-banner>
+                        <div class="hide-info">
+                            <p class="info-text">{$js-href}</p>
+                            <p class="info-image">{$js-banner}</p>
+                        </div>
+                    </div>
+                    <!-- // 리스트 반복 -->
+                </div>
+            </div>
+            <!-- // 모바일 메인 비주얼 / image 정보만 추출 -->
 		</section>
         <section class="section fp-auto-height-responsive" id="section1">
             <!-- 프로모션 상품 -->
@@ -151,6 +168,9 @@
                         </div>
                         <div class="swiper-button-prev control-btn"></div>
                         <div class="swiper-button-next control-btn"></div>
+                        <div class="paging-wrap">
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -171,40 +191,49 @@
                         </p>
                     </div>
                 </div>
-                <div class="block-wrap" js-banner-module="mainJournal" js-hide>
-                    <!-- 반복 -->
-                    <div class="block" js-banner>
-                        <a href="#;" class="link">
-                            <div class="content-title-area">
-                                <div class="title-wrap">
-                                    <p class="title">
-                                        저널 포스트명
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="content-text-area">
-                                <div class="text-wrap">
-                                    <p class="text">
-                                        
-                                    </p>
-                                </div>
-                                <div class="btn-area">
-                                    <div class="border-btn-wrap">
-                                        <div class="btn">
-                                            <p class="text lk">
-                                                READ MORE
-                                            </p>
+                <div class="block-wrap">
+                    <div class="swiper slide-area">
+                        <div class="swiper-wrapper slide-wrap" js-banner-module="mainJournal" js-hide>
+                            <!-- 슬라이드 반복 -->
+                            <div class="swiper-slide slide-con block" js-banner>
+                                <div class="slide-inner">
+                                    <a href="#;" class="link">
+                                        <div class="content-title-area">
+                                            <div class="title-wrap">
+                                                <p class="title">
+                                                    저널 포스트명
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="content-text-area">
+                                            <div class="text-wrap">
+                                                <p class="text">
+                                                    
+                                                </p>
+                                            </div>
+                                            <div class="btn-area">
+                                                <div class="border-btn-wrap">
+                                                    <div class="btn">
+                                                        <p class="text lk">
+                                                            READ MORE
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hide-info">
+                                            <p class="info-text">{$js-href}</p>
+                                            <p class="info-image">{$js-banner}</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="hide-info">
-                                <p class="info-text">{$js-href}</p>
-                                <p class="info-image">{$js-banner}</p>
-                            </div>
-                        </a>
+                            <!--// 반복 -->
+                        </div>
+                        <div class="paging-wrap">
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
-                    <!--// 반복 -->
                 </div>
             </div>
             <!--// 저널 -->
@@ -224,34 +253,43 @@
                         </p>
                     </div>
                 </div>
-                <div class="block-wrap" js-banner-module="mainSpace" js-hide>
-                    <!-- 반복 -->
-                    <div class="block" js-banner>
-                        <a href="#;" class="link">
-                            <div class="content-title-area">
-                                <div class="title-wrap">
-                                    <p class="title">
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="content-text-area">
-                                <div class="btn-area">
-                                    <div class="border-btn-wrap">
-                                        <div class="btn">
-                                            <p class="text lk">
-                                                READ MORE
-                                            </p>
+                <div class="block-wrap">
+                    <div class="swiper slide-area">
+                        <div class="swiper-wrapper slide-wrap" js-banner-module="mainSpace" js-hide>
+                            <!-- 슬라이드 반복 -->
+                            <div class="swiper-slide slide-con block" js-banner>
+                                <div class="slide-inner">
+                                    <a href="#;" class="link">
+                                        <div class="content-title-area">
+                                            <div class="title-wrap">
+                                                <p class="title">
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="content-text-area">
+                                            <div class="btn-area">
+                                                <div class="border-btn-wrap">
+                                                    <div class="btn">
+                                                        <p class="text lk">
+                                                            READ MORE
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hide-info">
+                                            <p class="info-text">{$js-href}</p>
+                                            <p class="info-image">{$js-banner}</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="hide-info">
-                                <p class="info-text">{$js-href}</p>
-                                <p class="info-image">{$js-banner}</p>
-                            </div>
-                        </a>
+                            <!--// 반복 -->
+                        </div>
+                        <div class="paging-wrap">
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
-                    <!--// 반복 -->
                 </div>
             </div>
             <!--// 공간 -->
@@ -267,25 +305,33 @@
                         </div>
                     </div>
                     <div class="insta-list-area">
-                        <ul class="list-wrap" js-banner-module="mainInstagram" js-hide>
-                            <li class="list-con border-box" js-banner>
-                                <div class="list-inner">
-                                    <div class="thumb-wrap">
-                                        <a href="#;" class="thumb"><img src="" alt="instagram thumbnail"></a>
-                                    </div>
-                                    <div class="content-text-area">
-                                        <div class="text-wrap">
-                                            <p class="text">
-                                            </p>
+                        <div class="swiper slide-area">
+                            <div class="swiper-wrapper list-wrap" js-banner-module="mainInstagram" js-hide>
+                                <!-- 슬라이드 반복 -->
+                                <div class="swiper-slide list-con block" js-banner>
+                                    <div class="list-inner">
+                                            <div class="thumb-wrap">
+                                                <a href="#;" class="thumb"><img src="" alt="instagram thumbnail"></a>
+                                            </div>
+                                            <div class="content-text-area">
+                                                <div class="text-wrap">
+                                                    <p class="text">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="hide-info">
+                                                <p class="info-text">{$js-href}</p>
+                                                <p class="info-image">{$js-banner}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="hide-info">
-                                        <p class="info-text">{$js-href}</p>
-                                        <p class="info-image">{$js-banner}</p>
-                                    </div>
                                 </div>
-                            </li>
-                        </ul>
+                                <!-- // 슬라이드 반복 -->
+                                <div class="paging-wrap">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,6 +344,27 @@
 <script>
 jQuery(function($){
     $(document).on('ready', function(){
+        // 메인 비주얼 정보 추출
+        $('.main-visual .slide-con').each(function(){
+            var infoText = $(this).find('.hide-info .info-text').html().trim();
+            var splitText = infoText.split('`');
+            $(this).find('.link').attr({'href': splitText[0]});
+            $(this).find('.category').html(splitText[1]);
+            $(this).find('.title').html(splitText[2]);
+            $(this).find('.text').html(splitText[3]);
+
+            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+            $(this).find('.bg-pc').css({
+                'background-image': 'url('+infoBg+')'
+            })
+        })
+        $('.main-visual-mobile .list-con').each(function(){
+            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
+            $('.main-visual .slide-con .bg-m').eq($(this).index()).css({
+                'background-image': 'url('+infoBg+')'
+            })
+        })
+
         // 메인 비주얼 롤링
         var mainVisualSwiper = new Swiper(".main-visual .slide-area", {
             loop: true,
@@ -310,22 +377,6 @@ jQuery(function($){
                 el: ".swiper-pagination",
             },
         });
-
-
-        // 메인 비주얼 정보 추출
-        $('.main-visual .slide-con').each(function(){
-            var infoText = $(this).find('.hide-info .info-text').html().trim();
-            var splitText = infoText.split('`');
-            $(this).find('.link').attr({'href': splitText[0]});
-            $(this).find('.category').html(splitText[1]);
-            $(this).find('.title').html(splitText[2]);
-            $(this).find('.text').html(splitText[3]);
-
-            var infoBg = $(this).find('.hide-info .info-image img').attr('src');
-            $(this).find('.bg').css({
-                'background-image': 'url('+infoBg+')'
-            })
-        })
 
         // 메인 프로모션 정보 추출
         $('.main-promotion .area').each(function(){
@@ -348,6 +399,34 @@ jQuery(function($){
                 nextEl: ".main-product .swiper-button-next",
                 prevEl: ".main-product .swiper-button-prev",
             },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2
+                },
+                1020: {
+                    slidesPerView: 3
+                }
+            }
+
+        });
+
+        // 메인 저널 슬라이드
+        var journalSwiper = new Swiper(".main-double-block.journal .block-wrap .slide-area", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                1020: {
+                    slidesPerView: 2
+                }
+            }
         });
 
         // 메인 저널 정보 추출
@@ -363,6 +442,22 @@ jQuery(function($){
             })
         })
 
+        // 메인 스페이스 슬라이드
+        var spaceSwiper = new Swiper(".main-double-block.space .block-wrap .slide-area", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                1020: {
+                    slidesPerView: 2
+                }
+            }
+        });
+
         // 메인 스페이스 정보 추출
         $('.main-double-block.space .block').each(function(){
             var infoText = $(this).find('.hide-info .info-text').html().trim();
@@ -373,6 +468,29 @@ jQuery(function($){
                 'background-image': 'url('+infoBg+')'
             })
         })
+
+        // 메인 인스타 슬라이드
+        var instaSwiper = new Swiper(".main-instagram .slide-area", {
+            slidesPerView: 4,
+            spaceBetween: 26,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+                1020: {
+                    slidesPerView: 4,
+                    spaceBetween: 26
+                }
+            }
+        });
         
         // 메인 인스타그램 정보 추출
         $('.main-instagram .insta-list-area .list-con').each(function(){

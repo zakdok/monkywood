@@ -51,10 +51,10 @@ body{
 #hd .hd-wrap{
     position: relative;
     display: flex;
-    max-width: 1820px;
+    max-width: 1830px;
     height: 70px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
     align-items: center;
     justify-content: space-between;
 }
@@ -62,10 +62,10 @@ body{
 #hd .gnb .dep1-wrap{
     display: flex;
     align-items: center;
-    margin-right: -22px;
+    margin-right: -28px;
 }
 #hd .gnb .dep1-con{
-    padding-right: 22px;
+    padding-right: 28px;
 }
 #hd .gnb .dep1-inner{}
 #hd .gnb .dep1{
@@ -77,6 +77,43 @@ body{
 #hd .gnb .dep1 .text{
     font-weight: 600;
     font-size: 16px;
+}
+#hd .open-gnb-area{
+    display: none;
+}
+#hd .open-gnb-area .btn{
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 18px;
+}
+#hd .open-gnb-area .btn::before,
+#hd .open-gnb-area .btn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+#hd .open-gnb-area .btn::before{
+    top: 0;
+}
+#hd .open-gnb-area .btn::after{
+    bottom: 0;
+}
+#hd .open-gnb-area .btn span{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-top: -0.5px;
+    font-size: 0;
+    text-indent: -9999px;
 }
 #hd .logo{
     position: absolute;
@@ -106,4 +143,64 @@ body{
 #hd .location-menu .dep1 .text{
     font-weight: 600;
     font-size: 16px;
+}
+#hd .location-menu .dep1 .ico{
+    position: relative;
+}
+#hd .location-menu .dep1 .ico img{}
+#hd .location-menu .dep1 .ico span{
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #222;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
+@media all and (max-width: 1200px){
+    body{
+        padding-top: 112px;
+    }
+    .hd-area .vertical-rolling .link .text-wrap .text{
+        font-size: 13px;
+    }
+    #hd .hd-wrap{
+        height: 60px;
+    }
+    #hd .gnb{
+        display: none;
+    }
+    #hd .open-gnb-area{
+        display: block;
+    }
+    #hd .logo a img{
+        height: 20px;
+    }
+    #hd .location-menu .dep1-wrap{
+        margin-left: -15px;
+    }
+    #hd .location-menu .dep1-con{
+        padding-left: 15px;
+    }
+    #hd .location-menu .dep1-con.mobile-none{
+        display: none;
+    }
+    #hd .location-menu .dep1 .ico img{
+        width: 20px;
+    }
+    #hd .location-menu .dep1 .ico span{
+        right: -9px;
+        top: -5px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 10px;
+    }
 }

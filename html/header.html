@@ -37,6 +37,13 @@
                 </ul>
             </nav>
             <!-- // GNB -->
+            <!-- mobile hambergur manu -->
+            <div class="open-gnb-area">
+                <button class="btn open-gnb">
+                    <span>햄버거 메뉴</span>
+                </button>
+            </div>
+            <!-- // mobile hambergur manu -->
             <!-- logo -->
             <h1 class="logo">
                 <a href="/"><img src="/images/logo.png" alt="logo"></a>
@@ -45,17 +52,20 @@
             <!-- location menu -->
             <nav class="location-menu">
                 <ul class="dep1-wrap">
-                    <li class="dep1-con" module="Layout_stateLogon"><div class="dep1-inner"><a href="/member/modify.html" class="dep1"><p class="text">멤버</p></a></div></li>
-                    <li class="dep1-con" module="Layout_stateLogon"><div class="dep1-inner"><a href="{$action_logout}" class="dep1"><p class="text">로그아웃</p></a></div></li>
-                    <li class="dep1-con" module="Layout_statelogoff"><div class="dep1-inner"><a href="/member/login.html" class="dep1"><p class="text">회원가입</p></a></div></li>
-                    <li class="dep1-con" module="Layout_statelogoff"><div class="dep1-inner"><a href="/member/join_sns.html" class="dep1"><p class="text">로그인</p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/order/basket.html" module="Layout_orderBasketcount" class="dep1"><p class="text">장바구니({$basket_count})</p></a></div></li>
+                    <li class="dep1-con mobile-none"><div class="dep1-inner"><a href="#;" class="dep1"><p class="text">멤버</p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="#;" class="dep1 search-form-toggle"><p class="ico"><img src="/images/hd-search.png" alt="search icon"></p></a></div></li>
+                    <li class="dep1-con mobile-none" module="Layout_stateLogon"><div class="dep1-inner"><a href="/member/modify.html" class="dep1"><p class="ico"><img src="/images/hd-user.png" alt="mypage icon"></p></a></div></li>
+                    <li class="dep1-con mobile-none" module="Layout_statelogoff"><div class="dep1-inner"><a href="/member/login.html" class="dep1"><p class="ico"><img src="/images/hd-user.png" alt="login icon"></p></a></div></li>
+                    <li class="dep1-con"><div class="dep1-inner"><a href="/order/basket.html" module="Layout_orderBasketcount" class="dep1"><p class="ico"><img src="/images/hd-cart.png" alt="cart icon"><span>({$basket_count})</span></p></a></div></li>
                 </ul>
             </nav>
             <!-- // location menu -->
         </div>
     </header>
     <!-- // 헤더 -->
+<!-- 검색 시작 -->
+<!--@import(/layout/basic/quick_search.html)-->
+<!-- 검색 끝 -->
 <!-- // 헤더 레이아웃 -->
 <script>
 jQuery(function($){
@@ -98,6 +108,15 @@ jQuery(function($){
             $(this).find('.link').attr({'href': splitInfo[0]});
             $(this).find('.text').text(splitInfo[1]);
         })
+
+        // 장바구니 텍스트 괄호 제거
+        var cartText = $('#hd .location-menu .dep1 .ico span').text().replace('(', '').replace(')', '');
+        $('#hd .location-menu .dep1 .ico span').text(cartText);
     });
+
+    // 서치 폼 토글
+    $('.search-form-toggle').on('click', function(){
+        $('.search-area').stop().fadeToggle();
+    })
 })
 </script>

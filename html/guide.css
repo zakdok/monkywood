@@ -66,9 +66,12 @@
     height: 350px;
 }
 .guide-info-section .top-title-area .title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 350px;
     text-align: center;
-    padding-top: 180px;
+    padding-top: 70px;
 }
 .guide-info-section .top-title-area.fixed .title-wrap{
     position: fixed;
@@ -104,19 +107,101 @@
     position: relative;
     overflow: hidden;
 }
-.guide-info-section .area .thumb-list-area .list-wrap{}
-.guide-info-section .area .thumb-list-area .list-con{}
-.guide-info-section .area .thumb-list-area .list-inner{}
-.guide-info-section .area .thumb-list-area .thumb-wrap{}
+.guide-info-section .area .thumb-list-area .list-wrap{
+    height: calc(100vh - 352px);
+    font-size: 0;
+    vertical-align: top;
+}
+.guide-info-section .area .thumb-list-area .list-con{
+    display: inline-block;
+    width: 33.33%;
+    height: 50%;
+    font-size: 10px;
+}
+.guide-info-section .area .thumb-list-area .list-wrap.swiper-wrapper .list-con{
+    height: 100%;
+}
+.guide-info-section .area .thumb-list-area .list-wrap2 .list-con{
+    width: 50%;
+    height: 100%;
+}
+.guide-info-section .area .thumb-list-area .list-wrap3 .list-con:nth-child(4),
+.guide-info-section .area .thumb-list-area .list-wrap3 .list-con:nth-child(5){
+    width: 50%;
+}
+.guide-info-section .area .thumb-list-area .list-wrap4 .list-con{
+    width: 100%;
+    height: 100%;
+}
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(1),
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(2),
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(3),
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(4){
+    width: 25%;
+}
+.guide-info-section .area .thumb-list-area .list-inner{
+    height: 100%;
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+    border-right: 1px solid #000;
+}
+.guide-info-section .area .thumb-list-area .list-wrap1 .list-con:nth-child(4) .list-inner,
+.guide-info-section .area .thumb-list-area .list-wrap1 .list-con:nth-child(5) .list-inner,
+.guide-info-section .area .thumb-list-area .list-wrap1 .list-con:nth-child(6) .list-inner{
+    border-top: 1px solid #000;
+}
+.guide-info-section .area .thumb-list-area .list-wrap1 .list-con:nth-child(3n+3) .list-inner{
+    border-right-width: 0;
+}
+.guide-info-section .area .thumb-list-area .list-wrap2 .list-con:nth-child(2) .list-inner{
+    border-right-width: 0;
+}
+.guide-info-section .area .thumb-list-area .list-wrap3 .list-con:nth-child(4) .list-inner,
+.guide-info-section .area .thumb-list-area .list-wrap3 .list-con:nth-child(5) .list-inner{
+    border-top: 1px solid #000;
+}
+.guide-info-section .area .thumb-list-area .list-wrap3 .list-con:nth-child(3) .list-inner,
+.guide-info-section .area .thumb-list-area .list-wrap3 .list-con:nth-child(5) .list-inner{
+    border-right-width: 0;
+}
+.guide-info-section .area .thumb-list-area .list-wrap4 .list-inner{
+    border-right-width: 0;
+}
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(5) .list-inner,
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(6) .list-inner,
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(7) .list-inner{
+    border-top: 1px solid #000;
+}
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(4) .list-inner,
+.guide-info-section .area .thumb-list-area .list-wrap5 .list-con:nth-child(7) .list-inner{
+    border-right-width: 0;
+}
+.guide-info-section .area .thumb-list-area .thumb-wrap{
+    position: relative;
+    height: 100%;
+}
+.guide-info-section .area .thumb-list-area .title{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 20;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+.guide-info-section .area .thumb-list-area .title.black{
+    color: #222;
+    font-weight: 600;
+    font-size: 19px;
+}
 .guide-info-section .area .thumb-list-area .thumb{}
 .guide-info-section .area .thumb-list-area .thumb img{
+    position: absolute;
+    left: 0;
+    top: 0;
     display: block;
     width: 100%;
-    height: calc(100vh - 352px);
+    height: 100%;
     object-fit: cover;
-}
-.guide-info-section.row-reverse .area .thumb-list-area .thumb img{
-    object-fit: unset;
 }
 .guide-info-section .area .text-list-area{}
 .guide-info-section .area .text-list-area .list-wrap{

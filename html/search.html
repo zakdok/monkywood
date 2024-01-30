@@ -1,0 +1,17 @@
+<!--@css(/layout/basic/css/search.css)-->
+<div id="saerchForm" class="search-area">
+	<div class="search-wrap">
+        <div module="Layout_SearchHeader">
+            <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+            -->
+            <fieldset>
+                <div class="search-con">
+                    {$form.keyword}
+                    <input type="submit" alt="검색" class="search_btn_icon" onclick="{$action_search_submit}" />
+                </div>
+            </fieldset>
+        </div>
+	</div>
+</div>
