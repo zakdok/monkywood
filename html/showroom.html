@@ -23,19 +23,179 @@
         </div>
         <nav class="nav">
             <ul class="dep1-wrap">
-                <li class="dep1-con active"><div class="dep1-inner"><button class="dep1" data-area="전체보기"><p class="text">전체보기</p></button></div></li>
-                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="서울"><p class="text">서울(4)</p></button></div></li>
-                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="경기"><p class="text">경기(1)</p></button></div></li>
-                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="전라"><p class="text">전라(1)</p></button></div></li>
-                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="경상"><p class="text">경상(4)</p></button></div></li>
+                <li class="dep1-con active"><div class="dep1-inner"><button class="dep1" data-area="0"><p class="text">전체보기</p></button></div></li>
+                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="1"><p class="text">서울(5)</p></button></div></li>
+                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="2"><p class="text">경기(9)</p></button></div></li>
+                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="3"><p class="text">전라(5)</p></button></div></li>
+                <li class="dep1-con"><div class="dep1-inner"><button class="dep1" data-area="4"><p class="text">경상(3)</p></button></div></li>
             </ul>
         </nav>
+        <script>
+        jQuery(function($){
+            $('.showroom .category .nav .dep1').on('click', function(){
+                var area = $(this).attr('data-area');
+                $(this).parents('.dep1-con').addClass('active').siblings().removeClass('active');
+                $('.showroom-area .list-area .list-con').hide();
+                $('.showroom-area .list-area .list-con.data-area'+area).show();
+                if(area == '0'){
+                    $('.showroom-area .list-area .list-con').show();
+                }
+
+                // mobile
+                $('.showroom .category .title-btn-wrap').removeClass('active').next().stop().slideUp();
+            })
+        })
+        </script>
     </div>
 	<div class="showroom-area">
 		<div class="list-area">
 			<!--@css(/css/module/layout/brand_show.css)-->
             <ul class="list-wrap">
-                <li class="list-con border-box">
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_01-.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        파주 쇼룸 (PAJU SHOWROOM)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        경기도 파주시 탄현면 검산로361번길 25-15 A동 2층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:031-948-7530">
+                                            031-948-7530
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3152.4958172741017!2d126.73593361559324!3d37.80185391837354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8dd48ca7ec51%3A0x8caf72481fae01b1!2z66q97YKk7Jqw65Oc!5e0!3m2!1sko!2skr!4v1629866821836!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="파주 쇼룸 (PAJU SHOWROOM)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="경기도 파주시 탄현면 검산로361번길 25-15 A동 2층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 10:00 - CLOSE PM 6:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="031-948-7530"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area1">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_01-.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        양재 쇼룸 (YANGJAE SHOWROOM)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        서울특별시 서초구 양재천로 11길 10 상희원빌딩
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:02-572-7530">
+                                            02-572-7530
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3166.392659462416!2d127.03415387619019!3d37.475059372062475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca13390852071%3A0x95536851d38662a8!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iOq1rCDslpHsnqzsspzroZwxMeq4uCAxMA!5e0!3m2!1sko!2skr!4v1690951403405!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="양재 쇼룸 (YANGJAE SHOWROOM)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="서울특별시 서초구 양재천로 11길 10 상희원빌딩"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 11:00 - CLOSE PM 7:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="02-572-7530"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area4">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_03.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        대구 쇼룸 (DAEGU SHOWROOM)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        대구광역시 서구 국채보상로 403 범성빌딩 1층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:053-572-7530">
+                                            053-572-7530
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3233.052375193128!2d128.5729678152439!3d35.872233327080465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e3f371a639f9%3A0xa3099a969fb5267f!2z64yA6rWs6rSR7Jet7IucIOyEnOq1rCDqta3ssYTrs7Tsg4HroZwgNDAz!5e0!3m2!1sko!2skr!4v1644386398745!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="대구 쇼룸 (DAEGU SHOWROOM)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="대구광역시 서구 국채보상로 403 범성빌딩 1층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 11:00 - CLOSE PM 7:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="053-572-7530"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area4">
                     <div class="list-inner">
                         <div class="thumb-area">
                             <div class="thumb-wrap">
@@ -55,26 +215,25 @@
                             <div class="content-text-area">
                                 <div class="subject-wrap">
                                     <p class="subject">
-                                        양재점 (YANGJAE STORE)
+                                        김해 쇼룸 (GIMHAE SHOWROOM)
                                     </p>
                                 </div>
                                 <div class="addr-wrap">
                                     <p class="addr">
-                                        서울특별시 서초구 양재천로 11길 10 상희원빌딩
+                                        경상남도 김해시 김해대로 2613
                                     </p>
                                 </div>
                                 <div class="time-tel-wrap">
-                                    <p class="time">
-                                        OPEN AM 11:00 - CLOSE PM 7:00
-                                    </p>
                                     <p class="tel">
-                                        <a href="tel:02-572-7530">02-572-7530</a>
+                                        <a href="tel:055-344-0110">
+                                            055-344-0110
+                                        </a>
                                     </p>
                                 </div>
                             </div>
                             <div class="hide-info">
                                 <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d26072.683867364543!2d128.91335!3d35.229242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66e9af236527fdff!2z66q97YKk7Jqw65OcIOq5gO2VtOygkA!5e0!3m2!1sko!2skr!4v1629866302921!5m2!1sko!2skr"></input></span>
-                                <span><input id="gmap_id_name" type="hidden" g-map-name="김해점 (GIMHAE STORE)"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="김해 쇼룸 (GIMHAE SHOWROOM)"></input></span>
                                 <span><input id="gmap_id_add" type="hidden" g-map-add="경상남도 김해시 김해대로 2613"></input></span>
                                 <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 10:00 - CLOSE PM 7:00"></input></span>
                                 <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
@@ -84,11 +243,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-con border-box">
+                <li class="list-con border-box data-area2">
                     <div class="list-inner">
                         <div class="thumb-area">
                             <div class="thumb-wrap">
-                                <p class="thumb"><img src="/store_img/sb_02.jpg" alt="thumbnail"></p>
+                                <p class="thumb"><img src="/store_img/sb_07.jpg" alt="thumbnail"></p>
                                 <div class="btn-layer">
                                     <div class="btn-wrap">
                                         <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
@@ -104,40 +263,39 @@
                             <div class="content-text-area">
                                 <div class="subject-wrap">
                                     <p class="subject">
-                                        양재점 (YANGJAE STORE)
+                                        용인 리빙파워센터점 (YONGIN STORE)
                                     </p>
                                 </div>
                                 <div class="addr-wrap">
                                     <p class="addr">
-                                        서울특별시 서초구 양재천로 11길 10 상희원빌딩
+                                        경기 용인시 기흥구 신고매로 59 B1, 몽키우드
                                     </p>
                                 </div>
                                 <div class="time-tel-wrap">
-                                    <p class="time">
-                                        OPEN AM 11:00 - CLOSE PM 7:00
-                                    </p>
                                     <p class="tel">
-                                        <a href="tel:02-572-7530">02-572-7530</a>
+                                        <a href="tel:031-285-7530">
+                                            031-285-7530
+                                        </a>
                                     </p>
                                 </div>
                             </div>
                             <div class="hide-info">
-                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d26072.683867364543!2d128.91335!3d35.229242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66e9af236527fdff!2z66q97YKk7Jqw65OcIOq5gO2VtOygkA!5e0!3m2!1sko!2skr!4v1629866302921!5m2!1sko!2skr"></input></span>
-                                <span><input id="gmap_id_name" type="hidden" g-map-name="김해점 (GIMHAE STORE)"></input></span>
-                                <span><input id="gmap_id_add" type="hidden" g-map-add="경상남도 김해시 김해대로 2613"></input></span>
-                                <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 10:00 - CLOSE PM 7:00"></input></span>
-                                <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
-                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
-                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="055-344-0110"></input></span>
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3177.0192866592497!2d127.11210165111946!3d37.223517079764754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b459899b1726f%3A0x335892f193c1e26a!2z66as67mZ7YyM7JuM7IS87YSw!5e0!3m2!1sko!2skr!4v1680498330959!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="용인 리빙파워센터점 (YONGIN STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="경기 용인시 기흥구 신고매로 59 B1, 몽키우드"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:00 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:00 - CLOSE PM 9:00"></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3="공휴일: OPEN AM 10:00 - CLOSE PM 9:00"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="031-285-7530"></input></span>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="list-con border-box">
+                <li class="list-con border-box data-area1">
                     <div class="list-inner">
                         <div class="thumb-area">
                             <div class="thumb-wrap">
-                                <p class="thumb"><img src="/store_img/sb_02.jpg" alt="thumbnail"></p>
+                                <p class="thumb"><img src="/store_img/sb_13.jpg" alt="thumbnail"></p>
                                 <div class="btn-layer">
                                     <div class="btn-wrap">
                                         <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
@@ -153,40 +311,38 @@
                             <div class="content-text-area">
                                 <div class="subject-wrap">
                                     <p class="subject">
-                                        양재점 (YANGJAE STORE)asdnjaskdkjandasd
+                                        롯데백화점 영등포점 (YEONGDEUNGPO STORE)
                                     </p>
                                 </div>
                                 <div class="addr-wrap">
                                     <p class="addr">
-                                        서울특별시 서초구 양재천로 11길 10 상희원빌딩
+                                        서울특별시 영등포구 경인로 846, 9층
                                     </p>
                                 </div>
                                 <div class="time-tel-wrap">
-                                    <p class="time">
-                                        OPEN AM 11:00 - CLOSE PM 7:00
-                                    </p>
                                     <p class="tel">
-                                        <a href="tel:02-572-7530">02-572-7530</a>
+                                        <a href="tel:02-2630-6957">
+                                            02-2630-6957
+                                        </a>
                                     </p>
                                 </div>
                             </div>
                             <div class="hide-info">
-                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d26072.683867364543!2d128.91335!3d35.229242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66e9af236527fdff!2z66q97YKk7Jqw65OcIOq5gO2VtOygkA!5e0!3m2!1sko!2skr!4v1629866302921!5m2!1sko!2skr"></input></span>
-                                <span><input id="gmap_id_name" type="hidden" g-map-name="김해점 (GIMHAE STORE)"></input></span>
-                                <span><input id="gmap_id_add" type="hidden" g-map-add="경상남도 김해시 김해대로 2613"></input></span>
-                                <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 10:00 - CLOSE PM 7:00"></input></span>
-                                <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
-                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
-                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="055-344-0110"></input></span>
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d12658.648239243967!2d126.9075191!3d37.5158879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9efcf6145dc5%3A0xf222329226590d33!2z66Gv642w67Cx7ZmU7KCQIOyYgeuTse2PrOygkA!5e0!3m2!1sko!2skr!4v1692749519125!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 영등포점 (YEONGDEUNGPO STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="서울특별시 영등포구 경인로 846, 9층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="02-2630-6957"></input></span>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="list-con border-box">
+                <li class="list-con border-box data-area1">
                     <div class="list-inner">
                         <div class="thumb-area">
                             <div class="thumb-wrap">
-                                <p class="thumb"><img src="/store_img/sb_02.jpg" alt="thumbnail"></p>
+                                <p class="thumb"><img src="/store_img/sb_10-.jpg" alt="thumbnail"></p>
                                 <div class="btn-layer">
                                     <div class="btn-wrap">
                                         <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
@@ -202,31 +358,739 @@
                             <div class="content-text-area">
                                 <div class="subject-wrap">
                                     <p class="subject">
-                                        양재점 (YANGJAE STORE)
+                                        롯데백화점 노원점 (NOWON STORE)
                                     </p>
                                 </div>
                                 <div class="addr-wrap">
                                     <p class="addr">
-                                        서울특별시 서초구 양재천로 11길 10 상희원빌딩
+                                        서울특별시 노원구 동일로 1414, 7층
                                     </p>
                                 </div>
                                 <div class="time-tel-wrap">
-                                    <p class="time">
-                                        OPEN AM 11:00 - CLOSE PM 7:00
-                                    </p>
                                     <p class="tel">
-                                        <a href="tel:02-572-7530">02-572-7530</a>
+                                        <a href="tel:ㅁㄴㅇㄴㅁㅇㅁㄴㅇㄴㅁㅂㅂ">
+                                            02-950-2740
+                                        </a>
                                     </p>
                                 </div>
                             </div>
                             <div class="hide-info">
-                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d26072.683867364543!2d128.91335!3d35.229242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66e9af236527fdff!2z66q97YKk7Jqw65OcIOq5gO2VtOygkA!5e0!3m2!1sko!2skr!4v1629866302921!5m2!1sko!2skr"></input></span>
-                                <span><input id="gmap_id_name" type="hidden" g-map-name="김해점 (GIMHAE STORE)"></input></span>
-                                <span><input id="gmap_id_add" type="hidden" g-map-add="경상남도 김해시 김해대로 2613"></input></span>
-                                <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 10:00 - CLOSE PM 7:00"></input></span>
-                                <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3158.744064593583!2d127.05870231173625!3d37.655220671899066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbbd82ed21e79%3A0x42eb07f4dd5a5890!2z66Gv642w67Cx7ZmU7KCQIOuFuOybkOygkA!5e0!3m2!1sko!2skr!4v1687325049796!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 노원점 (NOWON STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="서울특별시 노원구 동일로 1414, 7층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="02-950-2740"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area1">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_08.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 미아점 (MIA STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        서울특별시 강북구 도봉로62, 8층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:02-944-2846">
+                                            02-944-2846
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3160.4732475853293!2d127.02792951128393!3d37.61455442125677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbc12c85afa1d%3A0x669de0c9ee58340e!2z66Gv642w67Cx7ZmU7KCQIOuvuOyVhOygkA!5e0!3m2!1sko!2skr!4v1686116929410!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 미아점 (MIA STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="서울특별시 강북구 도봉로62, 8층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="02-944-2846"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_06.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 평촌점 (PYEONGCHONE STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        경기 안양시 동안구 시민대로 180, 7층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:031-8086-9701">
+                                            031-8086-9701
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d12679.986616599588!2d126.9503381!3d37.3899114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b60a8e81a02d5%3A0xcc980e97045fd2c!2z66Gv642w67Cx7ZmU7KCQIO2Piey0jOygkA!5e0!3m2!1sko!2skr!4v1677217165430!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 평촌점 (PYEONGCHONE STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="경기 안양시 동안구 시민대로 180, 7층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
                                 <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
-                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="055-344-0110"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="031-8086-9701"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/incheon.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 인천점 (INCHEON STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        인천광역시 미추홀구 연남로 35, 5층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:010-4821-7530">
+                                            010-4821-7530
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3167.7791057803906!2d126.69881660470402!3d37.44232275374323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7bd0d4672f13%3A0x87fd939b6506e51c!2z66Gv642w67Cx7ZmU7KCQIOyduOyynOygkA!5e0!3m2!1sko!2skr!4v1706082321457!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 인천점 (INCHEON STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="인천광역시 미추홀구 연남로 35, 5층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="010-4821-7530"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/dongtan.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 동탄점 (DONGTAN STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        경기 화성시 오산동 967-2419, 6층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:010-2714-7530">
+                                            010-2714-7530
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3177.9903793411017!2d127.09489197628379!3d37.200457945034294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b45b013734017%3A0x4f093e4d5d969f65!2z66Gv642w67Cx7ZmU7KCQIOuPme2DhOygkA!5e0!3m2!1sko!2skr!4v1706083704033!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 동탄점 (DONGTAN STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="경기 화성시 오산동 967-2419, 6층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="010-2714-7530"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_11-.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 구리점 (GURI STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        경기도 구리시 경춘로 261, 7층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:031-550-7743">
+                                            031-550-7743
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3160.977890155156!2d127.1411913116348!3d37.60267937191263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb0b002a4d21d%3A0x9a9bba5ba6b90e79!2z66Gv642w67Cx7ZmU7KCQIOq1rOumrA!5e0!3m2!1sko!2skr!4v1689123298690!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 구리점 (GURI STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="경기도 구리시 경춘로 261, 7층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="031-550-7743"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area4">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_09.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 광복점 (BUSAN STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        부산광역시 중구 중앙대로 2, 9층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:051-678-4262">
+                                            051-678-4262
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3264.3407721795834!2d129.03404057590362!3d35.09820077278108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e90ce42927c7%3A0x5d3d0805166065eb!2z66Gv642w67Cx7ZmU7KCQIOq0keuzteygkA!5e0!3m2!1sko!2skr!4v1686878702564!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 광복점 (BUSAN STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="부산광역시 중구 중앙대로 2, 9층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="051-678-4262"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area3">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_14.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 대전점 (DANJEON STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        대전광역시 서구 계룡로 598, B1층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:042-601-2093">
+                                            042-601-2093
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d12855.326777337312!2d127.3895615!3d36.3406287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565495a47be6863%3A0xe95300c41efbfeb6!2z66Gv642w67Cx7ZmU7KCQIOuMgOyghOygkA!5e0!3m2!1sko!2skr!4v1693896617694!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 대전점 (DANJEON STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="대전광역시 서구 계룡로 598, B1층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="042-601-2093"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area3">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_15.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 전주점 (JEONJU STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        전라북도 전주시 완산구 온고을로2, B1층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:063-289-3071">
+                                            063-289-3071
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d12938.38718102891!2d127.1218516!3d35.8343672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35703cad94d90657%3A0xb2b7c85906023e22!2z66Gv642w67Cx7ZmU7KCQIOyghOyjvOygkA!5e0!3m2!1sko!2skr!4v1694132892428!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 전주점 (JEONJU STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="전라북도 전주시 완산구 온고을로2, B1층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="063-289-3071"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area3">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_17.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        롯데백화점 광주점 (GWANGJU STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        광주 동구 독립로 268, 8층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:062-221-1858">
+                                            062-221-1858
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3262.0842728889493!2d126.90971507608658!3d35.15451897276185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c88382a8523%3A0x8c14cc1e6177cf42!2z66Gv642w67Cx7ZmU7KCQIOq0keyjvOygkA!5e0!3m2!1sko!2skr!4v1700727133948!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="롯데백화점 광주점 (GWANGJU STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="광주 동구 독립로 268, 8층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="062-221-1858"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area1">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_18.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        현대백화점 신촌점 (SINCHONE STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        서울 서대문구 신촌로 83, 9층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:02-3145-2966">
+                                            02-3145-2966
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3162.9459107109456!2d126.93361816164106!3d37.556338121924604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c989a7b2e4d6d%3A0x6aafda493b1f6d5c!2z7ZiE64yA67Cx7ZmU7KCQIOyLoOy0jOygkA!5e0!3m2!1sko!2skr!4v1702948556890!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="현대백화점 신촌점 (SINCHONE STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="서울 서대문구 신촌로 83, 9층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="02-3145-2966"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_04.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        AK 플라자 수원점 (SUWON STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        경기도 수원시 팔달구 덕영대로 924, 5층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:031-240-1522">
+                                            031-240-1522
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m14!1m8!1m3!1d12701.003744645996!2d127.0003508!3d37.2654762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87d7679749e70fef!2zQUvtlIzrnbzsnpAg7IiY7JuQ7KCQKEFL7YOA7Jq07KCQKQ!5e0!3m2!1sko!2skr!4v1655689276946!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="AK 플라자 수원점 (SUWON STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="경기도 수원시 팔달구 덕영대로 924, 5층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="031-240-1522"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_05.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        AK 플라자 분당점 (BUNDANG STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        경기도 성남시 분당구 황새울로360번길 42, 6층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:031-8023-2635">
+                                            031-8023-2635
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3170.2038211349745!2d127.12097641525307!3d37.385011842260816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5802decf215d%3A0xa6d3dd6812c38dd3!2zQUvtlIzrnbzsnpAg67aE64u57KCQ!5e0!3m2!1sko!2skr!4v1671688671954!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="AK 플라자 분당점 (BUNDANG STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="경기도 성남시 분당구 황새울로360번길 42, 6층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_open3" type="hidden" g-map-open3=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="031-8023-2635"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area3">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_12.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        갤러리아 센터시티점 (CHEONAN STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        충청남도 천안시 서북구 공원로 227, 7층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:ㅁㄴㅇㄴㅁㅇㅁㄴㅇㄴㅁㅂㅂ">
+                                            041-412-9703
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3194.755204175392!2d127.10229727616199!3d36.80041927224704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ad80cf2aafdbf%3A0xc78780457d7a1bfb!2z6rCk65-s66as7JWE67Cx7ZmU7KCQIOyEvO2EsOyLnO2LsOygkA!5e0!3m2!1sko!2skr!4v1690950430036!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="갤러리아 센터시티점 (CHEONAN STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="충청남도 천안시 서북구 공원로 227, 7층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="041-412-9703"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area3">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/sb_16.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        갤러리아 타임월드점 (DAEJEON STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        대전 서구 둔산동 대덕대로 211, 9층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:042-720-6932">
+                                            042-720-6932
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d3213.364976384942!2d127.3756125760447!3d36.35193747237837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654be0a6fa05d9%3A0xb0fb5aa41310d05b!2z6rCk65-s66as7JWE67Cx7ZmU7KCQIO2DgOyehOyblOuTnOygkA!5e0!3m2!1sko!2skr!4v1698972344601!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="갤러리아 타임월드점 (DAEJEON STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="대전 서구 둔산동 대덕대로 211, 9층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="월~목: OPEN AM 10:30 - CLOSE PM 8:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2="금~일: OPEN AM 10:30 - CLOSE PM 8:30"></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="042-720-6932"></input></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-con border-box data-area2">
+                    <div class="list-inner">
+                        <div class="thumb-area">
+                            <div class="thumb-wrap">
+                                <p class="thumb"><img src="/store_img/goyang.jpg" alt="thumbnail"></p>
+                                <div class="btn-layer">
+                                    <div class="btn-wrap">
+                                        <button class="btn border-box" onclick="STORE_MYO_MAP.viewTarget_map(this);">
+                                            <p class="text">
+                                                지도 보기
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="content-text-area">
+                                <div class="subject-wrap">
+                                    <p class="subject">
+                                        스타필드 고양점 (GOYANG STORE)
+                                    </p>
+                                </div>
+                                <div class="addr-wrap">
+                                    <p class="addr">
+                                        고양시 덕양구 고양대로 1955, 1층
+                                    </p>
+                                </div>
+                                <div class="time-tel-wrap">
+                                    <p class="tel">
+                                        <a href="tel:010-2672-7530">
+                                            010-2672-7530
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hide-info">
+                                <span><input id="gmap_id" type="hidden" g-map-url="!1m18!1m12!1m3!1d1579.5490730759527!2d126.89348408891132!3d37.646896566752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9713f6961e85%3A0x33d53c6fd0151b38!2z7Iqk7YOA7ZWE65OcIOqzoOyWkQ!5e0!3m2!1sko!2skr!4v1705301345370!5m2!1sko!2skr"></input></span>
+                                <span><input id="gmap_id_name" type="hidden" g-map-name="스타필드 고양점 (GOYANG STORE)"></input></span>
+                                <span><input id="gmap_id_add" type="hidden" g-map-add="고양시 덕양구 고양대로 1955, 1층"></input></span>
+                                <span><input id="gmap_id_open" type="hidden" g-map-open="OPEN AM 10:00 - CLOSE PM 10:00"></input></span>
+                                <span><input id="gmap_id_open2" type="hidden" g-map-open2=""></input></span>
+                                <span><input id="gmap_id_phone" type="hidden" g-map-phone="010-2672-7530"></input></span>
                             </div>
                         </div>
                     </div>

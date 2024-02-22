@@ -58,6 +58,58 @@
     font-weight: 400;
     line-height: 1.4;
 }
+.guide-intro .area .content-text-area .text-wrap .text br{
+    display: none;
+}
+
+@media all and (max-width: 1420px){
+    .guide-intro .area .content-text-area .text-wrap .text br{
+        display: block;
+    }
+}
+
+@media all and (max-width: 1020px){
+    .guide-intro .area{
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    .guide-intro .area .left{
+        width: 100%;
+    }
+    .guide-intro .area .right{
+        width: 100%;
+        height: auto;
+        position: static;
+        border-bottom-width: 0;
+    }
+    .guide-intro .area .bg-area{}
+    .guide-intro .area .bg-area .bg-wrap{}
+    .guide-intro .area .bg-area .bg{
+        height: auto;
+        padding-bottom: 100%;
+    }
+    .guide-intro .area .content-title-area{
+        position: relative;
+        top: 0;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .guide-intro .area .content-title-area .title-wrap .text{
+        font-size: 14px;
+    }
+    .guide-intro .area .content-title-area .title-wrap .title{
+        margin: 8px 0 0;
+        font-size: 32px;
+    }
+    .guide-intro .area .content-text-area{
+        padding: 0 0 25px 25px;
+    }
+    .guide-intro .area .content-text-area .text-wrap .text{
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
 /* // 인트로 */
 /* 식탁 마스터 / 내게 맞는 식탁 */
 .guide-info-section{}
@@ -313,6 +365,169 @@
 .guide-info-section .area .control-btn.swiper-button-disabled{
     display: none;
 }
+
+@media all and (max-width: 1540px){
+    .guide-info-section .top-title-area .title{
+        font-size: 30px;
+    }
+    .guide-info-section .area .left{
+        width: 60%;
+    }
+    .guide-info-section .area .right{
+        width: 40%;
+    }
+    .guide-info-section .area .text-list-area .title-area{
+        padding: 24px 0 0 30px;
+    }
+    .guide-info-section .area .text-list-area .title-area .title-wrap .en-title{
+        margin-right: 10px;
+        font-size: 30px;
+    }
+    .guide-info-section .area .text-list-area .title-area .title-wrap .title{
+        margin-right: 10px;
+        font-size: 30px;
+    }
+    .guide-info-section .area .text-list-area .title-area .text-wrap .text{
+        font-size: 14px;
+    }
+    .guide-info-section .area .text-list-area .title-area .text-wrap .text-medium{
+        font-size: 20px;
+    }
+    .guide-info-section .area .text-list-area .text-area{
+        padding: 30px 0 0 25px;
+    }
+    .guide-info-section .area .text-list-area .text-area .text-wrap .text{
+        font-size: 16px;
+    }
+    .guide-info-section .area .text-list-area .text-area .text-wrap .dot-text{
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .guide-info-section .area .text-list-area .text-area .btn-wrap .btn .text{
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 1200px){
+    .mobile-none{
+        display: none !important;
+    }
+}
+
+@media all and (max-width: 1020px){
+    .guide-info-section .top-title-area.dummy{
+        display: none;
+    }
+    .guide-info-section .top-title-area .title-wrap{
+        display: block;
+        height: auto;
+        padding: 70px 0 40px;
+    }
+    .guide-info-section .top-title-area.fixed .title-wrap{
+        position: relative;
+    }
+    .guide-info-section .top-title-area .title{
+        font-size: 30px;
+    }
+    .guide-info-section .area,
+    .guide-info-section.row-reverse .area{
+        flex-direction: column;
+        border-top-width: 0;
+    }
+    #section1 .guide-info-section .area{
+        border-top-width: 1px;
+    }
+    .guide-info-section .area .left{
+        width: 100%;
+    }
+    .guide-info-section .area .right{
+        width: 100%;
+    }
+    .guide-info-section .area .thumb-list-area .list-wrap{
+        height: auto;
+    }
+    .guide-info-section .area .thumb-list-area .list-con{
+        height: auto !important;
+    }
+    .guide-info-section .area .thumb-list-area .thumb-wrap{
+        height: auto;
+    }
+    .guide-info-section .area .thumb-list-area .title{
+        left: 8px;
+        top: 8px;
+        font-size: 12px;
+    }
+    .guide-info-section .area .thumb-list-area .title.black{
+        font-size: 11px;
+    }
+    .guide-info-section .area .thumb-list-area .thumb img{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .guide-info-section .area .text-list-area .list-wrap{
+        height: auto;
+        border-left-width: 0;
+        border-top: 1px solid #000;
+    }
+    .guide-info-section.row-reverse .area .text-list-area .list-wrap{
+        border-right-width: 0;
+    }
+    .guide-info-section .area .text-list-area .list-con{
+        position: relative;
+    }
+    .guide-info-section .area .text-list-area .title-area{
+        height: 90px;
+        padding: 20px 0 0 25px;
+    }
+    .guide-info-section .area .text-list-area .title-area .title-wrap .en-title{
+        margin-right: 6px;
+        font-size: 20px;
+    }
+    .guide-info-section .area .text-list-area .title-area .title-wrap .title{
+        bottom: 0;
+        margin-right: 6px;
+        font-size: 20px;
+    }
+    .guide-info-section .area .text-list-area .title-area .text-wrap .text{
+        top: 2px;
+        font-size: 12px;
+    }
+    .guide-info-section .area .text-list-area .title-area .text-wrap .text-medium{
+        font-size: 14px;
+    }
+    .guide-info-section .area .text-list-area .text-area{
+        padding: 30px 0 30px 25px;
+        margin: -12px 0 0;
+    }
+    .guide-info-section .area .text-list-area .text-area .text-wrap .text{
+        padding: 12px 0 0;
+        font-size: 14px;
+    }
+    .guide-info-section .area .text-list-area .text-area .text-wrap .dot-text{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .guide-info-section .area .text-list-area .text-area .btn-wrap{
+        margin: 15px 0 0;
+    }
+    .guide-info-section .area .text-list-area .text-area .btn-wrap .btn .text{
+        font-size: 14px;
+    }
+    .guide-info-section .area .control-btn{
+        width: 12px;
+        height: 23px;
+    }
+    .guide-info-section .area .control-btn.swiper-button-prev{
+        left: 10px;
+        background-size: cover;
+    }
+    .guide-info-section .area .control-btn.swiper-button-next{
+        right: 10px;
+        background-size: cover;
+    }
+}
+
 /* //식탁 마스터 / 내게 맞는 식탁 */
 /* 식탁 추천 */
 .guide-personal{}
@@ -357,7 +572,7 @@
 .guide-personal .type-list-area .list-inner{
     border-right: 1px solid #000;
 }
-.guide-personal .type-list-area .list-con:last-child .list-con{
+.guide-personal .type-list-area .list-con:last-child .list-inner{
     border-right-width: 0;
 }
 .guide-personal .type-list-area .link{
@@ -416,5 +631,42 @@
     font-weight: 600;
     line-height: 1.4;
     font-size: 16px;
+}
+
+@media all and (max-width: 1020px){
+    .guide-personal .visual{
+        height: 220px;
+        padding-top: 0;
+    }
+    .guide-personal .visual .content-text-area .title-wrap{}
+    .guide-personal .visual .content-text-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .guide-personal .visual .content-text-area .title-wrap .text{
+        margin: 8px 0 0;
+        font-size: 14px;
+    }
+    .guide-personal .type-list-area{}
+    .guide-personal .type-list-area .list-wrap{
+        font-size: 0;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+    }
+    .guide-personal .type-list-area .list-con{
+        width: 50%;
+    }
+    .guide-personal .type-list-area .list-con:nth-child(even) .list-inner{
+        border-right-width: 0;
+    }
+    .guide-personal .type-list-area .thumb-area .thumb .img{
+        height: auto;
+    }
+    .guide-personal .type-list-area .content-text-area .text-wrap .text{
+        font-size: 14px;
+    }
+    .guide-personal .type-list-area .content-text-area .tag-wrap{}
+    .guide-personal .type-list-area .content-text-area .tag-wrap .tag{
+        font-size: 13px;
+    }
 }
 /* //식탁 추천 */

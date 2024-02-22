@@ -259,8 +259,11 @@
 }
 
 @media all and (max-width: 1200px){
+    .main-promotion .area .content-text-area .btn-wrap{
+        margin: 45px 0 0;
+    }
     .main-promotion .area .content-text-area .text-wrap .text{
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 

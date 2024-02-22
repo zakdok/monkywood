@@ -1,0 +1,121 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/layout/basic/css/wishlist.css)-->
+
+<!-- cloud_rw start /myshop/wishlist.html  -->
+<div class="my-list">
+    <div class="top-title-area border-box">
+        <div class="title-wrap">
+            <p class="title">
+                위시리스트
+            </p>
+        </div>
+    </div>
+    <div class="product-list-area" module="myshop_wishlist">
+        <!--
+            $login_page = /member/login.html
+            $count = 10
+        -->
+        <ul class="list-wrap" module="myshop_wishlistitem">
+            <li class="list-con">
+                <div class="list-inner">
+                    <div class="thumb-wrap">
+                        <!-- <div class="badge-wrap">
+                            <p class="badge lk">
+                                BEST
+                            </p>
+                        </div> -->
+                        <a href="/product/detail.html{$param}" class="link">
+                            <img src="{$image_medium}" alt="thumbnail" class="img">
+                            <img src="{$image_big}" alt="thumbnail" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="content-text-area">
+                        <div class="subject-wrap">
+                            <a href="/product/detail.html{$param}" class="subject">
+                                {$product_name}
+                            </a>
+                        </div>
+                        <div class="info-wrap">
+                            <div class="price-wrap">
+                                <!-- <p class="old-price {$product_sale_price_display|display}">
+                                    {$product_sale_price}원
+                                </p> -->
+                                <p class="price">
+                                    {$product_price}
+                                </p>
+                            </div>
+                            <!-- <div class="sale-wrap {$product_sale_price_display|display}">
+                                <p class="sale lk">
+                                    20% OFF
+                                </p>
+                            </div> -->
+                            <div class="ico-wrap">
+                                <a class="{$class_del}" href="#;">
+                                    <img src="/web/upload/icon_202402161348069700.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-con">
+                <div class="list-inner">
+                    <div class="thumb-wrap">
+                        <!-- <div class="badge-wrap">
+                            <p class="badge lk">
+                                BEST
+                            </p>
+                        </div> -->
+                        <a href="/product/detail.html{$param}" class="link">
+                            <img src="{$image_medium}" alt="thumbnail" class="img">
+                            <img src="{$image_big}" alt="thumbnail" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="content-text-area">
+                        <div class="subject-wrap">
+                            <a href="/product/detail.html{$param}" class="subject">
+                                {$product_name}
+                            </a>
+                        </div>
+                        <div class="info-wrap">
+                            <div class="price-wrap">
+                                <!-- <p class="old-price {$product_sale_price_display|display}">
+                                    {$product_sale_price}원
+                                </p> -->
+                                <p class="price">
+                                    {$product_price}
+                                </p>
+                            </div>
+                            <!-- <div class="sale-wrap {$product_sale_price_display|display}">
+                                <p class="sale lk">
+                                    20% OFF
+                                </p>
+                            </div> -->
+                            <div class="ico-wrap">
+                                <a class="{$class_del}" href="#;">
+                                    <img src="/web/upload/icon_202402161348069700.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <p class="empty {$empty_display|display}">추가된 관심 상품이 없습니다.</p>
+    </div>
+    <!-- 페이징 처리 시작 -->
+    <div module="myshop_wishlistpaging" class="ec-cpc-paginate myboard_box f_pad">
+        <a href="{$param_first}" class="first"><em class="cloud_gnb_pc ico_firstp"></em></a>
+        <a href="{$param_before}"><em class="cloud_gnb_pc ico_prev"></em></a>
+        <ol>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        </ol>
+        <a href="{$param_next}"><em class="cloud_gnb_pc ico_next"></em></a>
+        <a href="{$param_last}" class="last"><em class="cloud_gnb_pc ico_endp"></em></a>
+    </div>
+    <!-- 페이징 처리 끝 -->
+</div>

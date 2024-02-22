@@ -1,0 +1,227 @@
+.my-list{
+    margin-bottom: 200px;
+}
+.my-list .top-title-area{
+    max-width: 1830px;
+    padding: 125px 15px 20px;
+}
+.my-list .top-title-area .title-wrap{}
+.my-list .top-title-area .title-wrap .title{
+    font-size: 32px;
+    font-weight: 700;
+}
+.my-list .product-list-area{}
+.my-list .product-list-area .list-wrap{
+    font-size: 0;
+}
+.my-list .product-list-area .list-con{
+    display: inline-block;
+    width: 20%;
+    vertical-align: baseline;
+    font-size: 10px;
+}
+.my-list .product-list-area .list-inner{
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.my-list .product-list-area .list-con:nth-child(1) .list-inner,
+.my-list .product-list-area .list-con:nth-child(2) .list-inner,
+.my-list .product-list-area .list-con:nth-child(3) .list-inner,
+.my-list .product-list-area .list-con:nth-child(4) .list-inner,
+.my-list .product-list-area .list-con:nth-child(5) .list-inner{
+    border-top: 1px solid #000;
+}
+.my-list .product-list-area .list-con:nth-child(5n+5) .list-inner{
+    border-right-width: 0;
+}
+.my-list .product-list-area .thumb-wrap{
+    position: relative;
+}
+.my-list .product-list-area .thumb-wrap .badge-wrap{
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.my-list .product-list-area .thumb-wrap .badge-wrap .badge{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border: 1px solid #000;
+    border-left-width: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.my-list .product-list-area .thumb-wrap .link{
+    position: relative;
+    display: block;
+    font-size: 0;
+}
+.my-list .product-list-area .thumb-wrap .link img{
+    width: 100%;
+}
+.my-list .product-list-area .thumb-wrap .link .img{}
+.my-list .product-list-area .thumb-wrap .link .hover-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: .25s;-moz-transition: .25s;-webkit-transition: .25s;-o-transition: .25s;
+}
+.my-list .product-list-area .thumb-wrap:hover .link .hover-img{
+    opacity: 1;
+}
+.my-list .product-list-area .content-text-area{
+    padding: 30px 28px;
+    border-top: 1px solid #000;
+}
+.my-list .product-list-area .content-text-area .subject-wrap{}
+.my-list .product-list-area .content-text-area .subject-wrap .subject{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: 24px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.my-list .product-list-area .content-text-area .info-wrap{
+    position: relative;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding-right: 30px;
+}
+.my-list .product-list-area .content-text-area .info-wrap .price-wrap{
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+.my-list .product-list-area .content-text-area .info-wrap .price-wrap .old-price{
+    margin-right: 7px;
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 400;
+    color: #a1a1a1;
+}
+.my-list .product-list-area .content-text-area .info-wrap .price-wrap .price{
+    font-size: 16px;
+    font-weight: 400;
+}
+.my-list .product-list-area .content-text-area .info-wrap .sale-wrap{}
+.my-list .product-list-area .content-text-area .info-wrap .sale-wrap .sale{
+    color: #a55866;
+    font-weight: 700;
+    font-size: 17px;
+}
+.my-list .product-list-area .content-text-area .info-wrap .ico-wrap{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+    font-size: 0;
+}
+.my-list .product-list-area .content-text-area .info-wrap .ico-wrap a{}
+.my-list .product-list-area .content-text-area .info-wrap .ico-wrap a img{
+    width: 22px;
+    margin: 0;
+}
+.empty{
+    text-align: center;
+    border-top: 1px solid #000;
+    padding: 50px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media all and (max-width: 1020px){
+    .my-list{
+        margin-bottom: 80px;
+    }
+    .my-list .top-title-area{
+        max-width: 1830px;
+        padding: 70px 25px 20px;
+    }
+    .my-list .top-title-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .my-list .product-list-area .list-con{
+        width: 25%;
+    }
+    .my-list .product-list-area .list-con:nth-child(5) .list-inner{
+        border-top-width: 0;
+    }
+    .my-list .product-list-area .list-con:nth-child(5n+5) .list-inner{
+        border-right-width: 1px;
+    }
+    .my-list .product-list-area .list-con:nth-child(4n+4) .list-inner{
+        border-right-width: 0px;
+    }
+    .my-list .product-list-area .thumb-wrap .badge-wrap{
+        top: 0;
+    }
+    .my-list .product-list-area .thumb-wrap .badge-wrap .badge{
+        border-top-width: 0;
+        height: 26px;
+        font-size: 13px;
+    }
+    .my-list .product-list-area .content-text-area{
+        padding: 20px 15px;
+    }
+    .my-list .product-list-area .content-text-area .subject-wrap .subject{
+        font-size: 15px;
+        line-height: 20px;
+        height: 20px;
+    }
+    .my-list .product-list-area .content-text-area .info-wrap{
+        padding-right: 25px;
+        align-items: flex-end;
+    }
+    .my-list .product-list-area .content-text-area .info-wrap .price-wrap{
+        display: block;
+        margin-right: 0px;
+    }
+    .my-list .product-list-area .content-text-area .info-wrap .price-wrap .old-price{
+        margin-right: 0px;
+        font-size: 14px;
+    }
+    .my-list .product-list-area .content-text-area .info-wrap .price-wrap .price{
+        font-size: 14px;
+        line-height: 22px;
+        white-space: nowrap;
+        margin-right: 5px;
+    }
+    .my-list .product-list-area .content-text-area .info-wrap .sale-wrap .sale{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .my-list .product-list-area .content-text-area .info-wrap .ico-wrap a img{
+        width: 20px;
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 768px){
+    .my-list .product-list-area .list-con{
+        width: 50%;
+    }
+    .my-list .product-list-area .list-con:nth-child(3) .list-inner,
+    .my-list .product-list-area .list-con:nth-child(4) .list-inner{
+        border-top-width: 0;
+    }
+    .my-list .product-list-area .list-con:nth-child(4n+4) .list-inner{
+        border-right-width: 0;
+    }
+    .my-list .product-list-area .list-con:nth-child(2n+2) .list-inner{
+        border-right-width: 1px;
+    }
+}

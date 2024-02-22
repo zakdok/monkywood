@@ -1,71 +1,384 @@
 <!--@css(/layout/basic/css/header.css)-->
 <!-- 헤더 레이아웃 -->
-    <!-- 띠 배너 -->
-    <div class="vertical-rolling">
-        <div class="swiper slide-area">
-            <div class="swiper-wrapper slide-wrap" js-banner-module="headerRollingBanner" js-hide>
-                <!-- 슬라이드 반복 -->
-                <div class="swiper-slide slide-con" js-banner>
-                    <div class="slide-inner">
-                        <a href="#;" class="link" target="{$js-target}">
-                            <div class="text-wrap">
-                                <p class="text">
-                                    
-                                </p>
-                            </div>
-                            <div class="hide-info">{$js-href}</div>
-                        </a>
-                    </div>
+<!-- 띠 배너 -->
+<div class="vertical-rolling">
+    <div class="swiper slide-area">
+        <div class="swiper-wrapper slide-wrap" js-banner-module="headerRollingBanner" js-hide>
+            <!-- 슬라이드 반복 -->
+            <div class="swiper-slide slide-con" js-banner>
+                <div class="slide-inner">
+                    <a href="#;" class="link" target="{$js-target}">
+                        <div class="text-wrap">
+                            <p class="text">
+                                
+                            </p>
+                        </div>
+                        <div class="hide-info">{$js-href}</div>
+                    </a>
                 </div>
-                <!-- // 슬라이드 반복 -->
             </div>
+            <!-- // 슬라이드 반복 -->
         </div>
     </div>
-    <!-- // 띠 배너 -->
-    <!-- 헤더 -->
-    <header id="hd">
-        <div class="hd-wrap">
-            <!-- GNB -->
-            <nav class="gnb">
-                <ul class="dep1-wrap">
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/product/guide.html" class="dep1"><p class="text">구매가이드</p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/board/review/list.html?board_no=4" class="dep1"><p class="text">구매후기</p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/product/product_custom.html" class="dep1"><p class="text">맞춤식탁</p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/shopinfo/about_showroom.html" class="dep1"><p class="text">쇼룸</p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/shopinfo/about_info.html" class="dep1"><p class="text">브랜드</p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/shopinfo/inspiration.html" class="dep1"><p class="text">영감</p></a></div></li>
-                </ul>
-            </nav>
-            <!-- // GNB -->
-            <!-- mobile hambergur manu -->
-            <div class="open-gnb-area">
-                <button class="btn open-gnb">
-                    <span>햄버거 메뉴</span>
-                </button>
-            </div>
-            <!-- // mobile hambergur manu -->
-            <!-- logo -->
-            <h1 class="logo">
-                <a href="/"><img src="/images/logo.png" alt="logo"></a>
-            </h1>
-            <!-- // logo -->
-            <!-- location menu -->
-            <nav class="location-menu">
-                <ul class="dep1-wrap">
-                    <li class="dep1-con mobile-none"><div class="dep1-inner"><a href="#;" class="dep1"><p class="text">멤버</p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="#;" class="dep1 search-form-toggle"><p class="ico"><img src="/images/hd-search.png" alt="search icon"></p></a></div></li>
-                    <li class="dep1-con mobile-none" module="Layout_stateLogon"><div class="dep1-inner"><a href="/member/modify.html" class="dep1"><p class="ico"><img src="/images/hd-user.png" alt="mypage icon"></p></a></div></li>
-                    <li class="dep1-con mobile-none" module="Layout_statelogoff"><div class="dep1-inner"><a href="/member/login.html" class="dep1"><p class="ico"><img src="/images/hd-user.png" alt="login icon"></p></a></div></li>
-                    <li class="dep1-con"><div class="dep1-inner"><a href="/order/basket.html" module="Layout_orderBasketcount" class="dep1"><p class="ico"><img src="/images/hd-cart.png" alt="cart icon"><span>({$basket_count})</span></p></a></div></li>
-                </ul>
-            </nav>
-            <!-- // location menu -->
+</div>
+<!-- // 띠 배너 -->
+<!-- 헤더 -->
+<header id="hd">
+    <div class="hd-wrap">
+        <!-- GNB -->
+        <nav class="gnb">
+            <ul class="dep1-wrap">
+                <li class="dep1-con">
+                    <div class="dep1-inner">
+                        <a href="/product/guide.html" class="dep1">
+                            <p class="text">구매가이드</p>
+                        </a>
+                        <div class="hover-dep2-area">
+                            <ul class="dep2-wrap">
+                                <li class="dep2-con"><a href="/product/guide.html" class="dep2"><p class="text">구매가이드</p></a></li>
+                                <li class="dep2-con"><a href="/shopinfo/recommend.html" class="dep2"><p class="text">퍼스넉식탁 찾기</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dep1-con">
+                    <div class="dep1-inner">
+                        <a href="/shopinfo/best_sellers.html" class="dep1">
+                            <p class="text">구매하기</p>
+                        </a>
+                        <div class="hover-dep2-area">
+                            <ul class="dep2-wrap">
+                                <li class="dep2-con"><a href="/shopinfo/best_sellers.html" class="dep2"><p class="text">베스트셀러</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">식탁</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">의자</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">벤치</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">소품</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dep1-con">
+                    <div class="dep1-inner">
+                        <a href="/board/popup_review/list.html?board_no=4" class="dep1">
+                            <p class="text">구매후기</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="dep1-con">
+                    <div class="dep1-inner">
+                        <a href="/product/product_custom.html" class="dep1">
+                            <p class="text">맞춤식탁</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="dep1-con">
+                    <div class="dep1-inner">
+                        <a href="/shopinfo/about_showroom.html" class="dep1">
+                            <p class="text">쇼룸</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="dep1-con">
+                    <div class="dep1-inner">
+                        <a href="/shopinfo/about_info.html" class="dep1">
+                            <p class="text">브랜드</p>
+                        </a>
+                        <div class="hover-dep2-area">
+                            <ul class="dep2-wrap">
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">몽키우드</p></a></li>
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">전문가</p></a></li>
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">제품관리</p></a></li>
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">품질약속</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dep1-con">
+                    <div class="dep1-inner">
+                        <a href="/shopinfo/inspiration.html" class="dep1">
+                            <p class="text">영감</p>
+                        </a>
+                        <div class="hover-dep2-area">
+                            <ul class="dep2-wrap">
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">저널</p></a></li>
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">공간</p></a></li>
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">사람</p></a></li>
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">시간</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- // GNB -->
+        <!-- mobile hambergur manu -->
+        <div class="open-gnb-area">
+            <button class="btn open-gnb">
+                <span>햄버거 메뉴</span>
+            </button>
         </div>
-    </header>
-    <!-- // 헤더 -->
+        <!-- // mobile hambergur manu -->
+        <!-- logo -->
+        <h1 class="logo">
+            <a href="/"><img src="/images/logo.png" alt="logo"></a>
+        </h1>
+        <!-- // logo -->
+        <!-- location menu -->
+        <nav class="location-menu">
+            <ul class="dep1-wrap">
+                <li class="dep1-con mobile-none">
+                    <div class="dep1-inner">
+                        <a href="#;" class="dep1"><p class="text">멤버</p></a>
+                        <div class="hover-dep2-area">
+                            <ul class="dep2-wrap">
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">공지</p></a></li>
+                                <li class="dep2-con"><a href="#;" class="dep2"><p class="text">프로모션</p></a></li>
+                                <li class="dep2-con"><a href="/board/qna/list.html?board_no=6" class="dep2"><p class="text">Q&amp;A</p></a></li>
+                                <li class="dep2-con"><a href="/board/popup_review/list.html?board_no=4" class="dep2"><p class="text">후기</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dep1-con"><div class="dep1-inner"><a href="#;" class="dep1 search-form-toggle"><p class="ico"><img src="/images/hd-search.svg" alt="search icon"></p></a></div></li>
+                <li class="dep1-con mobile-none" module="Layout_stateLogon"><div class="dep1-inner"><a href="/myshop/index.html" class="dep1"><p class="ico"><img src="/images/hd-user.svg" alt="mypage icon"></p></a></div></li>
+                <li class="dep1-con mobile-none" module="Layout_statelogoff"><div class="dep1-inner"><a href="/member/login.html" class="dep1"><p class="ico"><img src="/images/hd-user.svg" alt="login icon"></p></a></div></li>
+                <li class="dep1-con"><div class="dep1-inner"><a href="/order/basket.html" module="Layout_orderBasketcount" class="dep1"><p class="ico"><img src="/images/hd-cart.svg" alt="cart icon"><span>({$basket_count})</span></p></a></div></li>
+            </ul>
+        </nav>
+        <!-- // location menu -->
+    </div>
+</header>
+<!-- // 헤더 -->
 <!-- 검색 시작 -->
 <!--@import(/layout/basic/quick_search.html)-->
 <!-- 검색 끝 -->
+<!-- 모바일 GNB -->
+<div class="mobile-sidebar">
+    <div class="sidebar-area">
+        <div class="sidebar-wrap">
+            <div class="sidebar-header border-box">
+                <div class="logo-wrap">
+                    <h2 class="logo"><img src="/images/logo.png" alt="logo"></h2>
+                </div>
+            </div>
+            <!--@js(/js/module/layout/category_myoyoun.js)-->
+            <div class="sidebar-menu">
+                <nav class="nav">
+                    <ul class="dep1-wrap">
+                        <li class="dep1-con">
+                            <div class="dep1-inner">
+                                <div class="dep1-text">
+                                    <a href="/product/guide.html" class="dep1 border-box">
+                                        <p class="text">구매가이드</p>
+                                    </a>
+                                    <button class="ico"><span>+</span></button>
+                                </div>
+                                <div class="dep2-nav">
+                                    <div class="dep2-area">
+                                        <ul class="dep2-wrap">
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="/product/guide.html" class="view dep2">구매가이드</a>
+                                                </div>
+                                            </li>
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">퍼스널식탁 찾기</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dep1-con">
+                            <div class="dep1-inner">
+                                <div class="dep1-text">
+                                    <a href="/shopinfo/best_sellers.html" class="dep1 border-box">
+                                        <p class="text">베스트셀러</p>
+                                    </a>
+                                    <button class="ico"><span>+</span></button>
+                                </div>
+                                <!-- 전체보기 시작 웹 -->
+                                <div id="sitemap_box" class="mb_nav_wrap sub_nav_list dep2-nav">
+                                    <div class="sitemap_item dep2-area">
+                                        <!-- 카테고리 메뉴 관리자 자동생성 //시작 -->
+                                        <ul module="layout_category" class="categoryList dep2-wrap" id="slideCateList">
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="/shopinfo/best_sellers.html" class="view dep2">베스트셀러</a>
+                                                </div>
+                                            </li>
+                                            <li id="cate{$cate_no}" class="{$selected} dp1 dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="/{$design_page_url}{$param}" cate="{$param}" class="view dep2">{$name}</a>
+                                                    <a href="#none" class="cate ico viewdp1" cate="{$param}"><span></span></a>
+                                                </div>
+                                            </li>
+                                            <li id="cate{$cate_no}" class="{$selected} dp1 dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="/{$design_page_url}{$param}" cate="{$param}" class="view dep2">{$name}</a>
+                                                    <a href="#none" class="cate ico viewdp1" cate="{$param}"><span></span></a>
+                                                </div>
+                                            </li>
+                                        </ul> 
+                                        <!-- 카테고리 메뉴 관리자 자동생성 //끝 -->
+                                    </div>
+                                </div>
+                                <!-- 전체보기 끝 웹 -->
+                            </div>
+                        </li>
+                        <li class="dep1-con">
+                            <div class="dep1-inner">
+                                <div class="dep1-text">
+                                    <a href="/product/product_custom.html" class="dep1 border-box">
+                                        <p class="text">맞춤식탁</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dep1-con">
+                            <div class="dep1-inner">
+                                <div class="dep1-text">
+                                    <a href="/shopinfo/about_showroom.html" class="dep1 border-box">
+                                        <p class="text">쇼룸</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dep1-con">
+                            <div class="dep1-inner">
+                                <div class="dep1-text">
+                                    <a href="#;" class="dep1 border-box">
+                                        <p class="text">브랜드</p>
+                                    </a>
+                                    <button class="ico"><span>+</span></button>
+                                </div>
+                                <div class="dep2-nav">
+                                    <div class="dep2-area">
+                                        <ul class="dep2-wrap">
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">몽키우드</a>
+                                                </div>
+                                            </li>
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">전문가</a>
+                                                </div>
+                                            </li>
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">제품관리</a>
+                                                </div>
+                                            </li>
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">품질약속</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dep1-con">
+                            <div class="dep1-inner">
+                                <div class="dep1-text">
+                                    <a href="#;" class="dep1 border-box">
+                                        <p class="text">영감</p>
+                                    </a>
+                                    <button class="ico"><span>+</span></button>
+                                </div>
+                                <div class="dep2-nav">
+                                    <div class="dep2-area">
+                                        <ul class="dep2-wrap">
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">저널</a>
+                                                </div>
+                                            </li>
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">공간</a>
+                                                </div>
+                                            </li>
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">사람</a>
+                                                </div>
+                                            </li>
+                                            <li class="dep2-con">
+                                                <div class="dep2-inner">
+                                                    <a href="#;" class="view dep2">시간</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="location-menu">
+                <nav class="nav">
+                    <ul class="dep1-wrap">
+                        <li class="dep1-con"><a href="#;" class="dep1"><p class="text">공지사항</p></a></li>
+                        <li class="dep1-con"><a href="#;" class="dep1"><p class="text">프로모션</p></a></li>
+                        <li class="dep1-con"><a href="/board/qna/list.html?board_no=6" class="dep1"><p class="text">Q&amp;A</p></a></li>
+                        <li class="dep1-con"><a href="/board/popup_review/list.html?board_no=4" class="dep1"><p class="text">후기</p></a></li>
+                        <li class="dep1-con" module="Layout_stateLogoff"><a href="/member/login.html" class="dep1"><p class="text">로그인</p></a></li>
+                        <li class="dep1-con" module="Layout_stateLogon"><a href="{$action_logout}" class="dep1"><p class="text">로그아웃</p></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // 모바일 GNB -->
+<div id="quickMenu">
+    <div class="quick-list-area">
+        <ul class="list-wrap">
+            <li class="list-con">
+                <div class="list-inner">
+                    <a href="/myshop/recent_list.html" class="btn">
+                        <div class="ico-wrap">
+                            <p class="ico"><img src="/images/quick-eye.svg" alt="최근 본 상품" style="width: 24px;"></p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="list-con">
+                <div class="list-inner">
+                    <a href="/myshop/wish_list.html" class="btn">
+                        <div class="ico-wrap">
+                            <p class="ico"><img src="/images/quick-heart.svg" alt="위시리스트" style="width: 22px;"></p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="list-con">
+                <div class="list-inner">
+                    <a href="https://talk.naver.com/ct/wcdgzs" class="btn" title="새 창 열림" target="_blank">
+                        <div class="ico-wrap">
+                            <p class="ico"><img src="/images/quick-naver2.png" alt="네이버톡톡" style="width: 20px;"></p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="list-con">
+                <div class="list-inner">
+                    <a href="https://pf.kakao.com/_tswbj" class="btn" title="새 창 열림" target="_blank">
+                        <div class="ico-wrap">
+                            <p class="ico"><img src="/images/quick-kakao.png" alt="카카오채널" style="width: 20px;"></p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
 <!-- // 헤더 레이아웃 -->
 <script>
 jQuery(function($){
@@ -117,6 +430,32 @@ jQuery(function($){
     // 서치 폼 토글
     $('.search-form-toggle').on('click', function(){
         $('.search-area').stop().fadeToggle();
+    })
+
+    // gnb hover 토글
+    $('#hd .dep1-inner').on('mouseenter', function(){
+        $(this).find('.hover-dep2-area').stop().slideDown();
+    })
+    $('#hd .dep1-inner').on('mouseleave', function(){
+        $(this).find('.hover-dep2-area').stop().slideUp();
+    })
+
+    // 모바일 gnb toggle
+    $('#hd .open-gnb-area').on('click', function(){
+        $('.mobile-sidebar').addClass('active');
+        $('html').css({'overflow-y': 'hidden'});
+    })
+    $(document).mouseup(function (e){
+        var LayerPopup = $(".mobile-sidebar");
+        if(LayerPopup.has(e.target).length === 0){
+            LayerPopup.removeClass("active");
+            $('html').css({'overflow-y': 'auto'});
+        }
+    });
+
+    // 모바일 하위메뉴 gnb toggle
+    $('.mobile-sidebar .sidebar-menu .nav .dep1-wrap .dep1-text .ico').on('click', function(){
+        $(this).parents('.dep1-con').toggleClass('active').find('.dep1-text').next().stop().slideToggle();
     })
 })
 </script>

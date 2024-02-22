@@ -1,0 +1,358 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/layout/basic/css/myshop.css)-->
+
+<!-- cloud_rw start /myshop/index.html  -->
+<!-- 마이쇼핑  -->
+<div class="myshop border-box">
+    <div module="layout_logincheck">
+    <!--
+        $url = /member/login.html
+    -->
+    </div>
+    <div class="myshop-title-area" module="myshop_asyncbenefit">
+        <div class="title-wrap">
+            <p class="title lk">
+                MY ACCOUNT
+            </p>
+            <p class="text">
+                저희 쇼핑몰을 이용해 주셔서 감사합니다. <em>{$member_name}</em>님은 <strong>[{$group_name}]</strong> 회원이십니다.
+            </p>
+        </div>
+    </div>
+    <div class="myshop-wrap">
+        <div class="inner-title-area">
+            <div class="title-wrap">
+                <p class="title">
+                    나의 주문처리 현황
+                </p>
+            </div>
+        </div>
+        <div class="order-wrap" module="myshop_orderstate">
+            <div class="left">
+                <div class="state-list-area">
+                    <ul class="list-wrap">
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="{$shppiedBeforeUrl}" class="link">
+                                    <div class="num-area">
+                                        <div class="num-wrap">
+                                            <p class="num">
+                                                {$shppiedBeforeCount}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                입금전
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="{$shppiedStandbyUrl}" class="link">
+                                    <div class="num-area">
+                                        <div class="num-wrap">
+                                            <p class="num">
+                                                {$shppiedStandbyCount}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                배송준비중
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="{$shppiedBeginUrl}" class="link">
+                                    <div class="num-area">
+                                        <div class="num-wrap">
+                                            <p class="num">
+                                                {$shppiedBeginCount}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                배송중
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="{$shppiedComplateUrl}" class="link">
+                                    <div class="num-area">
+                                        <div class="num-wrap">
+                                            <p class="num">
+                                                {$shppiedComplateCount}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                배송완료
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="cs-list-area">
+                    <ul class="list-wrap">
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="{$orderCancelUrl}" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                취소
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="num-area">
+                                        <div class="num-wrap">
+                                            <p class="num">
+                                                {$orderCancelCount}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="{$orderExchangeUrl}" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                교환
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="num-area">
+                                        <div class="num-wrap">
+                                            <p class="num">
+                                                {$orderExchangeCount}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="{$orderReturnUrl}" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                반품
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="num-area">
+                                        <div class="num-wrap">
+                                            <p class="num">
+                                                {$orderReturnCount}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myshop-wrap">
+        <div class="inner-title-area">
+            <div class="title-wrap">
+                <p class="title">
+                    나의 적립금
+                </p>
+            </div>
+        </div>
+        <div class="mileage-wrap">
+            <div class="left">
+                <div class="mileage-list-area" module="myshop_asyncbankbook">
+                    <ul class="list-wrap">
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <div class="num-area">
+                                    <div class="num-wrap">
+                                        <p class="num">
+                                            {$avail_mileage}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="title-area">
+                                    <div class="title-wrap">
+                                        <p class="title">
+                                            가용적립금
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <div class="num-area">
+                                    <div class="num-wrap">
+                                        <p class="num">
+                                            {$total_mileage}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="title-area">
+                                    <div class="title-wrap">
+                                        <p class="title">
+                                            총적립금
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <div class="num-area">
+                                    <div class="num-wrap">
+                                        <p class="num">
+                                            {$used_mileage}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="title-area">
+                                    <div class="title-wrap">
+                                        <p class="title">
+                                            사용적립금
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <div class="num-area">
+                                    <div class="num-wrap">
+                                        <p class="num">
+                                            {$total_order_price}({$total_order_count}회)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="title-area">
+                                    <div class="title-wrap">
+                                        <p class="title">
+                                            총주문
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="member-list-area">
+                    <ul class="list-wrap">
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="/member/modify.html" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                회원정보 수정
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="/myshop/order/list.html" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                주문 내역
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="/myshop/mileage/historyList.html" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                적립금 관리
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="/myshop/board_list.html" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                게시물 관리
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="/myshop/addr/list.html" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                배송 주소 관리
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-con">
+                            <div class="list-inner">
+                                <a href="/myshop/wish_list.html" class="link">
+                                    <div class="title-area">
+                                        <div class="title-wrap">
+                                            <p class="title">
+                                                위시리스트
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

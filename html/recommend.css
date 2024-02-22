@@ -8,6 +8,15 @@
     font-size: 44px;
     font-weight: 700;
 }
+
+@media all and (max-width: 1020px){
+    .recommend-title-area{
+        margin: 0 0 30px;
+    }
+    .recommend-title-area .title-wrap .title{
+        font-size: 24px;
+    }
+}
 /* //공통 */
 /* 식탁 추천 탭 */
 .recommend-personal{}
@@ -148,7 +157,6 @@
     top: 70px;
     width: 100%;
     z-index: 9999;
-    background-color: #fff;
     transform: translateY(-200%);
     -moz-transform: translateY(-200%);
     -webkit-transform: translateY(-200%);
@@ -167,6 +175,9 @@
 .recommend-tab .nav{}
 .recommend-tab .dep1-wrap{
     display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
 }
 .recommend-tab .dep1-con{
     width: 25%;
@@ -174,16 +185,14 @@
 .recommend-tab .tag-wrap{
     display: flex;
     height: 80px;
-    border-top: 1px solid #000;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: .25s;
 }
-.recommend-tab .list-con:last-child .tag-wrap{
-    border-left-width: 0;
+.recommend-tab .dep1-con:last-child .tag-wrap{
+    border-right-width: 0;
 }
 .recommend-tab .tag-wrap .tag{
     color: #555;
@@ -208,6 +217,87 @@
     -webkit-filter: brightness(0) invert(1); 
     filter: brightness(0) invert(1);
 }
+
+@media all and (max-width: 1200px){
+    .recommend-tab{
+        top: 60px;
+    }
+}
+
+@media all and (max-width: 1020px){
+    .recommend-personal .visual{
+        height: 220px;
+        padding-top: 0;
+    }
+    .recommend-personal .visual .content-text-area .title-wrap{}
+    .recommend-personal .visual .content-text-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .recommend-personal .visual .content-text-area .title-wrap .text{
+        margin: 8px 0 0;
+        font-size: 14px;
+    }
+    .recommend-personal .type-list-area{}
+    .recommend-personal .type-list-area .list-wrap{
+        font-size: 0;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+    }
+    .recommend-personal .type-list-area .list-con{
+        width: 50%;
+    }
+    .recommend-personal .type-list-area .list-con:nth-child(even) .list-inner{
+        border-right-width: 0;
+    }
+    .recommend-personal .type-list-area .link{
+        padding-bottom: 141px;
+    }
+    .recommend-personal .type-list-area .thumb-area .thumb .img{
+        height: auto;
+    }
+    .recommend-personal .type-list-area .content-text-area{
+        height: 140px;
+    }
+    .recommend-personal .type-list-area .content-text-area .text-wrap .text{
+        font-size: 14px;
+    }
+    .recommend-personal .type-list-area .content-text-area .tag-wrap{
+        position: relative;
+        border-top-width: 0;
+    }
+    .recommend-personal .type-list-area .content-text-area .tag-wrap::before{
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        display: block;
+        width: calc(100% - 40px);
+        height: 1px;
+        background-color: #000;
+    }
+    .recommend-personal .type-list-area .content-text-area .tag-wrap .tag{
+        font-size: 13px;
+    }
+    .recommend-personal .type-list-area .content-text-area .tag-wrap .img{
+        margin: 5px 0 0;
+    }
+    .recommend-tab .nav{
+        padding: 0 20px;
+    }
+    .recommend-tab .dep1-wrap{
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+    .recommend-tab .tag-wrap{
+        height: 40px;
+    }
+    .recommend-tab .tag-wrap .tag{
+        font-size: 13px;
+    }
+    .recommend-tab .tag-wrap .img{
+        display: none;
+    }
+}
 /* //식탁 추천 탭 */
 /* 추천 식탁 자세히 알아보기, 딱 맞는 식탁 */
 .recommend-table-info{
@@ -217,6 +307,7 @@
 }
 .recommend-table-info .slide-area{
     overflow-x: hidden;
+    margin: 0 0 -50px;
 }
 .recommend-table-info .slide-wrap{}
 .recommend-table-info .slide-con{}
@@ -335,6 +426,75 @@
     font-weight: 400;
     text-decoration: underline;
 }
+
+@media all and (max-width: 1020px){
+    .recommend-table-info{
+        padding: 70px 20px 0;
+    }
+    .recommend-table-info.search-slide{
+        padding-bottom: 50px;
+    }
+    .recommend-table-info .table-info-area .info-list-area .list-wrap{
+        border-bottom-width: 0;
+    }
+    .recommend-table-info .table-info-area .info-list-area .list-con{
+        width: 100%;
+    }
+    .recommend-table-info .table-info-area .info-list-area .list-inner{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #000;
+    }
+    .recommend-table-info .table-info-area .info-list-area .title-area{
+        width: 25%;
+        height: auto;
+    }
+    .recommend-table-info .table-info-area .info-list-area .title-area .title{
+        font-size: 15px;
+    }
+    .recommend-table-info .table-info-area .info-list-area .thumb-area{
+        width: 40%;
+        border-top-width: 0;
+        border-bottom-width: 0;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+    }
+    .recommend-table-info .table-info-area .info-list-area .text-area{
+        height: auto;
+        width: 35%;
+        padding: 0 10px;
+        box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+    }
+    .recommend-table-info .table-info-area .info-list-area .text-area .text{
+        font-size: 14px;
+    }
+    .recommend-table-info .table-info-area .info-list-area .text-area .refer-text{
+        font-size: 13px;
+    }
+    .recommend-table-info .table-search-area .search-list-area{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .recommend-table-info .table-search-area .list-wrap{
+        margin: -15px 0 0;
+    }
+    .recommend-table-info .table-search-area .list-con{
+        width: 100%;
+        padding: 15px 0 0;
+    }
+    .recommend-table-info .table-search-area .title-area{
+        height: 60px;
+        padding: 0 15px;
+    }
+    .recommend-table-info .table-search-area .title-area .title-wrap .title{
+        font-size: 14px;
+    }
+    .recommend-table-info .table-search-area .title-area .btn-wrap{}
+    .recommend-table-info .table-search-area .title-area .btn-wrap .btn{
+        font-size: 14px;
+    }
+}
 /* //추천 식탁 자세히 알아보기, 딱 맞는 식탁 */
 /* 하단 비주얼 */
 .recommend-bottom-visual{}
@@ -362,5 +522,21 @@
     font-size: 22px;
     line-height: 1.54;
     font-weight: 400;
+}
+
+@media all and (max-width: 1020px){
+    .recommend-bottom-visual{
+        border-top: 1px solid #000;
+    }
+    .recommend-bottom-visual .visual-wrap{
+        height: 200px;
+    }
+    .recommend-bottom-visual .content-text-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .recommend-bottom-visual .content-text-area .title-wrap .text{
+        font-size: 18px;
+        line-height: 1.45;
+    }
 }
 /* // 하단 비주얼 */

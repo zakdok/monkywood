@@ -1,0 +1,114 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/layout/basic/css/journal.css)-->
+
+<!-- cloud_rw review start /board/review/list.html  -->
+<!-- 후기 list  -->
+<div class="journal-title-area">
+    <div class="title-wrap">
+        <p class="title lk">
+            JOURNAL
+        </p>
+        <p class="text">
+            식탁과 사람에 대한 이야기
+        </p>
+    </div>
+</div>
+<div class="journal-wrap" module="Board_ListPackage_3001">
+    <div class="list-area" module="Board_ListPackage_3001">
+        <!--
+            $count = 20
+            $product_name_cut = 100
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+        <div class="list-wrap" module="board_list_3001">
+            <!-- 리스트 반복 -->
+            <div class="list-con" style="background-image: url('{$img_src}');" js-banner>
+                <div class="list-inner">
+                    <a href="{$link_board_detail}" class="link">
+                        <div class="content-title-area">
+                            <div class="title-wrap">
+                                <p class="title">
+                                    {$subject}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-text-area">
+                            <div class="text-wrap">
+                                <div class="text">
+                                    {$content}
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <div class="border-btn-wrap">
+                                    <div class="btn">
+                                        <p class="text lk">
+                                            READ MORE
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="list-con" style="background-image: url('{$img_src}');" js-banner>
+                <div class="list-inner">
+                    <a href="{$link_board_detail}" class="link">
+                        <div class="content-title-area">
+                            <div class="title-wrap">
+                                <p class="title">
+                                    {$subject}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-text-area">
+                            <div class="text-wrap">
+                                <div class="text">
+                                    {$content}
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <div class="border-btn-wrap">
+                                    <div class="btn">
+                                        <p class="text lk">
+                                            READ MORE
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--// 반복 -->
+        </div>
+        <!-- 페이징 처리 시작 -->
+        <div class="notice-btn-paging">
+            <div module="board_ButtonList_4" class="notice-btn-area">
+                <div class="btn-wrap">
+                    <a href="/board/qna/write.html{$param_write}" class="btn {$write_display|display}">
+                        <p class="text">
+                            글쓰기
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="notice-paging ec-cpc-paginate" module="board_paging_4">
+                <div class="controls-btn-wrap">
+                    <a href="{$param_prev}" class="btn"><em class="cloud_gnb_pc ico_prev"></em></a>
+                </div>
+                <ul class="page-list-area">
+                    <ul class="list-wrap">
+                        <li class="list-con"><a href="{$param_num}" class="btn {$param_class}">{$page_num}</a></li>
+                        <li class="list-con"><a href="{$param_num}" class="btn {$param_class}">{$page_num}</a></li>
+                    </ul>
+                </ul>
+                <div class="controls-btn-wrap">
+                    <a href="{$param_next}" class="btn"><em class="cloud_gnb_pc ico_next"></em></a>
+                </div>
+            </div>
+        </div>
+        <!-- 페이징 처리 끝 -->
+    </div>
+</div>

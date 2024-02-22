@@ -57,7 +57,13 @@
     font-weight: 600;
 }
 .showroom .showroom-area{}
-.showroom-area .list-area{}
+.showroom-area .list-area{
+    overflow: hidden;
+}
+.layer_map_close{
+    right: 0 !important;
+    top: 0 !important;
+}
 .showroom-area .list-area .list-wrap{
     position: relative;
     font-size: 0;
@@ -394,5 +400,12 @@
     }
     .showroom-area .list-area .content-text-area .time-tel-wrap .tel{
         font-size: 2.083vw;
+    }
+}
+
+@media all and (max-width: 900px){
+    .layer_map_close{
+        right: auto !important;
+        top: auto !important;
     }
 }

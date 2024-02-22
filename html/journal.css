@@ -1,0 +1,364 @@
+.border-btn-wrap .btn{
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.border-btn-wrap.black .btn{
+    border-bottom-color: #222;
+    color: #222;
+}
+.border-btn-wrap .btn .text{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+@media all and (max-width: 1020px){
+    .border-btn-wrap .btn .text{
+        font-size: 14px;
+    }
+}
+.journal-title-area{
+    padding: 140px 10px 145px;
+    text-align: center;
+}
+.journal-title-area .title-wrap{}
+.journal-title-area .title-wrap .title{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.3;
+}
+.journal-title-area .title-wrap .text{
+    margin: 10px 0 0;
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+}
+@media all and (max-width: 1400px){
+    .journal-title-area{
+        padding: 100px 20px;
+    }
+    .journal-title-area .title-wrap .title{
+        font-size: 54px;
+    }
+    .journal-title-area .title-wrap .text{
+        font-size: 24px;
+    }
+}
+@media all and (max-width: 1020px){
+    .journal-title-area{
+        padding: 70px 20px;
+    }
+    .journal-title-area .title-wrap .title{
+        font-size: 7.5vw;
+    }
+    .journal-title-area .title-wrap .text{
+        margin: 5px 0 0;
+        font-size: 3.3vw;
+    }
+}
+
+.journal-wrap{}
+.journal-wrap .list-area{}
+.journal-wrap .list-wrap{
+    font-size: 0;
+}
+.journal-wrap .list-con{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 10px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.journal-wrap .list-inner{}
+.journal-wrap .link{
+    position: relative;
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    color: #fff;
+}
+.journal-wrap .link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .25s;
+}
+.journal-wrap .block:hover .link::before{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.journal-wrap .content-title-area{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 100px 0 0 65px;
+}
+.journal-wrap .content-title-area .title-wrap{}
+.journal-wrap .content-title-area .title-wrap .title{
+    font-size: 40px;
+    font-weight: 600;
+}
+.journal-wrap .content-text-area{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 60px 65px;
+}
+.journal-wrap .content-text-area .text-wrap{}
+.journal-wrap .content-text-area .text-wrap .text{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.56;
+}
+.journal-wrap .content-text-area .text-wrap img{
+    display: none;
+}
+.journal-wrap .content-text-area .btn-area{
+    margin: 45px 0 0;
+}
+.journal-wrap .content-text-area .border-btn-wrap{}
+.journal-wrap .content-text-area .border-btn-wrap .btn{}
+.journal-wrap .content-text-area .border-btn-wrap .btn .text{}
+.journal-wrap .slide-area .paging-wrap{
+    display: none;
+}
+.journal-wrap .slide-area .paging-wrap .swiper-pagination{
+    left: 0;
+    top: auto;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin: 0 -4px 0 0;
+}
+.journal-wrap .slide-area .paging-wrap .swiper-pagination-bullet{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px 0 0;
+    border-radius: 50%;
+    border: 1px solid #000;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.journal-wrap .slide-area .paging-wrap .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+
+@media all and (max-width: 1200px){
+    .journal-wrap .content-title-area .title-wrap .title{
+        font-size: 32px;
+    }
+    .journal-wrap .content-text-area .text-wrap .text{
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 1020px){
+    .journal-wrap .list-con{
+        width: 100%;
+    }
+    .journal-wrap .content-title-area{
+        padding: 50px 0 0 25px;
+    }
+    .journal-wrap .content-title-area .title-wrap .title{
+        font-size: 24px;
+    }
+    .journal-wrap .content-text-area{
+        padding: 0 0 40px 25px;
+    }
+    .journal-wrap .content-text-area .text-wrap .text{
+        font-size: 16px;
+    }
+    .journal-wrap .content-text-area .btn-area{
+        margin: 30px 0 0;
+    }
+    .journal-wrap .slide-area .paging-wrap{
+        display: block;
+    }
+}
+/* 페이징, 검색 */
+.notice-btn-paging{
+    position: relative;
+}
+.notice-btn-paging .notice-btn-area{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+}
+.notice-btn-paging .notice-btn-area .btn-wrap{}
+.notice-btn-paging .notice-btn-area .btn-wrap .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 38px;
+    border: 1px solid #000;
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+    transition: .25s;
+}
+.notice-btn-paging .notice-btn-area .btn-wrap .btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+.notice-btn-paging .notice-btn-area .btn-wrap .btn .text{
+    font-size: 15px;
+    font-weight: 400;
+}
+.notice-btn-paging .notice-paging{
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.notice-paging .controls-btn-wrap{}
+.notice-paging .controls-btn-wrap .btn{}
+.notice-paging .page-list-area{}
+.notice-paging .page-list-area .list-wrap{
+    display: flex;
+    align-items: center;
+}
+.notice-paging .page-list-area .list-con{}
+.notice-paging .page-list-area .btn{
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #c5c5c5;
+    font-size: 15px;
+    font-weight: 300;
+}
+.notice-paging .page-list-area .btn.this{
+    font-weight: 600;
+    color: #222;
+}
+.search-list-area{
+    margin: 70px 0 0;
+}
+.search-list-area .list-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -3px;
+}
+.search-list-area .list-con{
+    width: 131px;
+    margin-right: 3px;
+}
+.search-list-area .list-con .list-inner{}
+.search-list-area .list-con select,
+.search-list-area .list-con input{
+    width: 100%;
+    height: 39px;
+    line-height: 37px;
+    border: 1px solid #aaa;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+}
+.search-list-area .list-con.input-wrap{
+    width: 324px;
+}
+.search-list-area .list-con.input-wrap .list-inner{
+    position: relative;
+    padding-right: 103px;
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+}
+.search-list-area .list-con .input-con{}
+.search-list-area .list-con .input-con input{
+    color: #222;
+}
+.search-list-area .list-con .btn-wrap{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.search-list-area .list-con .btn-wrap .btn{
+    display: block;
+    width: 100px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+}
+@media all and (max-width: 1020px){
+    .notice-btn-paging .notice-btn-area{
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0 0;
+        transform: translateY(0);-moz-transform: translateY(0);-webkit-transform: translateY(0);-o-transform: translateY(0);
+    }
+    .notice-btn-paging .notice-btn-area .btn-wrap .btn{
+        width: 120px;
+        height: 30px;
+        background-color: #000;
+        color: #fff;
+    }
+    .notice-btn-paging .notice-btn-area .btn-wrap .btn .text{
+        font-size: 13px;
+    }
+    .notice-btn-paging .notice-paging{
+        margin: 10px 0;
+    }
+    .notice-paging .page-list-area .btn{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .search-list-area{
+        margin: 50px auto 0;
+        max-width: 600px;
+        box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+    }
+    .search-list-area .list-wrap{
+        display: block;
+        font-size: 0;
+        margin: -7px -7px 0 0;
+    }
+    .search-list-area .list-con{
+        display: inline-block;
+        width: 50%;
+        padding: 7px 7px 0 0;
+        margin: 0;
+        font-size: 10px;
+        vertical-align: top;
+        box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+    }
+    .search-list-area .list-con select,
+    .search-list-area .list-con input{
+        font-size: 13px;
+    }
+    .search-list-area .list-con.input-wrap{
+        width: 100%;
+    }
+    .search-list-area .list-con.input-wrap .list-inner{
+        padding-right: 87px;
+    }
+    .search-list-area .list-con .btn-wrap .btn{
+        width: 80px;
+        line-height: 37px;
+        border: 1px solid #aaa;
+        background-color: #fff;
+        color: #222;
+    }
+}
+/* //페이징, 검색 */

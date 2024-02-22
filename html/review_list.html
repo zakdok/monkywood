@@ -1,0 +1,517 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/layout/basic/css/review.css)-->
+
+<!-- cloud_rw review start /board/review/list.html  -->
+<!-- 후기 list  -->
+<div class="review-title-area">
+    <div class="title-wrap">
+        <p class="title lk">
+            REVIEW
+        </p>
+        <p class="text">
+            식탁과 사람에 대한 이야기
+        </p>
+    </div>
+</div>
+<div class="review-visual">
+    <div class="area">
+        <div class="left">
+            <div class="content-text-area">
+                <div class="text-wrap">
+                    <p class="text">
+                        TUNE 무게감 있는 연출과 여유로운 공간감으로<br>
+                        소중한 자리를 마련하세요
+                    </p>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#;" class="btn">
+                        <p class="text">
+                            이벤트 자세히 보기
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="bg-area">
+                <div class="bg-wrap"><p class="bg" style="background-image:url('https://monkeywood.co.kr/web/upload/NNEditor/20240117/41fc22972e761d9dfadb1616278c4714.jpg');">review visual image</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="review" module="Board_ListPackage_4">
+    <div class="best-review" module="Board_ListPackage_4">
+        <!--
+            $count = 30
+            $product_name_cut = 100
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+        <div class="left border-box">
+            <div class="content-title-area">
+                <div class="title-wrap">
+                    <p class="title lk">
+                        BEST <br>
+                        REVIEW
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="swiper slide-area">
+                <div class="swiper-wrapper slide-wrap" module="board_list_4">
+                    <!-- 슬라이드 반복 -->
+                    <div class="swiper-slide slide-con list-con">
+                        <div class="slide-inner">
+                            <div class="thumb-area">
+                                <div class="thumb-wrap review_a">
+                                    <i data-idx="{$idx}" data-no="{$board_no}"></i>
+									<div class="pop-slide hide-info">
+
+									</div>
+                                </div>
+                            </div>
+                            <div class="review-text-area">
+                                <div class="top">
+                                    <div class="subject-wrap">
+                                        <p class="subject">
+											<span class="pro">
+												{$product_name}
+											</span>
+											<span class="sub">
+												{$subject}
+											</span>
+                                        </p>
+                                    </div>
+                                    <div class="info-wrap">
+                                        <p class="ico">
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+										</p>
+                                        <p class="text name">
+                                            {$writer}
+                                        </p>
+										<p class="hide-info date">
+											{$write_date}
+										</p>
+                                    </div>
+                                    <div class="small-thumb-wrap">
+                                        <p class="thumb">
+                                            {$image_big}
+                                        </p>
+                                    </div>
+									<div class="hide-info link">
+										{$link_board_detail}
+									</div>
+                                </div>
+                                <div class="content-text">
+                                    {$content}
+                                </div>
+                                <div class="btn-wrap">
+                                    <a href="#;" class="btn show-pop">
+                                        <p class="text">
+                                            더보기
+                                        </p>
+                                        <p class="ico"><span>+</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-con list-con">
+                        <div class="slide-inner">
+                            <div class="thumb-area">
+                                <div class="thumb-wrap review_a">
+                                    <i data-idx="{$idx}" data-no="{$board_no}"></i>
+									<div class="pop-slide hide-info">
+										
+									</div>
+                                </div>
+                            </div>
+                            <div class="review-text-area">
+                                <div class="top">
+                                    <div class="subject-wrap">
+                                        <p class="subject">
+											<span class="pro">
+												{$product_name}
+											</span>
+											<span class="sub">
+												{$subject}
+											</span>
+                                        </p>
+                                    </div>
+                                    <div class="info-wrap">
+                                        <p class="ico">
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+										</p>
+                                        <p class="text name">
+                                            {$writer}
+                                        </p>
+										<p class="hide-info date">
+											{$write_date}
+										</p>
+                                    </div>
+                                    <div class="small-thumb-wrap">
+                                        <p class="thumb">
+                                            {$image_big}
+                                        </p>
+                                    </div>
+									<div class="hide-info link">
+										{$link_board_detail}
+									</div>
+                                </div>
+                                <div class="content-text">
+                                    {$content}
+                                </div>
+                                <div class="btn-wrap">
+                                    <a href="#;" class="btn show-pop">
+                                        <p class="text">
+                                            더보기
+                                        </p>
+                                        <p class="ico"><span>+</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 슬라이드 반복 -->
+                </div>
+                <div class="swiper-button-prev control-btn"></div>
+                <div class="swiper-button-next control-btn"></div>
+                <div class="paging-wrap">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-popup-outer">
+	<div class="content-popup">
+		<div class="popup-wrap border-box">
+			<div class="popup-con border-box">
+				<div class="close-btn-area">
+					<div class="btn-wrap">
+						<button class="btn"><img src="/images/pop-close.png" alt="close popup"></button>
+					</div>
+				</div>
+				<div class="slide border-box">
+				</div>
+				<div class="review-text-area border-box">
+					<div class="top">
+						<div class="subject-wrap">
+							<p class="subject">
+							</p>
+						</div>
+						<div class="info-wrap">
+							<p class="ico">
+								<span>★</span>
+								<span>★</span>
+								<span>★</span>
+								<span>★</span>
+								<span>★</span>
+							</p>
+							<p class="text name">
+							</p>
+							<p class="text date">
+							</p>
+						</div>
+						<div class="small-thumb-wrap">
+							<p class="thumb">
+							</p>
+						</div>
+					</div>
+					<div class="content-text full">
+					</div>
+					<div class="btn-wrap border-box">
+						<a href="#;" class="btn">
+							<p class="text">
+								리뷰 더 보기
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="review-normal border-box" module="Board_ListPackage_4">
+    <div class="review-normal-area" module="Board_ListPackage_4">
+		<div class="notice-title-area">
+			<div class="title-wrap">
+				<p class="title lk">REVIEW</p>
+				<div class="btn-wrap">
+					<button class="btn active"><p class="text">전체보기</p></button>
+					<button class="btn"><p class="text">포토 리뷰</p></button>
+				</div>
+			</div>
+			<div class="filter">
+				<div class="select-wrap">
+					<select>제품별 보기</select>
+				</div>
+				<div class="select-wrap small">
+					<select>정렬 기준</select>
+				</div>
+			</div>
+		</div>
+        <!--
+            $count = 20
+            $product_name_cut = 100
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+        <div class="review-list">
+            <div class="review-list-area border-box">
+                <div class="list-wrap" module="board_list_4">
+                    <!-- 슬라이드 반복 -->
+                    <div class="list-con">
+                        <div class="list-inner show-pop">
+                            <div class="thumb-area">
+                                <div class="thumb-wrap review_a">
+                                    <i data-idx="{$idx}" data-no="{$board_no}"></i>
+									<div class="pop-slide hide-info">
+										
+									</div>
+                                </div>
+                            </div>
+                            <div class="review-text-area">
+                                <div class="top">
+                                    <div class="subject-wrap">
+                                        <p class="subject">
+											<span class="pro">
+												{$product_name}
+											</span>
+											<span class="sub">
+												{$subject}
+											</span>
+                                        </p>
+                                    </div>
+                                    <div class="info-wrap">
+                                        <p class="ico">
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+										</p>
+                                        <p class="text name">
+                                            {$writer}
+                                        </p>
+										<p class="hide-info date">
+											{$write_date}
+										</p>
+                                    </div>
+									<div class="hide-info link">
+										{$link_board_detail}
+									</div>
+                                </div>
+                                <div class="content-text">
+                                    {$content}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="list-con">
+                        <div class="list-inner show-pop">
+                            <div class="thumb-area">
+                                <div class="thumb-wrap review_a">
+                                    <i data-idx="{$idx}" data-no="{$board_no}"></i>
+									<div class="pop-slide hide-info">
+										
+									</div>
+                                </div>
+                            </div>
+                            <div class="review-text-area">
+                                <div class="top">
+                                    <div class="subject-wrap">
+                                        <p class="subject">
+											<span class="pro">
+												{$product_name}
+											</span>
+											<span class="sub">
+												{$subject}
+											</span>
+                                        </p>
+                                    </div>
+                                    <div class="info-wrap">
+                                        <p class="ico">
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+										</p>
+                                        <p class="text name">
+                                            {$writer}
+                                        </p>
+										<p class="hide-info date">
+											{$write_date}
+										</p>
+                                    </div>
+									<div class="hide-info link">
+										{$link_board_detail}
+									</div>
+                                </div>
+                                <div class="content-text">
+                                    {$content}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 리스트 반복 -->
+                </div>
+            </div>
+        </div>
+		<!-- 페이징 처리 시작 -->
+		<div class="notice-btn-paging">
+			<div module="board_ButtonList_4" class="notice-btn-area">
+				<div class="btn-wrap">
+					<a href="/board/qna/write.html{$param_write}" class="btn {$write_display|display}">
+						<p class="text">
+							글쓰기
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="notice-paging ec-cpc-paginate" module="board_paging_4">
+				<div class="controls-btn-wrap">
+					<a href="{$param_prev}" class="btn"><em class="cloud_gnb_pc ico_prev"></em></a>
+				</div>
+				<ul class="page-list-area">
+					<ul class="list-wrap">
+						<li class="list-con"><a href="{$param_num}" class="btn {$param_class}">{$page_num}</a></li>
+						<li class="list-con"><a href="{$param_num}" class="btn {$param_class}">{$page_num}</a></li>
+					</ul>
+				</ul>
+				<div class="controls-btn-wrap">
+					<a href="{$param_next}" class="btn"><em class="cloud_gnb_pc ico_next"></em></a>
+				</div>
+			</div>
+		</div>
+		<!-- 페이징 처리 끝 -->
+		<!-- 검색 시작 -->
+		<div module="board_search_4">
+			<fieldset class="boardSearch">
+				<div class="search-list-area">
+					{$form.qna}
+					<ul class="list-wrap">
+						<li class="list-con">
+							<div class="list-inner">
+								{$form.search_date}
+							</div>
+						</li>
+						<li class="list-con">
+							<div class="list-inner">
+								{$form.search_key}
+							</div>
+						</li>
+						<li class="list-con input-wrap">
+							<div class="list-inner">
+								<div class="input-con">
+									{$form.search}
+								</div>
+								<div class="btn-wrap">
+									<a href="#none" class="btn" onclick="{$action_search}">찾기</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</fieldset>
+		</div>
+		<!-- 검색 끝 -->
+    </div>
+</div>
+
+
+<!-- cloud_rw review end /board/review/list.html  -->
+<script>
+jQuery(function($){
+	$(document).ready(function(){
+
+        var bestReviewSwiper = new Swiper(".best-review .slide-area", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".best-review .swiper-button-next",
+                prevEl: ".best-review .swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2
+                },
+                1020: {
+                    slidesPerView: 3
+                }
+            }
+        });
+		$('.review-text-area .top .subject-wrap .subject .pro').each(function(){
+			if($(this).text().trim() == ''){
+				$(this).remove().next().show();
+			} else {
+				$(this).next().remove();
+			}
+		})
+	})
+	$(window).on('load', function(){
+		var $popupEle = $('.content-popup-outer');
+		$('.show-pop').on('click', function(){
+			var $parentEle = $(this).parents('.list-con');
+			var slideEle = $parentEle.find('.pop-slide').html();
+			var subject = $parentEle.find('.subject-wrap .subject').text();
+			var name = $parentEle.find('.info-wrap .name').text();
+			var $date = $parentEle.find('.info-wrap .date');
+			var smallThumbnail = $parentEle.find('.small-thumb-wrap .thumb img').attr('src');
+			var contentText = $parentEle.find('.content-text').html();
+			var linkUrl = $parentEle.find('.hide-info.link').text();
+
+			$popupEle.show(function(){
+				$popupEle.find('.popup-wrap .slide').html(slideEle);
+				var reviewPopupSwiper = new Swiper(".content-popup .popup-slide-area", {
+					slidesPerView: 1,
+					navigation: {
+						nextEl: ".content-popup .swiper-button-next",
+						prevEl: ".content-popup .swiper-button-prev",
+					},
+				});
+				$(document).on('click', '.content-popup .popup-wrap .slide .slide-thumb-nav .thumb', function(){
+					var tmp = $(this).parents('.dep1-con').index();
+					reviewPopupSwiper.slideTo(tmp);
+				})
+			});
+			$popupEle.find('.subject-wrap .subject').text(subject);
+			$popupEle.find('.info-wrap .name').text(name);
+            var dateString = $date.text().trim();
+            var trimmedDateString = dateString.substring(0, 10);
+            $popupEle.find('.date').text(trimmedDateString);
+			$popupEle.find('.small-thumb-wrap .thumb img').attr({'src': smallThumbnail});
+			$popupEle.find('.content-text').html(contentText);
+			$popupEle.find('.btn-wrap .btn').attr({'href': linkUrl});
+		})
+		$('.content-popup .close-btn-area .btn').on('click', function(){
+			$popupEle.hide();
+			$popupEle.find('.popup-slide-outer').remove();
+			$popupEle.find('.slide-thumb-nav').remove();
+			$popupEle.find('.subject-wrap .subject').text('');
+			$popupEle.find('.info-wrap .name').text('');
+			$popupEle.find('.info-wrap .date').text('');
+			$popupEle.find('.small-thumb-wrap .thumb img').attr({'src': ''});
+			$popupEle.find('.content-text').html('');
+			$popupEle.find('.btn-wrap .btn').attr({'href': '#;'});
+		})
+	})
+})
+</script>
+<!--@js(/js/module/layout/product_bot.js)--> 
+
+
+
+

@@ -42,3 +42,21 @@
     border-width: 0;
     padding: 0;
 }
+
+@media all and (max-width: 1020px){
+    .search-area .search-con{
+        padding: 0 15px;
+    }
+    .search-area .inputTypeText{
+        height: 40px;
+        line-height: 40px;
+        padding-right: 50px;
+        font-size: 14px;
+    }
+    .search-area .search_btn_icon{
+        width: 40px;
+        height: 40px;
+        background: #000 url('/images/hd-search-submit.png') 50% 50% no-repeat;
+        background-size: 20px;
+    }
+}
