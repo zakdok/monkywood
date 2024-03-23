@@ -1,5 +1,41 @@
 <!--@layout(/layout/basic/layout.html)-->
 <!--@css(/layout/basic/css/review.css)-->
+<!--@css(/layout/basic/css/brand.css)-->
+<div class="nav-height"></div>
+<div class="top-fixed-nav">
+    <nav class="nav">
+        <ul class="dep1-wrap">
+            <li class="dep1-con">
+                <a href="/board/free/list.html?board_no=1" class="dep1">
+                    <p class="text">
+                        공지
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/event_board/list.html?board_no=2" class="dep1">
+                    <p class="text">
+                        프로모션
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/qna/list.html?board_no=6" class="dep1">
+                    <p class="text">
+                        Q&amp;A
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/popup_review/list.html?board_no=4" class="dep1 active">
+                    <p class="text">
+                        후기
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <!-- cloud_rw review start /board/review/list.html  -->
 <!-- 후기 list  -->
@@ -34,7 +70,7 @@
         </div>
         <div class="right">
             <div class="bg-area">
-                <div class="bg-wrap"><p class="bg" style="background-image:url('https://monkeywood.co.kr/web/upload/NNEditor/20240117/41fc22972e761d9dfadb1616278c4714.jpg');">review visual image</p></div>
+                <div class="bg-wrap"><p class="bg" style="background-image:url('/images/content/REVIEW_.jpg');">review visual image</p></div>
             </div>
         </div>
     </div>
@@ -64,7 +100,7 @@
                     <div class="swiper-slide slide-con list-con">
                         <div class="slide-inner">
                             <div class="thumb-area">
-                                <div class="thumb-wrap review_a">
+                                <div class="thumb-wrap review_a show-pop">
                                     <i data-idx="{$idx}" data-no="{$board_no}"></i>
 									<div class="pop-slide hide-info">
 
@@ -84,7 +120,7 @@
                                         </p>
                                     </div>
                                     <div class="info-wrap">
-                                        <p class="ico">
+                                        <p class="ico star{$point_count}">
 											<span>★</span>
 											<span>★</span>
 											<span>★</span>
@@ -100,7 +136,9 @@
                                     </div>
                                     <div class="small-thumb-wrap">
                                         <p class="thumb">
-                                            {$image_big}
+											<a href="/product/detail.html{$param_product}">
+												{$image_big}
+											</a>
                                         </p>
                                     </div>
 									<div class="hide-info link">
@@ -124,7 +162,7 @@
                     <div class="swiper-slide slide-con list-con">
                         <div class="slide-inner">
                             <div class="thumb-area">
-                                <div class="thumb-wrap review_a">
+                                <div class="thumb-wrap review_a show-pop">
                                     <i data-idx="{$idx}" data-no="{$board_no}"></i>
 									<div class="pop-slide hide-info">
 										
@@ -144,7 +182,7 @@
                                         </p>
                                     </div>
                                     <div class="info-wrap">
-                                        <p class="ico">
+                                        <p class="ico star{$point_count}">
 											<span>★</span>
 											<span>★</span>
 											<span>★</span>
@@ -160,7 +198,9 @@
                                     </div>
                                     <div class="small-thumb-wrap">
                                         <p class="thumb">
-                                            {$image_big}
+											<a href="/product/detail.html{$param_product}">
+												{$image_big}
+											</a>
                                         </p>
                                     </div>
 									<div class="hide-info link">
@@ -246,19 +286,19 @@
 		<div class="notice-title-area">
 			<div class="title-wrap">
 				<p class="title lk">REVIEW</p>
-				<div class="btn-wrap">
+				<!-- <div class="btn-wrap">
 					<button class="btn active"><p class="text">전체보기</p></button>
 					<button class="btn"><p class="text">포토 리뷰</p></button>
-				</div>
+				</div> -->
 			</div>
-			<div class="filter">
+			<!-- <div class="filter">
 				<div class="select-wrap">
 					<select>제품별 보기</select>
 				</div>
 				<div class="select-wrap small">
 					<select>정렬 기준</select>
 				</div>
-			</div>
+			</div> -->
 		</div>
         <!--
             $count = 20
@@ -293,7 +333,7 @@
                                         </p>
                                     </div>
                                     <div class="info-wrap">
-                                        <p class="ico">
+                                        <p class="ico star{$point_count}">
 											<span>★</span>
 											<span>★</span>
 											<span>★</span>
@@ -340,7 +380,7 @@
                                         </p>
                                     </div>
                                     <div class="info-wrap">
-                                        <p class="ico">
+                                        <p class="ico star{$point_count}">
 											<span>★</span>
 											<span>★</span>
 											<span>★</span>
@@ -372,7 +412,7 @@
 		<div class="notice-btn-paging">
 			<div module="board_ButtonList_4" class="notice-btn-area">
 				<div class="btn-wrap">
-					<a href="/board/qna/write.html{$param_write}" class="btn {$write_display|display}">
+					<a href="/board/popup_review/write.html{$param_write}" class="btn {$write_display|display}">
 						<p class="text">
 							글쓰기
 						</p>
@@ -429,7 +469,12 @@
     </div>
 </div>
 
-
+<style>
+.review-title-area{
+	border-bottom: 1px solid #000;
+	margin: 0 0 30px;
+}
+</style>
 <!-- cloud_rw review end /board/review/list.html  -->
 <script>
 jQuery(function($){
@@ -437,6 +482,7 @@ jQuery(function($){
 
         var bestReviewSwiper = new Swiper(".best-review .slide-area", {
             slidesPerView: 3,
+			slidesPerGroup: 3,
             navigation: {
                 nextEl: ".best-review .swiper-button-next",
                 prevEl: ".best-review .swiper-button-prev",
@@ -446,9 +492,11 @@ jQuery(function($){
             },
             breakpoints: {
                 0: {
+					slidesPerGroup: 2,
                     slidesPerView: 2
                 },
                 1020: {
+					slidesPerGroup: 3,
                     slidesPerView: 3
                 }
             }
@@ -472,20 +520,28 @@ jQuery(function($){
 			var smallThumbnail = $parentEle.find('.small-thumb-wrap .thumb img').attr('src');
 			var contentText = $parentEle.find('.content-text').html();
 			var linkUrl = $parentEle.find('.hide-info.link').text();
+			var star = $parentEle.find('.info-wrap .ico').attr('class');
+			var starReplace = star.replace('ico star', '');
 
 			$popupEle.show(function(){
-				$popupEle.find('.popup-wrap .slide').html(slideEle);
-				var reviewPopupSwiper = new Swiper(".content-popup .popup-slide-area", {
-					slidesPerView: 1,
-					navigation: {
-						nextEl: ".content-popup .swiper-button-next",
-						prevEl: ".content-popup .swiper-button-prev",
-					},
-				});
-				$(document).on('click', '.content-popup .popup-wrap .slide .slide-thumb-nav .thumb', function(){
-					var tmp = $(this).parents('.dep1-con').index();
-					reviewPopupSwiper.slideTo(tmp);
-				})
+				var thumbChk = $parentEle.hasClass('no-thumb');
+				if(!thumbChk){
+					$popupEle.find('.popup-wrap .slide').html(slideEle);
+					var reviewPopupSwiper = new Swiper(".content-popup .popup-slide-area", {
+						slidesPerView: 1,
+						navigation: {
+							nextEl: ".content-popup .swiper-button-next",
+							prevEl: ".content-popup .swiper-button-prev",
+						},
+					});
+					$(document).on('click', '.content-popup .popup-wrap .slide .slide-thumb-nav .thumb', function(){
+						var tmp = $(this).parents('.dep1-con').index();
+						reviewPopupSwiper.slideTo(tmp);
+					})
+					$('.content-popup-outer').removeClass('no-thumb');
+				} else {
+					$('.content-popup-outer').addClass('no-thumb');
+				}
 			});
 			$popupEle.find('.subject-wrap .subject').text(subject);
 			$popupEle.find('.info-wrap .name').text(name);
@@ -495,6 +551,7 @@ jQuery(function($){
 			$popupEle.find('.small-thumb-wrap .thumb img').attr({'src': smallThumbnail});
 			$popupEle.find('.content-text').html(contentText);
 			$popupEle.find('.btn-wrap .btn').attr({'href': linkUrl});
+			$popupEle.find('.info-wrap .ico').addClass('star'+starReplace);
 		})
 		$('.content-popup .close-btn-area .btn').on('click', function(){
 			$popupEle.hide();
@@ -506,6 +563,11 @@ jQuery(function($){
 			$popupEle.find('.small-thumb-wrap .thumb img').attr({'src': ''});
 			$popupEle.find('.content-text').html('');
 			$popupEle.find('.btn-wrap .btn').attr({'href': '#;'});
+			$popupEle.find('.info-wrap .ico').removeClass('star1');
+			$popupEle.find('.info-wrap .ico').removeClass('star2');
+			$popupEle.find('.info-wrap .ico').removeClass('star3');
+			$popupEle.find('.info-wrap .ico').removeClass('star4');
+			$popupEle.find('.info-wrap .ico').removeClass('star5');
 		})
 	})
 })

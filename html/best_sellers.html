@@ -2,7 +2,39 @@
 <!--@css(/layout/basic/css/best_sellers.css)-->
 <!-- 베스트 셀러 -->
 <div class="best-sellers">
-    <ul class="list-wrap" js-banner-module="bestSellers" js-hide>
+    <ul class="list-wrap m_none" js-banner-module="bestSellers" js-hide>
+        <!-- 리스트 반복 -->
+        <li class="list-con" js-banner>
+            <div class="list-inner">
+                <div class="bg-wrap">
+                    <p class="bg">background image</p>
+                </div>
+                <div class="content-text-area border-box">
+                    <div class="box">
+                        <div class="text-wrap">
+                            <p class="text">
+                                TUNE 무게감 있는 연출과 여유로운 공간감으로<br>
+                                소중한 이들과의 자리를 마련하세요
+                            </p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="#;" class="btn border-box" target="{$js-target}">
+                                <p class="text lk">
+                                    SHOP NOW
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hide-info">
+                        <p class="info-text">{$js-href}</p>
+                        <p class="info-image">{$js-banner}</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- //리스트 반복 -->
+    </ul>
+    <ul class="list-wrap m_show" js-banner-module="bestSellersMobile" js-hide>
         <!-- 리스트 반복 -->
         <li class="list-con" js-banner>
             <div class="list-inner">

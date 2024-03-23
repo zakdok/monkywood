@@ -1,0 +1,199 @@
+.xans-member-join.typeM{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.typeM *{
+    font-weight: 500 !important;
+}
+.xans-member-join.typeM .ec-base-table2 td input,
+.xans-member-join .txtComplete,
+.xans-member-join label,
+.xans-member-join .ec-base-table2.typeWrite [id*="Msg"].error,
+.xans-member-join .button_right{
+    font-size: 15px;
+}
+.xans-member-join .ec-base-button{
+    text-align: left;
+}
+.accordion .item input,
+.accordion .item input + label{
+    vertical-align: middle;
+}
+
+@media all and (max-width: 768px){
+    .xans-member-join.typeM{
+        max-width: 100%;
+        padding: 40px 25px;
+        box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+        font-size: 12px;
+    }
+    .xans-member-join.typeM .ec-base-table2 td input,
+    .xans-member-join .txtComplete,
+    .xans-member-join label,
+    .xans-member-join .ec-base-table2.typeWrite [id*="Msg"].error,
+    .xans-member-join .button_right{
+        font-size: 12px;
+    }
+}
+.accordion .item  {margin-bottom:15px;border:1px solid #000;padding:15px;}
+.accordion {
+  overflow: hidden;
+  margin: auto;
+}
+
+.accordion .item .heading {
+  height: 22px;color:#000;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.accordion .item .heading i.fa-angle-down{float:right;
+  font-size: 12px;
+    margin-top:5px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;font-weight:100;}
+
+
+.accordion .item.open .heading,
+.accordion .item:last-child .heading { border: 0; }
+.accordion .item.open .heading { background-position: right 20px top -5px; }
+
+
+
+.accordion .item.open .heading i.fa-angle-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+
+.accordion .item .content2 {
+  padding: 10px 0 20px;font-size:12px;}
+
+.accordion .item .content {
+  display: none;
+  padding: 10px 0 20px;font-size:11px;
+    max-height:200px;margin-bottom:10px;
+    overflow:auto;
+}
+
+.accordion .item .content::-webkit-scrollbar {
+    width: 5px;
+  }
+.accordion .item .content::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 5px;
+  }
+.accordion .item .content::-webkit-scrollbar-track {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+
+/* 공통 */
+.progress { overflow:hidden; padding:15px 16px; text-align:center; background:#f6f6f6; }
+.progress ol { display:-webkit-flex; display:-ms-flex; display:flex; position:relative; counter-reset:rank 0; }
+.progress ol:before { content:''; position:absolute; left:0; top:13px; width:100%; height:1px; background:#dedfe2; }
+.progress ol li { -webkit-flex:1; -ms-flex:1; flex:1; position:relative; padding:35px 0 0; font-size:12px; line-height:16px; color:#cacaca; text-align:center; }
+.progress ol li.selected,
+.progress ol li.done { color:#000; }
+.progress ol li:first-child:after,
+.progress ol li:last-child:after { content:''; position:absolute; top:13px; width:100%; height:1px; background:#f6f6f6; }
+.progress ol li:first-child:after { right:-moz-calc(50% + 13px); right:-webkit-calc(50% + 13px); right:calc(50% + 13px); }
+.progress ol li:last-child:after { left:-moz-calc(50% + 13px); left:-webkit-calc(50% + 13px); left:calc(50% + 13px); }
+.progress ol li.done:before,
+.progress ol li.selected:before { content:''; position:absolute; right:-moz-calc(50% + 13px); right:-webkit-calc(50% + 13px); right:calc(50% + 13px); top:13px; width:100%; height:1px; background:#000; }
+.progress ol li .label { position:absolute; left:50%; top:0; z-index:1; width:26px; height:26px; margin:0 0 0 -13px; color:#fff; line-height:24px; background:url('http://img.echosting.cafe24.com/skin/dnd_ko_KR/common/module/member/sfix_process.png') no-repeat 0 0; background-size:150px auto; }
+.progress ol li.selected .label { background-position:-50px 0; }
+.progress ol li.done .label { background-position:-100px 0; }
+.progress ol li .label:before { counter-increment:rank 1; content:counter(rank); }
+.progress ol li.done .label:before { content:''; }
+
+.xans-member-join { padding:0 0 29px; }
+.xans-member-join .titleArea { width:100%; margin:0; border:none; }
+.xans-member-join .titleArea h3{ }
+.xans-member-join p.required img { vertical-align:middle; }
+
+.xans-member-join ul.info li { margin:5px 0 0; }
+.xans-member-join ul.info .name { display:block; margin-bottom:5px; font-weight:normal; }
+
+.btnStrong {vertical-align:bottom; }
+/* 정보입력 */
+
+.xans-member-join .ec-base-table2.typeWrite {  }
+.xans-member-join .ec-base-table2.typeWrite .multiForm { display:-webkit-flex; display:-ms-flex; display:flex; -webkit-align-items:center; -ms-align-items:center; align-items:center; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap; flex-wrap:wrap; }
+.xans-member-join .ec-base-table2.typeWrite .multiForm.mobile { margin:0 -4px; }
+.xans-member-join .ec-base-table2.typeWrite .multiForm.phone { margin:0 -4px; }
+.xans-member-join .ec-base-table2.typeWrite .emailCheck td,
+.xans-member-join .ec-base-table2.typeWrite .idCheck td { font-size:11px; }
+.xans-member-join .ec-base-table2.typeWrite [id*="Msg"].error { color:#f00; padding:6px 0 0;}
+.xans-member-join .ec-base-table2.typeWrite td.thead .subject { display:block; padding:0 0 10px; font-weight:normal; }
+.xans-member-join .ec-base-table2.typeWrite .interest label { min-width:90px; margin:0 7px 14px 0; }
+.xans-member-join .ec-base-table2.typeWrite .interest { font-size:11px; line-height:1.2em; }
+.xans-member-join .ec-base-table2.typeWrite .interest input { margin:0 3px 0 0; }
+.xans-member-join .ec-base-table2.typeWrite .interest span { display:inline-block; }
+.xans-member-join .ec-base-table2.typeWrite th > img { vertical-align:top; padding:4px 0 0; }
+.xans-member-join .ec-base-table2.typeWrite select { margin-right:4px; }
+.xans-member-join .ec-base-table2.typeWrite #authWrap #ipinWrap img,
+.xans-member-join .ec-base-table2.typeWrite #authWrap #mobileWrap img,
+.xans-member-join .ec-base-table2.typeWrite #authWrap img { width:106px !important; }
+.xans-member-join .ec-base-table2.typeWrite .ec-base-tooltip-area { width:100%; position:relative;font-size:9px;color:#999; }
+.xans-member-join .ec-base-table2.gClearBorderTop { border-top-width:1px; }
+
+/* INPUT SIZE */
+.xans-member-join input[type=text],
+.xans-member-join input[type=password],
+.xans-member-join input[type=number],
+.xans-member-join input[type=tel],
+.xans-member-join select { width:100%; }
+.xans-member-join input[type=tel] { padding:10px 4px; }
+.xans-member-join select { padding:0 20px 0 4px; }
+.xans-member-join #foreigner_ssn { width:auto; }
+.xans-member-join #user_passwd_confirm,
+.xans-member-join #hint,
+.xans-member-join #hint_answer { margin-bottom:7px; }
+.xans-member-join #member_id { width:100%; }
+.xans-member-join #postcode1 { width:55px; text-align:center; }
+.xans-member-join #addr1 { margin:5px 0 0; }
+.xans-member-join #addr2 { margin:5px 0 7px; }
+.xans-member-join #phone1,
+.xans-member-join #phone2,
+.xans-member-join #phone3 { -webkit-flex:1; -ms-flex:1; flex:1; width:33%; margin:0 4px; }
+.xans-member-join #mobile1,
+.xans-member-join #mobile2,
+.xans-member-join #mobile3 { -webkit-flex:1; -ms-flex:1; flex:1; width:33%; margin:0 4px; }
+.xans-member-join #bssn1,
+.xans-member-join #bssn2 { width:70px; }
+.xans-member-join #email1 { width:100%; }
+
+.xans-member-join #birth_year,
+.xans-member-join #marry_year,
+.xans-member-join #partner_year { width:54px; margin:0 4px 0 0; }
+.xans-member-join #birth_month,
+.xans-member-join #marry_month,
+.xans-member-join #partner_month { width:38px; margin:0 4px; }
+.xans-member-join #birth_day,
+.xans-member-join #marry_day,
+.xans-member-join #partner_day { width:38px; margin:0 4px; }
+
+@media all and (max-width:992px) {
+    
+.xans-member-join .titleArea { margin:40px 0 0; border:none; }
+    
+.xans-member-join .titleArea h3{ }
+.xans-member-join .ec-base-table.typeWrite th:nth-of-type(1) { width:100%;}
+.xans-member-join .ec-base-table.typeWrite th:nth-of-type(2) { width:100%;}
+    
+.xans-member-join .ec-base-table.typeWrite tr{border:0;clear:both;display:block; width:100%;padding:0;margin:20px 0 0;} 
+.xans-member-join .ec-base-table.typeWrite td,
+.xans-member-join .ec-base-table.typeWrite th{border:0;clear:both;display:block; width:100%;padding:0;margin:0;}
+
+}
+    

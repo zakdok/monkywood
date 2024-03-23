@@ -1,0 +1,60 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div class="my-area max430">
+    <div class="my-title-area bdb">
+        <div class="title-wrap">
+            <p class="title">
+                배송 주소록 수정
+            </p>
+        </div>
+    </div>
+    <div class="my-wrap" module="myshop_AddrModify">
+            <!--@css(/css/module/myshop/addrModify.css)-->
+            <!--
+                $return_url = /myshop/addr/list.html
+            -->
+            <div class="ec-base-table2">
+                <table border="0">
+                    <caption>배송 주소록 수정</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">배송지명*</th>
+                            <td>{$form.ma_rcv_title}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">성명*</th>
+                            <td>{$form.ma_rcv_name}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주소*</th>
+                            <td>
+                                {$form.address_zip1}
+                                <a href="#none" onclick="{$action_find_address}" id="{$btn_find_post}" class="btnNormal text-center">우편번호</a><br />
+                                {$form.address_addr1}<br />
+                                {$form.address_addr2}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">일반전화<span class="{$phone1_display|display}">*</span></th>
+                            <td><div class="multiForm mobile">{$form.ma_rcv_phone}</div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">휴대전화<span class="{$phone2_display|display}">*</span></th>
+                            <td><div class="multiForm mobile">{$form.ma_rcv_mobile_no}</div></td>
+                        </tr>
+                        <tr class="shipping">
+                            <td colspan="2">{$form.ma_main_flag}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="ec-base-button">
+                <a href="#none" onclick="{$action_check}" class="button_right fll">확인</a>
+                <span class="gRight mr0"><a href="list.html" class="button_left">취소</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+  

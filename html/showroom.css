@@ -1,13 +1,17 @@
 .showroom{}
 .showroom .top-title-area{
-    padding: 140px 10px 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    padding: 0 10px;
     text-align: center;
 }
 .showroom .top-title-area .title-wrap{}
 .showroom .top-title-area .title-wrap .title{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 56px;
-    line-height: 1.3;
+    line-height: 1;
 }
 .showroom .top-title-area .title-wrap .text{
     margin: 10px 0 0;
@@ -139,11 +143,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 202px;
-    height: 42px;
+    width: 200px;
+    height: 40px;
     border: 1px solid #fff;
+    background-color: transparent;
     font-size: 18px;
     font-weight: 700;
+    color: #fff;
 }
 .showroom-area .list-area .thumb-area .btn-layer .btn .text{}
 .showroom-area .list-area .info{}
@@ -197,10 +203,7 @@
 .showroom-area .list-area .content-text-area .time-tel-wrap .tel a:hover{}
 .showroom-area .list-area .hide-info{}
 
-@media all and (max-width: 1400px){
-    .showroom .top-title-area{
-        padding: 100px 20px;
-    }
+@media all and (max-width: 1020px){
     .showroom .top-title-area .title-wrap .title{
         font-size: 54px;
     }
@@ -213,25 +216,89 @@
     .showroom-area .list-area .thumb-area .btn-layer .btn{
         width: 180px;
     }
+    .showroom-area .list-area .list-wrap::before{
+        left: 50%;
+    }
+    .showroom-area .list-area .list-wrap::after{
+        display: none;
+    }
+    .showroom-area .list-area .list-con{
+        width: 50%;
+    }
+    .showroom-area .list-area .list-con:nth-child(3){
+        border-top-width: 1px;
+    }
+    .showroom-area .list-area .list-inner{
+        position: relative;
+    }
+    .showroom-area .list-area .list-con:nth-child(3n+1) .list-inner::before{
+        display: none;
+    }
+    .showroom-area .list-area .list-con:nth-child(odd) .list-inner::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -1px;
+        display: block;
+        width: 200%;
+        height: 1px;
+        background-color: #000;
+        z-index: 40;
+    }
+    .showroom-area .list-area .thumb-area{
+        position: static;
+    }
+    .showroom-area .list-area .thumb-area .btn-layer{
+        left: auto;
+        top: auto;
+        right: 15px;
+        bottom: 15px;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        opacity: 1 !important;
+        transition: 0s;
+        z-index: 40;
+    }
+    .showroom-area .list-area .thumb-area .btn-layer .btn{
+        width: 13px;
+        height: 16px;
+        border-width: 0;
+        font-size: 0;
+        text-indent: -9999px;
+        background: url('/images/showroom-map-ico.svg') 50% 50% no-repeat;
+        background-size: cover;
+    }
     .showroom-area .list-area .content-text-area{
-        padding: 30px 20px;
+        padding: 15px 40px 15px 15px;
+    }
+    .showroom-area .list-area .list-con:nth-child(3n+1) .content-text-area::before{
+        display: none;
+    }
+    .showroom-area .list-area .list-con:nth-child(odd) .content-text-area::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -1px;
+        display: block;
+        width: 200%;
+        height: 1px;
+        background-color: #000;
     }
     .showroom-area .list-area .content-text-area .subject-wrap .subject{
-        font-size: 18px;
+        font-size: 2.500vw;
+        word-break: keep-all;
     }
     .showroom-area .list-area .content-text-area .addr-wrap .addr{
-        font-size: 16px;
-    }
-    .showroom-area .list-area .content-text-area .time-tel-wrap{
-        display: block;
+        height: 2.6em;
+        font-size: 2.222vw;
+        word-break: keep-all;
     }
     .showroom-area .list-area .content-text-area .time-tel-wrap .time{
-        font-size: 15px;
+        font-size: 2.083vw;
     }
     .showroom-area .list-area .content-text-area .time-tel-wrap .tel{
-        margin: 5px 0 0;
-        font-size: 15px;
-        color: #777;
+        font-size: 2.083vw;
     }
 }
 
@@ -243,14 +310,14 @@
 
 @media all and (max-width: 768px){
     .showroom .top-title-area{
-        padding: 70px 20px;
+        height: 110px;
     }
     .showroom .top-title-area .title-wrap .title{
-        font-size: 7.5vw;
+        font-size: 28px;
     }
     .showroom .top-title-area .title-wrap .text{
         margin: 5px 0 0;
-        font-size: 3.3vw;
+        font-size: 12px;
     }
     .showroom .category{
         position: relative;
@@ -319,87 +386,6 @@
     }
     .showroom .category .nav .dep1 .text{
         font-size: 2.778vw;
-    }
-    .showroom-area .list-area .list-wrap::before{
-        left: 50%;
-    }
-    .showroom-area .list-area .list-wrap::after{
-        display: none;
-    }
-    .showroom-area .list-area .list-con{
-        width: 50%;
-    }
-    .showroom-area .list-area .list-con:nth-child(3){
-        border-top-width: 1px;
-    }
-    .showroom-area .list-area .list-inner{
-        position: relative;
-    }
-    .showroom-area .list-area .list-con:nth-child(3n+1) .list-inner::before{
-        display: none;
-    }
-    .showroom-area .list-area .list-con:nth-child(odd) .list-inner::before{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -1px;
-        display: block;
-        width: 200%;
-        height: 1px;
-        background-color: #000;
-        z-index: 40;
-    }
-    .showroom-area .list-area .thumb-area{
-        position: static;
-    }
-    .showroom-area .list-area .thumb-area .btn-layer{
-        left: auto;
-        top: auto;
-        right: 10px;
-        bottom: 23px;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        opacity: 1 !important;
-        transition: 0s;
-        z-index: 40;
-    }
-    .showroom-area .list-area .thumb-area .btn-layer .btn{
-        width: 21px;
-        height: 26px;
-        border-width: 0;
-        font-size: 0;
-        text-indent: -9999px;
-        background: url('/images/showroom-map-ico.png') 50% 50% no-repeat;
-        background-size: cover;
-    }
-    .showroom-area .list-area .content-text-area{
-        padding: 30px 40px 30px 15px;
-    }
-    .showroom-area .list-area .list-con:nth-child(3n+1) .content-text-area::before{
-        display: none;
-    }
-    .showroom-area .list-area .list-con:nth-child(odd) .content-text-area::before{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -1px;
-        display: block;
-        width: 200%;
-        height: 1px;
-        background-color: #000;
-    }
-    .showroom-area .list-area .content-text-area .subject-wrap .subject{
-        font-size: 2.500vw;
-    }
-    .showroom-area .list-area .content-text-area .addr-wrap .addr{
-        font-size: 2.222vw;
-    }
-    .showroom-area .list-area .content-text-area .time-tel-wrap .time{
-        font-size: 2.083vw;
-    }
-    .showroom-area .list-area .content-text-area .time-tel-wrap .tel{
-        font-size: 2.083vw;
     }
 }
 

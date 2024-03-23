@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
+
+/* tag reset */
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; 
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
+	text-rendering: optimizelegibility;
+	-webkit-appearance: none;
+}
+html { width:100%; height:100%; }
+body,code { font-size:12px; font-family: "pretendard", Pretendard,sans-serif; color:#222; background:#fff; }
+.lk{font-family: "larken", sans-serif;}
+body { width: 100%;}
+body#popup { min-width:0; }
+li { list-style:none; }
+img,fieldset { border:none; vertical-align:top; max-width:100%;}
+table { width:100%; border:0; border-spacing:0; border-collapse:collapse; }
+caption { display:none; }
+th, td {
+    border: 0;
+    word-wrap: break-word;
+    vertical-align: middle;
+    font-weight: 400;
+    text-align: left;
+    font-size: 12px;
+}
+button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; color: inherit;}
+hr.layout { display:none; }
+a { text-decoration:none; color:inherit; }
+a:hover { text-decoration:none; }
+a:active { text-decoration:none;}
+a:focus { outline: none;}
+button:focus { outline:none;}
+.objHidden { visibility:hidden; position:absolute; left:-1000px; top:-1000px; height:0; width:0; }
+#content_CONTAINER table, #bi_inquire_content_CONTAINER table { border:0; margin:0 0 -1px; }
+#content_CONTAINER table:before, #bi_inquire_content_CONTAINER table:before { display:none; }
+#content_CONTAINER td, #bi_inquire_content_CONTAINER td { width:auto !important; padding:0; }
+table.nneditor-table { width:auto !important; }
+legend, .blind {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    text-indent: -150%;
+    white-space: nowrap;
+}
+
+.border-box{
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+/* 결제진행바 */
+#progressPaybarBackground { position:absolute; z-index:99; left:0; top:0; width:100%; height:100%; }
+#progressPaybarView { position:absolute; z-index:100; top:160px; left:20px; width:471px; font-size:12px; }
+#progressPaybarView .box { height:180px; background:url(//img.cafe24.com/images/ec_hosting/popup/layer_guide/bg_layer_box1.gif) 0 0 no-repeat; }
+#progressPaybarView .box .graph { padding:15px 0 0 0; text-align:center;}
+#progressPaybarView .box .graph span { display:block; text-align:center; margin:20px 0; }
+#progressPaybarView .box .txt { text-align:center; padding:15px 0 0; color:#555555; }
+div.layerProgress { filter:alpha(opacity=40); opacity:0.4; -moz-opacity:0.4; background-color:#999; }
+
+/* contents */
+#skipNavigation {position:absolute; top:0; left:0; z-index:100; width:100%; height:0;}
+#skipNavigation p, #skipNavigation ul, #skipNavigation ul li {height:0;}
+#skipNavigation p a {position:absolute; left:0; top:0; display:block; overflow:hidden; width:1px; height:1px; margin-left:-1px; margin-bottom:-1px; text-align:center; color:#000; white-space:nowrap;}
+#skipNavigation p a:focus, #skipNavigation p a:hover, #skipNavigation p a:active {width:100%; height:auto; padding:10px 0; background:#c4122f; color:#fff; z-index:100;}
+
+.displaynone { display:block; }
+
+.dimmed { position:fixed; top:0; left:0; z-index:99; width:100%; height:100%; background:#fff; opacity:0.8; filter:alpha(opacity=80); }
+
+/* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */
+
+
+/*gnb 공통이미지 사용 */
+/* .cloud_gnb {background: url('../layout/skin/img/inc/icon_gnb.png') no-repeat; background-size: 250px 250px;} */
+html,body{
+    overflow-x: hidden;
+}
+.fll{float: left;}
+.empty {
+    padding: 100px 0;
+    text-align: center;
+}
+.my-title-area{
+    margin: 0 -15px 30px;
+    border-bottom: 1px solid #000;
+}
+.my-title-area .title-wrap{
+    position: relative;
+	max-width: 1760px;
+    margin: 0 auto;
+    padding: 125px 20px 20px;
+}
+.my-title-area .title-wrap::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    display: block;
+    width: 10000px;
+    height: 1px;
+    background-color: #000;
+    margin-left: -5000px;
+}
+.my-title-area .title-wrap .title,
+.my-title-area .title-wrap .title span{
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+}
+.my-area{
+	max-width: 1760px;
+    margin: 0 auto 130px;
+    padding: 0 20px;
+    line-height: 1.4;
+}
+.my-area.max430{
+	max-width: 430px;
+}
+.my-area,
+.my-area *{
+	font-size: 15px !important;
+    font-weight: 500 !important;
+}
+.my-wrap{
+	/* max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 20px; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    line-height: 1.4;
+}
+
+.text-center:not(.mini),
+.btnNormal:not(.mini){
+    line-height: 34px !important;
+}
+.gRight.mr0{margin-right: 0 !important;}
+
+@media all and (max-width: 1023px){
+	.mCafe24Post.gMobile{margin-top: 130px;}
+}
+
+@media all and (max-width: 1020px){
+    .my-area {
+        max-width: 600px;
+        margin: 0 auto 80px;
+        padding: 0;
+    }
+    .my-area,
+    .my-area *{
+        font-size: 12px !important;
+    }
+    .my-wrap{
+        padding: 0 25px;
+    }
+    .my-title-area{
+        margin: 0 0 30px;
+    }
+    .my-title-area .title-wrap{
+        padding: 70px 25px 20px;
+    }
+    .my-title-area .title-wrap .title,
+	.my-title-area .title-wrap .title span{
+        font-size: 24px !important;
+    }
+    .my-title-area .title-wrap .text{
+        margin: 12px 0 0;
+        bottom: 0;
+        font-size: 14px !important;
+        word-break: keep-all;
+    }
+}
+
+@media all and (max-width: 768px){
+    .my-area.max430{
+        max-width: 100%;
+    }
+}

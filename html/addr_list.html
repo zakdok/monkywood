@@ -1,0 +1,58 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="order-area my-area">
+    <div class="my-title-area">
+        <div class="title-wrap">
+            <p class="title">
+                주소 관리
+            </p>
+        </div>
+    </div>
+    <div class="my-wrap">
+
+        <div module="myshop_AddrList" class="d_border_top">
+            <!--@css(/css/module/myshop/addrList.css)-->
+            <!--
+                $return_url = /myshop/addr/list.html
+            -->
+
+            <div class="addList {$list_display|display}">
+                <div class="description d_border_bottom">
+                    <p class="name"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/myshop/ico_addr_default.png" width="19" class="{$default_img_display|display}" alt="기본"><span>{$ma_rcv_title}</span> ({$ma_rcv_name})</p>
+                    <div class="info">
+                        <p>[{$ma_rcv_zipcode}] {$ma_rcv_addr1} {$ma_rcv_addr2}</p>
+                        <p class="number">{$ma_rcv_phone}<span class="line"></span>{$ma_rcv_mobile_no}</p>
+                    </div>
+                    <div class="ec-base-button">
+                            <a href="{$fix_url}" class="btnNormal mini {$fix_display|display}">고정</a>
+                            <a href="{$fix_url}" class="btnNormal mini {$notfix_display|display}">해제</a>
+                        <a href="modify.html?ma_idx={$ma_idx}" onclick="" class="btnNormal mini">수정</a>
+                        <a href="#none" onclick="{$action_delete}; return false;" class="btnNormal mini">삭제</a>
+                    </div>
+                </div>
+                <div class="description d_border_bottom">
+                    <p class="name"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/myshop/ico_addr_default.png" width="19" class="{$default_img_display|display}" alt="기본"><span>{$ma_rcv_title}</span> ({$ma_rcv_name})</p>
+                    <div class="info">
+                        <p>[{$ma_rcv_zipcode}] {$ma_rcv_addr1} {$ma_rcv_addr2}</p>
+                        <p class="number">{$ma_rcv_phone}<span class="line"></span>{$ma_rcv_mobile_no}</p>
+                    </div>
+                    <div class="ec-base-button">
+                        <span class="gLeft">
+                            <a href="{$fix_url}" class="btnNormal mini {$fix_display|display}">고정</a>
+                            <a href="{$fix_url}" class="btnNormal mini {$notfix_display|display}">해제</a>
+                        <a href="modify.html?ma_idx={$ma_idx}" onclick="" class="btnNormal mini">수정</a>
+                        <a href="#none" onclick="{$action_delete}; return false;" class="btnNormal mini">삭제</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="empty {$nodata_display|display}">등록된 주소가 없습니다.</p>
+
+        </div>
+
+
+        <div class="ec-base-button btn0">
+        <span class="gRight"><a href="/myshop/addr/register.html" class="button_right">배송지 추가</a></span>
+        </div>
+    </div>
+</div>

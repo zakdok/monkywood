@@ -1,3 +1,6 @@
+.m_show{
+    display: none !important;
+}
 .best-sellers{}
 .best-sellers .list-wrap{}
 .best-sellers .list-con{
@@ -65,6 +68,12 @@
 }
 
 @media all and (max-width: 1020px){
+    .m_show{
+        display: block !important;
+    }
+    .m_none{
+        display: none !important;
+    }
     .best-sellers .bg-wrap .bg{
         padding-bottom: 100%;
     }
@@ -82,7 +91,8 @@
         display: block;
     }
     .best-sellers .content-text-area .text-wrap .text{
-        font-size: 17px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .best-sellers .content-text-area .btn-wrap{
         display: flex;
@@ -91,13 +101,13 @@
     }
     .best-sellers .content-text-area .btn-wrap .btn{
         display: flex;
-        width: 160px;
-        height: 34px;
+        width: 100px;
+        height: 20px;
         background-color: #fff;
         border-color: #fff;
         color: #222;
     }
     .best-sellers .content-text-area .btn-wrap .btn .text{
-        font-size: 14px;
+        font-size: 10px;
     }
 }

@@ -1,0 +1,112 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/member/login.css)-->
+
+<div class="typeM loginArea">
+    <div class="dnd_module_403fc44481ecc8740bce862728fdc832">
+<!-- MOMA COMPONENT ID 50 : BS_로그인_로그인_v01 -->
+        
+<div module="member_login" id="{$member_login_module_id}" class="memberLogin">
+     
+    <!--
+        $defaultReturnUrl = /index.html
+    -->
+    <!--주문조회-->
+    <div>
+
+        <div class="form">
+            <fieldset>
+                <legend>로그인</legend>
+                
+                <div class="inner2">
+                    <div class="write">
+                        <p>아이디</p>
+                       {$form.member_id}<br><br>
+                        <p>비밀번호</p>
+                       {$form.member_passwd}
+                    </div>                  
+                </div>
+                
+              
+                
+                    <div class="ec-base-button gColumn">
+                        <button type="button" class="button_right" onclick="{$action_func_login}">로그인</button>
+                        <a href="/member/join.html" class="button_left">회원가입</a>
+                         </div>
+                
+                    <div style="display:block;clear:both;"></div>
+                  
+                    <div class="option">                     
+                        <a href="/member/id/find_id.html">아이디</a>/<a href="/member/passwd/find_passwd_info.html">비밀번호</a> 찾기               
+                    </div>
+                
+                    <div style="display:block;clear:both;"></div>
+                
+                    <div class="snsLogin">
+                        <a href="#none" class="btnSns btnNaver {$display_naver|display}" onclick="{$naver_func_login}">
+                            <span class="text">네이버</span>
+                        </a>
+                        <a href="#none" class="btnSns btnFacebook {$display_facebook|display}" onclick="{$facebook_func_login}">
+                            <span class="text">Facebook</span>
+                        </a>
+                        <a href="#none" class="btnSns btnGoogle {$display_google|display}" onclick="{$google_func_login}">
+                            <span class="text">구글</span>
+                        </a>
+                        <a href="#none" class="btnSns btnKakao {$display_kakao|display}" onclick="{$kakao_func_login}">
+                            <span class="text">카카오계정</span>
+                        </a>
+                        <a href="#none" class="btnSns btnLine {$display_line|display}" onclick="{$line_func_login}">
+                            <span class="text">LINE</span>
+                        </a>
+                        <a href="#none" class="btnSns btnYahoo {$display_yahoojp|display}" onclick="{$yahoo_func_login}">
+                            <span class="text">야후</span>
+                        </a>
+                    </div>
+                    <span class="{$display_nomember|display}" id="noMemberWrap">
+                        <a href="{$returnUrl}" onclick="{$action_nomember_order}" class="button_left" style="margin:10px 0 0;width:100%;">비회원 주문</a>
+                    </span>
+                            
+                
+            </fieldset>        
+        </div>
+        </div>    
+    </div>
+    
+    <div module="MyShop_OrderHistoryNologin" id="{$order_history_nologin_id}" class="orderHistoryNoLogin">
+
+        
+        <div id="titleArea">
+                <h2>비회원 주문내역 조회</h2> 
+        </div>
+        
+        <!--
+            $orderDetailUrl = /myshop/order/list.html
+        -->
+
+        <div class="form">     
+            <fieldset>
+                <div class="inner">
+                    <div class="write">
+                        <p>이름</p>
+                        {$form.order_name}
+                        <p>주문번호</p>
+                        {$form.order_id}
+                        <p>비밀번호</p>
+                        {$form.order_password}
+                    </div>
+                    <div class="btnLogin">
+                        <button type="button" class="button_right" onclick="$('#historyNoLoginForm').submit();">조회</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+        
+</div>
+</div>
+<script>
+jQuery(function($){
+    $(document).ready(function(){
+        $('#order_id').attr({'placeholder': ''})
+    })
+})
+</script>

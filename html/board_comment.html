@@ -1,0 +1,62 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div class="order-area my-area">
+    <div class="my-title-area">
+        <div class="title-wrap">
+            <p class="title">
+                나의 댓글 관리
+            </p>
+        </div>
+    </div>
+    <div class="my-wrap">
+        <div module="myshop_boardTitle" class="ec-base-tab">
+            <ul>
+                <li><a href="/myshop/board_list.html"><span>게시물 ({$my_board_count})</span></a></li>
+                <li class="selected"><a href="/myshop/board_comment.html"><span>댓글 ({$my_comment_count})</span></a></li>
+            </ul>
+        </div>
+
+        <div module="myshop_BoardPackage">
+            <!--@css(/css/module/myshop/boardPackage.css)-->
+
+
+            <div module="myshop_Commentlist">
+                <ul class="list">
+                    <li class="d_border_bottom">
+                        <p class="summary">
+                            <a href="{$board_read_url}">
+                                <span class="subject">{$icon_mobile} <strong>[{$board_category}]</strong> {$comment_content}</span>
+                                <span class="id" title="작성자">{$comment_name}</span><span class="date" title="작성일">{$comment_write_date}</span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="d_border_bottom">
+                        <p class="summary">
+                            <a href="{$board_read_url}">
+                                <span class="subject">{$icon_mobile} <strong>[{$board_category}]</strong> {$comment_content}</span>
+                                <span class="id" title="작성자">{$comment_name}</span><span class="date" title="작성일">{$comment_write_date}</span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div module="myshop_boardlistSearch">
+            <!--@css(/css/module/myshop/boardlistSearch.css)-->
+            <fieldset class="boardSearch">
+                <legend>게시물 검색</legend>
+                <div>{$form.search_key} {$form.search} <button class="btnNormal" onclick="{$action_search}">확인</button></div>
+            </fieldset>
+        </div>
+        <div module="myshop_boardlistPaging" class="ec-base-paginate typeList">
+            <a href="{$param_prev}" class="btnPrev">prev</a>
+            <ol>
+                <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+            </ol>
+            <a href="{$param_next}" class="btnNext">next</a>
+        </div>
+    </div>
+</div>

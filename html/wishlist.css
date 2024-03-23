@@ -2,17 +2,22 @@
     margin-bottom: 200px;
 }
 .my-list .top-title-area{
-    max-width: 1830px;
-    padding: 125px 15px 20px;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 125px 20px 20px;
 }
 .my-list .top-title-area .title-wrap{}
 .my-list .top-title-area .title-wrap .title{
     font-size: 32px;
     font-weight: 700;
 }
-.my-list .product-list-area{}
+.my-list .product-list-area{
+    overflow: hidden;
+}
 .my-list .product-list-area .list-wrap{
     font-size: 0;
+    border-top: 1px solid #000;
+    margin-right: -1px;
 }
 .my-list .product-list-area .list-con{
     display: inline-block;
@@ -23,16 +28,6 @@
 .my-list .product-list-area .list-inner{
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
-}
-.my-list .product-list-area .list-con:nth-child(1) .list-inner,
-.my-list .product-list-area .list-con:nth-child(2) .list-inner,
-.my-list .product-list-area .list-con:nth-child(3) .list-inner,
-.my-list .product-list-area .list-con:nth-child(4) .list-inner,
-.my-list .product-list-area .list-con:nth-child(5) .list-inner{
-    border-top: 1px solid #000;
-}
-.my-list .product-list-area .list-con:nth-child(5n+5) .list-inner{
-    border-right-width: 0;
 }
 .my-list .product-list-area .thumb-wrap{
     position: relative;
@@ -148,7 +143,6 @@
         margin-bottom: 80px;
     }
     .my-list .top-title-area{
-        max-width: 1830px;
         padding: 70px 25px 20px;
     }
     .my-list .top-title-area .title-wrap .title{
@@ -156,15 +150,6 @@
     }
     .my-list .product-list-area .list-con{
         width: 25%;
-    }
-    .my-list .product-list-area .list-con:nth-child(5) .list-inner{
-        border-top-width: 0;
-    }
-    .my-list .product-list-area .list-con:nth-child(5n+5) .list-inner{
-        border-right-width: 1px;
-    }
-    .my-list .product-list-area .list-con:nth-child(4n+4) .list-inner{
-        border-right-width: 0px;
     }
     .my-list .product-list-area .thumb-wrap .badge-wrap{
         top: 0;
@@ -213,15 +198,5 @@
 @media all and (max-width: 768px){
     .my-list .product-list-area .list-con{
         width: 50%;
-    }
-    .my-list .product-list-area .list-con:nth-child(3) .list-inner,
-    .my-list .product-list-area .list-con:nth-child(4) .list-inner{
-        border-top-width: 0;
-    }
-    .my-list .product-list-area .list-con:nth-child(4n+4) .list-inner{
-        border-right-width: 0;
-    }
-    .my-list .product-list-area .list-con:nth-child(2n+2) .list-inner{
-        border-right-width: 1px;
     }
 }

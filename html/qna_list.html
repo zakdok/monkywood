@@ -1,5 +1,41 @@
 <!--@layout(/layout/basic/layout.html)-->
 <!--@css(/layout/basic/css/qna_list.css)-->
+<!--@css(/layout/basic/css/brand.css)-->
+<div class="nav-height"></div>
+<div class="top-fixed-nav">
+    <nav class="nav">
+        <ul class="dep1-wrap">
+            <li class="dep1-con">
+                <a href="/board/free/list.html?board_no=1" class="dep1">
+                    <p class="text">
+                        공지
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/event_board/list.html?board_no=2" class="dep1">
+                    <p class="text">
+                        프로모션
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/qna/list.html?board_no=6" class="dep1 active">
+                    <p class="text">
+                        Q&amp;A
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/popup_review/list.html?board_no=4" class="dep1">
+                    <p class="text">
+                        후기
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <!-- FAQ -->
 <div class="faq-list">
@@ -17,7 +53,7 @@
                     <div class="faq-title-area">
                         <div class="title-wrap">
                             <p class="title">
-                                [FAQ] 자주 묻는 질문
+                                자주 묻는 질문
                             </p>
                         </div>
                     </div>
@@ -670,8 +706,28 @@
 <script>
 jQuery(function($){
     $('.faq-list .faq-list-area .q-wrap').on('click', function(){
-        $(this).toggleClass('active').next().stop().slideToggle().parents('.list-con').siblings().find('.q-wrap').removeClass('active').next().stop().slideUp();
+        $(this).next().stop().slideToggle().parents('.list-con').toggleClass('active').siblings().removeClass('active').find('.q-wrap').next().stop().slideUp();
     })
+    var faqHeightLimit = function(){
+        var heightLimit = $('.faq-list .bg').outerHeight();
+        $('.faq-list .faq-wrap').css({'max-height': heightLimit})
+    }
+    $(document).ready(function(){
+        faqHeightLimit();
+    })
+    // 리사이즈 이벤트 후처리    
+    $(window).resize(function() {
+        if(this.resizeTO) {
+            clearTimeout(this.resizeTO);
+        }
+        this.resizeTO = setTimeout(function() {
+            $(this).trigger('resizeEnd');
+        }, 0);
+    });
+    $(window).on('resizeEnd', function() {
+        // 후처리 코드 넣을 곳        
+        faqHeightLimit();
+    });
 })
 </script>
 <!-- // FAQ -->
@@ -682,7 +738,7 @@ jQuery(function($){
         <div class="faq-title-area">
             <div class="title-wrap">
                 <p class="title">
-                    [Q&A] 1:1 질문
+                    1:1 질문
                 </p>
             </div>
         </div>

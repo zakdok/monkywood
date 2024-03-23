@@ -104,9 +104,8 @@
         <p class="empty {$empty_display|display}">추가된 관심 상품이 없습니다.</p>
     </div>
     <!-- 페이징 처리 시작 -->
-    <div module="myshop_wishlistpaging" class="ec-cpc-paginate myboard_box f_pad">
-        <a href="{$param_first}" class="first"><em class="cloud_gnb_pc ico_firstp"></em></a>
-        <a href="{$param_before}"><em class="cloud_gnb_pc ico_prev"></em></a>
+    <div module="myshop_wishlistpaging" class="notice-paging ec-cpc-paginate">
+        <a href="{$param_before}" class="btn"><em class="cloud_gnb_pc ico_prev"></em></a>
         <ol>
             <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
             <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
@@ -114,8 +113,7 @@
             <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
             <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
         </ol>
-        <a href="{$param_next}"><em class="cloud_gnb_pc ico_next"></em></a>
-        <a href="{$param_last}" class="last"><em class="cloud_gnb_pc ico_endp"></em></a>
+        <a href="{$param_next}" class="btn"><em class="cloud_gnb_pc ico_next"></em></a>
     </div>
     <!-- 페이징 처리 끝 -->
 </div>

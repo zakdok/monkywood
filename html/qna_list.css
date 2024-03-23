@@ -3,38 +3,28 @@
 .faq-list .faq-area{
     position: relative;
     display: flex;
-    height: 800px;
-    align-items: center;
     justify-content: flex-end;
     border-bottom: 1px solid #000;
 }
 .faq-list .left{
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 50%;
-    height: 100%;
     border-right: 1px solid #000;
     box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
 }
 .faq-list .right{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
 }
-.faq-list .bg-area{
-    border-right: 1px solid #000;
-}
+.faq-list .bg-area{}
 .faq-list .bg-area .bg-wrap{}
 .faq-list .bg-area .bg-wrap .bg{
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
+    padding-bottom: 100%;
     text-indent: -9999px;
-    background: url('/images/faq-bg.jpg') 50% 50% no-repeat;
+    background: url('/images/content/FAQ_.jpg') 50% 50% no-repeat;
     background-size: cover;
 }
 .faq-list .faq-wrap{
@@ -56,11 +46,12 @@
     margin: 20px 0 0;
     border-top: 2px solid #000;
 }
-.faq-list .faq-list-area .list-wrap{
-    background-color: #fafafa;
-}
+.faq-list .faq-list-area .list-wrap{}
 .faq-list .faq-list-area .list-con{
     border-bottom: 1px solid #222;
+}
+.faq-list .faq-list-area .list-con.active{
+    background-color: #fafafa;
 }
 .faq-list .faq-list-area .list-inner{}
 .faq-list .faq-list-area .q-wrap{
@@ -149,6 +140,9 @@
     .faq-list .faq-wrap{
         padding: 20px 25px;
     }
+    .faq-title-area{
+        padding-left: 15px;
+    }
     .faq-title-area .title-wrap .title{
         font-size: 32px;
     }
@@ -186,6 +180,9 @@
     .faq-list .right{
         width: 100%;
         height: auto;
+    }
+    .faq-list .faq-wrap{
+        max-height: none !important;
     }
     .faq-title-area .title-wrap .title{
         font-size: 24px;

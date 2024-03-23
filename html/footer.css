@@ -1,8 +1,13 @@
 #ft{}
+#ft,
+#ft *{
+    box-sizing: content-box;-moz-box-sizing: content-box;-webkit-box-sizing: content-box;-o-box-sizing: content-box;
+}
 #ft .ft-area{}
 #ft .ft-area .grid-list-area{
-    max-width: 1800px;
+    max-width: 1720px;
     padding: 60px 20px 75px;
+    margin: 0 auto;
 }
 #ft .ft-area .grid-list-area .list-wrap{
     display: flex;
@@ -91,8 +96,9 @@
     border-top: 1px solid #aaaaaa;
 }
 #ft .ft-area .ft-info-area .text-wrap{
-    max-width: 1800px;
+    max-width: 1720px;
     padding: 35px 20px 75px;
+    margin: 0 auto;
 }
 #ft .ft-area .ft-info-area .text-wrap .text{
     color: #aaa;

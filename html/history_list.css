@@ -1,0 +1,15 @@
+.xans-myshop-historylist {}
+.xans-myshop-historylist .item {}
+.xans-myshop-historylist .item h3 { color:#000; overflow:hidden; text-decoration:underline;font-size:12px; }
+.xans-myshop-historylist .empty { padding:100px 0; text-align:center; }
+
+.xans-myshop-historylist .item {padding:0;}
+
+.xans-myshop-historylist .ec-base-table4,
+.xans-myshop-historylist .ec-base-table4 tr {  border:0;}
+.navigation {}
+.navigation li {margin-bottom:3px; float:left;}
+.navigation li.active{text-decoration:underline;}
+@media all and (max-width:992px) {
+    
+}

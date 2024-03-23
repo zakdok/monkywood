@@ -1,0 +1,187 @@
+<!-- 추천 상품 시작 -->
+<!--@css(/css/module/product/product_recommend.css)-->
+<!--@js(/js/module/product/recommend_slide.js)-->
+<!--@js(/js/module/product/recommend_sale_price.js)-->
+<div class="product-detail-recommend">
+    <div class="recommend-title-block">
+      <h2>
+        RECOMMENDED<br />
+        FOR
+      </h2>
+    </div>
+  
+    <div module="product_listrecommend" class="recommend-slide">
+      <div class="swiper recommend-swiper">
+        <div class="swiper-background"></div>
+        <ul class="prdList swiper-wrapper">
+          <div class="swiper-slide">
+            <li class="item" id="anchorBoxId_{$product_no}">
+              <div class="box">
+                <!-- 썸네일 -->
+                <div class="thumbnail goods_img_over recommend-product-thumbnail">
+                  <a
+                    href="/product/detail.html{$param}"
+                    name="anchorBoxName_{$product_no}"
+                    ><img
+                      src="{$image_medium}"
+                      id="{$image_medium_id}"
+                      alt=""
+                      class="thumb"
+                    />
+                    <img src="{$image_big}" class="goods_list_over_img" />
+                  </a>
+                  <p class="icon">{$recommend_icon} {$new_icon}</p>
+                </div>
+  
+                <!-- 상품 정보 -->
+                <div
+                  class="information recommend-product-desc description"
+                  ec-data-custom="{$product_custom}"
+                  ec-data-price="{$product_price}"
+                >
+                  <!-- 상품명 -->
+                  <p class="name">
+                    <strong class="name {$product_name_display|display}">
+                      <a href="/product/detail.html{$param}">{$product_name}</a>
+                    </strong>
+                  </p>
+  
+                  <!-- 상품 정보 목록: 가격, 할인가... -->
+                  <ul module="product_ListItem" class="list-item-info price">
+                    <li class="{$item_display|display}">{$item_content}</li>
+                    <li class="{$item_display|display}">{$item_content}</li>
+                  </ul>
+  
+                  <div class="recommend-meta">
+                    <div class="review-block">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        style="enable-background: new 0 0 16 16"
+                        xml:space="preserve"
+                      >
+                        <path
+                          d="M2 3.3C2 2.6 2.6 2 3.3 2h9.3c.8 0 1.4.6 1.4 1.3V14l-2.7-2.7h-8c-.7 0-1.3-.6-1.3-1.3V3.3z"
+                          style="
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 0.6667;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 2.6667;
+                          "
+                        />
+                      </svg>
+  
+                      <span class="review_count">{$review_cnt}</span>
+                    </div>
+  
+                    <span class="wishIcon product_wishIcon"
+                      >{$list_wish_icon}</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="swiper-slide">
+            <li class="item" id="anchorBoxId_{$product_no}">
+              <div class="box">
+                <!-- 썸네일 -->
+                <div class="thumbnail goods_img_over recommend-product-thumbnail">
+                  <a
+                    href="/product/detail.html{$param}"
+                    name="anchorBoxName_{$product_no}"
+                    ><img
+                      src="{$image_medium}"
+                      id="{$image_medium_id}"
+                      alt=""
+                      class="thumb"
+                    />
+                    <img src="{$image_big}" class="goods_list_over_img" />
+                  </a>
+                  <p class="icon">{$recommend_icon} {$new_icon}</p>
+                </div>
+  
+                <!-- 상품 정보 -->
+                <div
+                  class="information recommend-product-desc description"
+                  ec-data-custom="{$product_custom}"
+                  ec-data-price="{$product_price}"
+                >
+                  <!-- 상품명 -->
+                  <p class="name">
+                    <strong class="name {$product_name_display|display}">
+                      <a href="/product/detail.html{$param}">{$product_name}</a>
+                    </strong>
+                  </p>
+  
+                  <!-- 상품 정보 목록: 가격, 할인가... -->
+                  <ul module="product_ListItem" class="list-item-info price">
+                    <li class="{$item_display|display}">{$item_content}</li>
+                    <li class="{$item_display|display}">{$item_content}</li>
+                  </ul>
+  
+                  <div class="recommend-meta">
+                    <div class="review-block">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        style="enable-background: new 0 0 16 16"
+                        xml:space="preserve"
+                      >
+                        <path
+                          d="M2 3.3C2 2.6 2.6 2 3.3 2h9.3c.8 0 1.4.6 1.4 1.3V14l-2.7-2.7h-8c-.7 0-1.3-.6-1.3-1.3V3.3z"
+                          style="
+                            fill: none;
+                            stroke: #000;
+                            stroke-width: 0.6667;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 2.6667;
+                          "
+                        />
+                      </svg>
+  
+                      <span class="review_count">{$review_cnt}</span>
+                    </div>
+  
+                    <span class="wishIcon product_wishIcon"
+                      >{$list_wish_icon}</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+  
+        <button class="slide-prev-button">
+          <svg
+            width="12"
+            height="20"
+            viewBox="0 0 12 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M10.018 17.854L2.16301 10L10.018 2.146" stroke="white" />
+          </svg>
+        </button>
+        <button class="slide-next-button">
+          <svg
+            width="12"
+            height="20"
+            viewBox="0 0 12 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1.48199 1.646L9.33699 9.5L1.48199 17.354" stroke="white" />
+          </svg>
+        </button>
+      </div>
+  
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- 추천 상품 끝 -->
+  

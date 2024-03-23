@@ -1,0 +1,62 @@
+    <!--@layout(/layout/basic/layout.html)-->
+
+    <!--@js(/js/module/product/product_detail.js)-->
+    <div module="product_detail">
+        <!--@import(/product/qr_modal.html)-->
+  
+        <!--@css(/css/module/product/detail.css)-->
+        <div class="product-detail-container">
+          <!-- 썸네일 시작 -->
+          <div module="product_image" class="product-detail-3d">
+            <!--@js(/js/module/product/product_3d.js)-->
+            <div
+              class="view_3d_model"
+              data-ma_product_code="{$ma_product_code}"
+            ></div>
+  
+            <!-- 상품명 시작 -->
+            <div module="product_detaildesign" class="product-detail-wrapper">
+              <table border="1" summary="">
+                <tbody>
+                  <tr class="{$item_display|display}">
+                    <td>{$item_content}</td>
+                  </tr>
+                  <tr class="{$item_display|display}">
+                    <td>{$item_content}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 상품명 끝 -->
+  
+            <button class="qr-button">
+              <img src="/layout/skin/img/inc/ar.png" alt="ar" />
+            </button>
+          </div>
+          <!-- 썸네일 끝 -->
+  
+          <!-- 상품 옵션/action/추가정보 시작 -->
+          <div class="product-detail-info-wrapper">
+            <div class="product-detail-info">
+              <!--@import(/product/product_option_action.html)-->
+              <!--@import(/product/product_additional_list.html)-->
+            </div>
+          </div>
+          <!-- 상품 옵션/action/추가정보 끝 -->
+  
+          <!-- 상세 페이지 영역 시작 -->
+          <div class="product-detail-content">
+            <div class="main-content-wrapper">{$product_detail}</div>
+            <button class="read-more-button">READ MORE</button>
+          </div>
+          <!-- 상세 페이지 영역 끝 -->
+  
+          <!--@import(/product/product_detail_qna.html)-->
+        </div>
+        <!--@import(/product/product_detail_recommend.html)-->
+      </div>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.min.js"></script>
+      <!--@js(/js/module/product/sale_price.js)-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!--@import(/layout/basic/footer_comm_js.html)-->

@@ -132,7 +132,7 @@ var BOARD2 = {
 
                         
                     } else {
-                        
+                        elmTarget.parents('.list-con').addClass('no-thumb');
                     }
                     elmTarget.parents('.list-con').find('.pop-slide').prepend(aHtml.join(''));
                     elmTarget.parents('.list-con').find('.thumb-wrap').prepend(bHtml.join(''));

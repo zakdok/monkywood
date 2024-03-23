@@ -1,0 +1,332 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/layout/basic/css/brand.css)-->
+<style>
+.list_btn{padding: 25px;}
+.fl_ck .qn_rep{
+	display: none !important;
+}
+#f_wrap_grid{
+	padding: 0 25px;
+}
+.blind{
+	display: none !important;
+}
+@media all and (max-width: 1020px){
+	.list_btn{padding: 15px;}
+}
+</style>
+<div class="nav-height"></div>
+<div class="top-fixed-nav">
+    <nav class="nav">
+        <ul class="dep1-wrap">
+            <li class="dep1-con">
+                <a href="/board/free/list.html?board_no=1" class="dep1 active">
+                    <p class="text">
+                        공지
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/event_board/list.html?board_no=2" class="dep1">
+                    <p class="text">
+                        프로모션
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/qna/list.html?board_no=6" class="dep1">
+                    <p class="text">
+                        Q&amp;A
+                    </p>
+                </a>
+            </li>
+            <li class="dep1-con">
+                <a href="/board/popup_review/list.html?board_no=4" class="dep1">
+                    <p class="text">
+                        후기
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- cloud_rw board start /board/free/list.html  -->
+<!-- 자유형 list  -->
+
+<!-- 보드 카테고리 반응형 적용 시작 -->
+<!--@import(/board/board_nav_top.html)-->	
+<!-- 보드 카테고리 반응형 적용 끝 -->
+<style>
+#f_wrap_grid{margin-top: 0 !important;}
+.cs_padding{padding-top: 0 !important;}
+</style>
+<!--@css(/layout/basic/css/review.css)-->
+<div class="review-title-area">
+    <div class="title-wrap">
+        <p class="title lk">
+            NOTICE
+        </p>
+        <p class="text">
+            공지사항
+        </p>
+    </div>
+</div>
+<div id="f_wrap_grid">
+	<div class="">
+<!-- 	<div class="wrap_layout"> -->
+		<div class="cs_padding" style="padding-top: 0px;">
+			<!-- 상단 이미지 시작 : 관리자 입력 -->
+			<div class="myboard_box f_pad imgArea" module="board_title_1002">{$board_top_image}</div>
+			<!-- 상단 이미지 끝 : 관리자 입력 -->
+		
+		    <div class="boardSort blind">
+		        <span module="board_ReplySort_1002">{$reply_sort}</span>
+		    </div>
+
+		    <!-- 게시판 본문 시작 -->
+			<div module="Board_ListPackage_1002" class="myboard_box f_pad">
+			    <!--@css(/css/module/board/listPackage.css)-->
+			    
+			    <i class="border_tline"></i>
+
+    			<!-- 공지 게시물 시작 -->
+			    <div module="board_notice_1002">
+	                <!--
+	                    $count = 10
+	                    $login_page_url = /member/login.html
+	                    $deny_access_url = /index.html
+	                -->
+		            <ul class="mx_board_list">
+		                <li class="fl_ck">
+		                	<div class="list_btn" aria-expanded-board="false">
+		                		<span class="qn_notice">NOTICE</span>
+		                		<span><em class="qn_rep ec-common-rwd-image">{$icon_re}</em></span>{$subject}{$icon_new}</span>
+		                	</div>
+		                	<div class="list_view">
+		                		<div>
+			                		<s>{$icon_file}</s>
+			                		<span>{$content}</span>
+			                		<a href="/board/free/read.html{$param_read}" class="dt_view_btn">자세히 보기</a>
+			                		<div class="view_wr">
+				                		<span>{$writer}</span>
+				                		<span>VIEW<em>{$hit_count}</em></span>
+			                		</div>
+		                		</div>
+		                	</div>
+		                	<i data-idx="afile_{$idx}" data-Flag="1" data-no="{$board_no}"></i>
+		                </li>
+		                <li class="fl_ck">
+		                	<div class="list_btn" aria-expanded-board="false">
+		                		<span class="qn_notice">NOTICE</span>
+		                		<span><em class="qn_rep ec-common-rwd-image">{$icon_re}</em></span>{$subject}{$icon_new}</span>
+		                	</div>
+		                	<div class="list_view">
+		                		<div>
+			                		<s>{$icon_file}</s>
+			                		<span>{$content}</span>
+			                		<a href="/board/free/read.html{$param_read}" class="dt_view_btn">자세히 보기</a>
+			                		<div class="view_wr">
+				                		<span>{$writer}</span>
+				                		<span>VIEW<em>{$hit_count}</em></span>
+			                		</div>
+		                		</div>
+		                	</div>
+		                	<i data-idx="afile_{$idx}" data-Flag="1" data-no="{$board_no}"></i>
+		                </li>
+		            </ul>
+			    </div>
+    			<!-- 공지 게시물 끝 -->
+			    
+    			<!-- 고정 게시물 시작 -->
+			    <div module="board_fixed_1002" class="div_blank">
+	                <!--
+	                    $count = 10
+	                    $login_page_url = /member/login.html
+	                    $deny_access_url = /index.html
+	                -->
+		            <ul class="mx_board_list">
+		                <li class="fl_ck">
+		                	<div class="list_btn" aria-expanded-board="false">
+		                		<span class="qn_fix">FIX</span>
+		                		<span><em class="qn_rep ec-common-rwd-image">{$icon_re}</em></span>{$subject}{$icon_new}</span>
+		                	</div>
+		                	<div class="list_view">
+		                		<div>
+			                		<s>{$icon_file}</s>
+			                		<span>{$content}</span>
+			                		<a href="/board/free/read.html{$param_read}" class="dt_view_btn">자세히 보기</a>
+			                		<div class="view_wr">
+				                		<span>{$writer}</span>
+				                		<span>VIEW<em>{$hit_count}</em></span>
+			                		</div>
+		                		</div>
+		                	</div>
+		                	<i data-idx="afile_{$idx}" data-Flag="1" data-no="{$board_no}"></i>
+		                </li>
+		                <li class="fl_ck">
+		                	<div class="list_btn" aria-expanded-board="false">
+		                		<span class="qn_fix">FIX</span>
+		                		<span><em class="qn_rep ec-common-rwd-image">{$icon_re}</em></span>{$subject}{$icon_new}</span>
+		                	</div>
+		                	<div class="list_view">
+		                		<div>
+			                		<s>{$icon_file}</s>
+			                		<span>{$content}</span>
+			                		<a href="/board/free/read.html{$param_read}" class="dt_view_btn">자세히 보기</a>
+			                		<div class="view_wr">
+				                		<span>{$writer}</span>
+				                		<span>VIEW<em>{$hit_count}</em></span>
+			                		</div>
+		                		</div>
+		                	</div>
+		                	<i data-idx="afile_{$idx}" data-Flag="1" data-no="{$board_no}"></i>
+		                </li>
+		            </ul>
+			    </div>
+    			<!-- 고정 게시물 끝 -->
+			    
+    			<!-- 일반 게시물 시작 -->
+			    <div module="board_list_1002" class="div_blank">
+	                <!--
+	                    $login_page_url = /member/login.html
+	                    $deny_access_url = /index.html
+	                -->
+		            <ul class="mx_board_list">
+		                <li class="fl_ck">
+		                	<div class="list_btn" aria-expanded-board="false">
+		                		<span class="qn_cate"><em class="cate_db {$category_display|display}">{$category_name}</em></span>
+		                		<span class="qn_no">{$no}</span>
+		                		<em class="qn_rep ec-common-rwd-image">{$icon_re}</em></span>
+		                		<span>{$subject}{$icon_new}</span>
+		                	</div>
+		                	<div class="list_view">
+		                		<div>
+			                		<s>{$icon_file}</s>
+			                		<span>{$content}</span>
+			                		<a href="/board/free/read.html{$param_read}" class="dt_view_btn">자세히 보기</a>
+			                		<div class="view_wr">
+				                		<span>{$writer}</span>
+				                		<span>VIEW<em>{$hit_count}</em></span>
+			                		</div>
+		                		</div>
+		                	</div>
+		                	<i data-idx="afile_{$idx}" data-Flag="1" data-no="{$board_no}"></i>
+		                </li>
+		                <li class="fl_ck">
+		                	<div class="list_btn" aria-expanded-board="false">
+		                		<span class="qn_cate"><em class="cate_db {$category_display|display}">{$category_name}</em></span>
+		                		<span class="qn_no">{$no}</span>
+		                		<em class="qn_rep ec-common-rwd-image">{$icon_re}</em></span>
+		                		<span>{$subject}{$icon_new}</span>
+		                	</div>
+		                	<div class="list_view">
+		                		<div>
+			                		<s>{$icon_file}</s>
+			                		<span>{$content}</span>
+			                		<a href="/board/free/read.html{$param_read}" class="dt_view_btn">자세히 보기</a>
+			                		<div class="view_wr">
+				                		<span>{$writer}</span>
+				                		<span>VIEW<em>{$hit_count}</em></span>
+			                		</div>
+		                		</div>
+		                	</div>
+		                	<i data-idx="afile_{$idx}" data-Flag="1" data-no="{$board_no}"></i>
+		                </li>
+		            </ul>	            	
+			    </div>
+    			<!-- 일반 게시물 끝 -->
+    			
+		        <!-- 게시물 없음 시작 -->
+		        <p class="message {$empty_display|display}" module="board_empty_1002">{$empty_message}</p>
+		        <!-- 게시물 없음 끝 -->
+				<!--@css(/layout/basic/css/qna_list.css)-->
+                <!-- 페이징 처리 시작 -->
+                <div class="notice-btn-paging">
+                    <div module="board_ButtonList_9" class="notice-btn-area">
+                        <div class="btn-wrap">
+                            <a href="/board/free/write.html{$param_write}" class="btn {$write_display|display}">
+                                <p class="text">
+                                    글쓰기
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="notice-paging ec-cpc-paginate" module="board_paging_1002">
+                        <div class="controls-btn-wrap">
+                            <a href="{$param_prev}" class="btn"><em class="cloud_gnb_pc ico_prev"></em></a>
+                        </div>
+                        <ul class="page-list-area">
+                            <ul class="list-wrap">
+                                <li class="list-con"><a href="{$param_num}" class="btn {$param_class}">{$page_num}</a></li>
+                                <li class="list-con"><a href="{$param_num}" class="btn {$param_class}">{$page_num}</a></li>
+                            </ul>
+                        </ul>
+                        <div class="controls-btn-wrap">
+                            <a href="{$param_next}" class="btn"><em class="cloud_gnb_pc ico_next"></em></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 페이징 처리 끝 -->
+                <!-- 검색 시작 -->
+                <div module="board_search_1002">
+                    <fieldset class="boardSearch">
+                        <div class="search-list-area">
+                            {$form.qna}
+                            <ul class="list-wrap">
+                                <li class="list-con">
+                                    <div class="list-inner">
+                                        {$form.search_date}
+                                    </div>
+                                </li>
+                                <li class="list-con">
+                                    <div class="list-inner">
+                                        {$form.search_key}
+                                    </div>
+                                </li>
+                                <li class="list-con input-wrap">
+                                    <div class="list-inner">
+                                        <div class="input-con">
+                                            {$form.search}
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="#none" class="btn" onclick="{$action_search}">찾기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- 검색 끝 -->
+
+				<!-- // 관리자 전용 메뉴 -->
+				<div module="board_catemove_1002" class="blind">
+				    <!--@css(/css/module/board/catemove.css)-->
+				    <p>
+				        {$board_catemove_selectbox}
+				        <a href="#none" class="btnNormal" onclick="{$action_category_move}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$category_move}</a>
+				    </p>
+				</div>
+				
+				<div module="board_function_1002" class="blind">
+				    <!--@css(/css/module/board/function.css)-->
+				    <p>
+				        {$board_function_selectbox}
+				        <a href="#none" class="btnNormal" onclick="{$action_article_move}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$article_move}</a>
+				        <a href="#none" class="btnNormal" onclick="{$action_article_copy}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_copy.gif" alt="" /> {$article_copy}</a>
+				        {$board_function_help}
+				    </p>
+				</div>
+				<!-- // 관리자 전용 메뉴 -->
+			
+			</div>
+		    <!-- 게시판 본문 끝 -->
+
+		</div>
+	</div>
+</div>
+<!-- cloud_rw board end /board/free/list.html  -->
+
+<!--@js(/js/module/layout/board_comm_sw.js)--> 
+<!--@js(/js/module/layout/product_bot.js)--> 

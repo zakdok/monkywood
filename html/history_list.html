@@ -1,0 +1,63 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="order-area my-area">
+    <div class="my-title-area">
+        <div class="title-wrap">
+            <p class="title">
+                적립금 관리
+            </p>
+        </div>
+    </div>
+    <div class="my-wrap">
+        <div class="ec-base-tab">
+            <ul>
+                <li class="selected"><a href="/myshop/mileage/historyList.html">적립금</a></li>
+                <li><a href="/myshop/mileage/mileageList.html">적립내역</a></li>
+                <li><a href="/myshop/mileage/unavailList.html">미가용적립</a></li>
+                <li><a href="/myshop/mileage/couponList.html">쿠폰/등급</a></li>
+            </ul>
+        </div>
+
+
+        <div module="myshop_mileagePackage">
+        <div module="myshop_summary">
+            <!--@css(/css/module/myshop/summary.css)-->
+        <div class="ec-base-table4">
+                <table border="0">
+                    <caption>{$mileage_name}</caption>
+                    <colgroup>
+                        <col style="width:125px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody class="right">
+                        <tr class="first">
+                            <th scope="row">총 {$mileage_name}</th>
+                            <td class="right">{$total_mileage}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">사용가능 {$mileage_name}</th>
+                            <td class="right">{$avail_mileage}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">사용된 {$mileage_name}</th>
+                            <td class="right">{$used_mileage}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">미가용 {$mileage_name}</th>
+                            <td class="right">{$unavail_mileage}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">환불예정 {$mileage_name}</th>
+                            <td class="right">{$refunded_mileage}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div module="myshop_historyList">
+        <!--
+            $login_page = /member/login.html
+        -->
+        </div>
+    </div>
+</div>
