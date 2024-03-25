@@ -67,7 +67,7 @@
     font-weight: 400;
 }
 
-@media all and (max-width: 1020px){
+@media all and (max-width: 1400px){
     .m_show{
         display: block !important;
     }

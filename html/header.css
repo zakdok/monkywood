@@ -1,5 +1,5 @@
 body{
-    padding-top: 121px;
+    padding-top: 121px !important;
 }
 .hide-info{
     display: none;
@@ -19,10 +19,10 @@ body{
     transition: .5s;
     overflow: hidden;
 }
-/* .hd-area .vertical-rolling.hide{
+.hd-area .vertical-rolling.hide{
     padding-bottom: 0;
     opacity: 0;
-} */
+}
 .hd-area .vertical-rolling .slide-area{
     position: absolute;
     left: 0;

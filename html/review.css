@@ -103,10 +103,7 @@
         display: block;
     }
     .review-visual .area .left{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
+        position: static;
     }
     .review-visual .area .right{
         width: 100%;
@@ -115,16 +112,24 @@
         border-left-width: 0;
     }
     .review-visual .area .content-text-area{
-        padding: 0 25px 50px;
+        padding: 0;
     }
     .review-visual .area .content-text-area .text-wrap .text{
-        font-size: 15px;
+        display: none;
     }
     .review-visual .area .content-text-area .btn-wrap{
-        margin: 20px 0 0;
+        margin: 0;
+    }
+    .review-visual .area .content-text-area .btn-wrap .btn{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
     }
     .review-visual .area .content-text-area .btn-wrap .btn .text{
-        font-size: 14px;
+        font-size: 0;
     }
 }
 .best-review{

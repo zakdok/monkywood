@@ -482,10 +482,10 @@ jQuery(function($){
         $('.main-visual .slide-con').each(function(){
             var infoText = $(this).find('.hide-info .info-text').html().trim();
             var splitText = infoText.split('`');
-            $(this).find('.link').attr({'href': splitText[0]});
-            $(this).find('.category').html(splitText[1]);
-            $(this).find('.title').html(splitText[2]);
-            $(this).find('.text').html(splitText[3]);
+            $(this).find('.link').attr({'href': splitText[0].trim()});
+            $(this).find('.category').html(splitText[1].trim());
+            $(this).find('.title').html(splitText[2].trim());
+            $(this).find('.text').html(splitText[3].trim());
 
             var infoBg = $(this).find('.hide-info .info-image img').attr('src');
             $(this).find('.bg-pc').css({
@@ -516,9 +516,9 @@ jQuery(function($){
         $('.main-promotion .area').each(function(){
             var infoText = $(this).find('.hide-info .info-text').html().trim();
             var splitText = infoText.split('`');
-            $(this).find('.link').attr({'href': splitText[0]});
-            $(this).find('.text-wrap .text').html(splitText[1]);
-            $(this).css({'background-color' : splitText[2]});
+            $(this).find('.link').attr({'href': splitText[0].trim()});
+            $(this).find('.text-wrap .text').html(splitText[1].trim());
+            $(this).css({'background-color' : splitText[2].trim()});
 
             var infoBg = $(this).find('.hide-info .info-image img').attr('src');
             $(this).find('.bg').css({
@@ -529,6 +529,7 @@ jQuery(function($){
         // 메인 저널 슬라이드
         var journalSwiper = new Swiper(".main-double-block.journal .block-wrap .slide-area", {
             slidesPerView: 1,
+            spaceBetween: 1,
             pagination: {
                 el: ".swiper-pagination",
             },
@@ -558,6 +559,7 @@ jQuery(function($){
         // 메인 스페이스 슬라이드
         var spaceSwiper = new Swiper(".main-double-block.space-section .block-wrap .slide-area", {
             slidesPerView: 1,
+            spaceBetween: 1,
             // pagination: {
             //     el: ".swiper-pagination",
             // },
@@ -575,9 +577,9 @@ jQuery(function($){
         $('.main-double-block.space-section .block').each(function(){
             var infoText = $(this).find('.hide-info .info-text').html().trim();
             var splitText = infoText.split('`');
-            $(this).find('.link').attr({'href': splitText[0]});
-            $(this).find('.title').html(splitText[1]);
-            $(this).find('.text-wrap .text').html(splitText[2]);
+            $(this).find('.link').attr({'href': splitText[0].trim()});
+            $(this).find('.title').html(splitText[1].trim());
+            $(this).find('.text-wrap .text').html(splitText[2].trim());
 
             var infoBg = $(this).find('.hide-info .info-image img').attr('src');
             $(this).css({
@@ -595,15 +597,18 @@ jQuery(function($){
             breakpoints: {
                 0: {
                     slidesPerView: 2,
-                    spaceBetween: 15
+                    spaceBetween: 15,
+                    slidesPerGroup : 2
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 15
+                    spaceBetween: 15,
+                    slidesPerGroup : 3
                 },
                 1020: {
                     slidesPerView: 4,
-                    spaceBetween: 26
+                    spaceBetween: 26,
+                    slidesPerGroup : 4
                 }
             }
         });
@@ -612,7 +617,7 @@ jQuery(function($){
         $('.main-instagram .insta-list-area .list-con').each(function(){
             var infoText = $(this).find('.hide-info .info-text').html().trim();
             var splitText = infoText.split('`');
-            $(this).find('.thumb').attr({'href': splitText[0]});
+            $(this).find('.thumb').attr({'href': splitText[0].trim()});
             // $(this).find('.text-wrap .text').html(splitText[1]);
 
             var infoBg = $(this).find('.hide-info .info-image img').attr('src');
@@ -640,9 +645,9 @@ jQuery(function($){
 <!--@define(cmc_log)-->
 
 <!-- 하단 스와이프 설정 -->
-<!--@js(/layout/skin/js/myoyoun_main_sw.js)-->
+<!--js(/layout/skin/js/myoyoun_main_sw.js)-->
 
-<!-@js(/js/module/product/vimeo_setting.js)--> 
+<!--js(/js/module/product/vimeo_setting.js)--> 
 
 <!-- 풀페이지 설정 js -->
 <script type="text/javascript">//window.mfullpage = jQuery.noConflict(true);</script>

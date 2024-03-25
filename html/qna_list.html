@@ -765,7 +765,7 @@ jQuery(function($){
                                         </div>
                                         <div class="subject-wrap">
                                             <p class="subject">
-                                                {$subject|cut:25,...}{$icon_new}{$icon_hit}
+                                                {$subject|cut:25,...}
                                             </p>
                                         </div>
                                     </div>
@@ -836,7 +836,7 @@ jQuery(function($){
                                         </div>
                                         <div class="subject-wrap">
                                             <p class="subject">
-                                                {$subject|cut:25,...}{$icon_new}{$icon_hit}
+                                                {$subject|cut:25,...}
                                             </p>
                                         </div>
                                     </div>
@@ -972,7 +972,7 @@ jQuery(function($){
             } else {
                 $(this).parents('.ico-wrap').remove();
                 $(this).siblings('.lock').remove();
-                // $listEle.find('.question .content-text-area .btn-wrap').remove();
+                $listEle.find('.question .content-text-area .btn-wrap').remove();
             }
 
             var $date = $listEle.find('.text.date');
@@ -989,6 +989,7 @@ jQuery(function($){
                 $listEle.addClass('reply')
             } else {
                 $listEle.find('.status-wrap').remove();
+                $listEle.find('.content-text-area .btn-wrap .btn .text').text('질문 확인');
             }
         })
     })

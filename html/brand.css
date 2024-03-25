@@ -41,6 +41,10 @@
     background-color: #fff;
     border-bottom: 1px solid #000;
     z-index: 9999;
+    transition: .5s;-moz-transition: .5s;-webkit-transition: .5s;-o-transition: .5s;
+}
+.top-fixed-nav.up{
+    transform: translateY(-50px);-moz-transform: translateY(-50px);-webkit-transform: translateY(-50px);-o-transform: translateY(-50px);
 }
 .top-fixed-nav .nav{}
 .top-fixed-nav .nav .dep1-wrap{

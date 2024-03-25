@@ -1,51 +1,13 @@
 <!--@layout(/layout/basic/layout.html)-->
 <!--@css(/layout/basic/css/qna_list.css)-->
-<!--@css(/layout/basic/css/brand.css)-->
-<div class="nav-height"></div>
-<div class="top-fixed-nav">
-    <nav class="nav">
-        <ul class="dep1-wrap">
-            <li class="dep1-con">
-                <a href="/board/free/list.html?board_no=1" class="dep1">
-                    <p class="text">
-                        공지
-                    </p>
-                </a>
-            </li>
-            <li class="dep1-con">
-                <a href="/board/event_board/list.html?board_no=2" class="dep1">
-                    <p class="text">
-                        프로모션
-                    </p>
-                </a>
-            </li>
-            <li class="dep1-con">
-                <a href="/board/qna/list.html?board_no=6" class="dep1 active">
-                    <p class="text">
-                        Q&amp;A
-                    </p>
-                </a>
-            </li>
-            <li class="dep1-con">
-                <a href="/board/popup_review/list.html?board_no=4" class="dep1">
-                    <p class="text">
-                        후기
-                    </p>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
-
-<!-- cloud_rw board start /board/qna/read.html  -->
+<!-- cloud_rw board start /board/product/read.html  -->
 <!-- 상품 read/view  -->
-
 <div class="read-area border-box" module="board_ReadPackage_4">
 	<div class="read-wrap">
-        <div class="faq-title-area">
+        <div class="faq-title-area" module="board_title_4">
             <div class="title-wrap">
                 <div class="title">
-                    [FAQ] 자주 묻는 질문
+                    {$board_title}
                 </div>
             </div>
         </div>
@@ -83,10 +45,10 @@
             <div class="read-btn-area">
                 <!-- 게시판 버튼 시작 -->
                 <div class="btn-wrap">
-                    <a href="/board/qna/list.html{$param_list}" class="btn">목록</a>
+                    <a href="/board/product/list.html{$param_list}" class="btn">목록</a>
                     <a href="#none" onclick="{$action_delete}" class="btn {$delete_button_auth|display}">삭제</a>
-                    <a href="/board/qna/modify.html{$param_modify}" class="btn {$modify_button_auth|display}">수정</a>
-                    <a href="/board/qna/reply.html{$param_reply}" class="btn {$reply_button_auth|display}">답변</a>
+                    <a href="/board/product/modify.html{$param_modify}" class="btn {$modify_button_auth|display}">수정</a>
+                    <a href="/board/product/reply.html{$param_reply}" class="btn {$reply_button_auth|display}">답변</a>
                 </div>
                 <!-- 게시판 버튼 끝 -->
             </div>

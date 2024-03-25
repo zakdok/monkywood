@@ -11,7 +11,7 @@
     font-weight: 700;
 }
 
-@media all and (max-width: 1020px){
+@media all and (max-width: 1400px){
     .recommend-title-area{
         margin: 0 0 30px;
     }
@@ -156,7 +156,7 @@
 .recommend-tab{
     position: fixed;
     left: 0;
-    top: 120px;
+    top: 70px;
     width: 100%;
     z-index: 9999;
     transform: translateY(-200%);
@@ -222,11 +222,11 @@
 
 @media all and (max-width: 1200px){
     .recommend-tab{
-        top: 110px;
+        top: 60px;
     }
 }
 
-@media all and (max-width: 1020px){
+@media all and (max-width: 1400px){
     .recommend-personal .visual{
         height: 110px;
         padding-top: 0;
@@ -448,8 +448,10 @@
     text-decoration: underline;
 }
 
-@media all and (max-width: 1020px){
+@media all and (max-width: 1400px){
     .recommend-table-info{
+        max-width: 600px;
+        margin: 0 auto;
         display: block;
         padding: 67px 20px 0;
     }
@@ -550,7 +552,7 @@
     font-weight: 400;
 }
 
-@media all and (max-width: 1020px){
+@media all and (max-width: 1400px){
     .show1020{
         display: block;
     }

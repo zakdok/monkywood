@@ -25,6 +25,9 @@
     font-weight: 400;
     font-size: 16px;
 }
+.myshop-title-area .title-wrap .text br{
+    display: none;
+}
 .myshop-title-area .title-wrap .text em{
     color: #000;
     font-weight: 600;
@@ -244,6 +247,10 @@
         bottom: 0;
         font-size: 14px;
         word-break: keep-all;
+        line-height: 1.4;
+    }
+    .myshop-title-area .title-wrap .text br{
+        display: block;
     }
     .myshop-wrap{
         padding: 40px 25px;

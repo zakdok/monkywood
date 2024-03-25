@@ -41,6 +41,8 @@
     background: #000 url('/images/hd-search-submit.png') 50% 50% no-repeat;
     border-width: 0;
     padding: 0;
+    font-size: 0;
+    text-indent: -99999px;
 }
 
 @media all and (max-width: 1020px){

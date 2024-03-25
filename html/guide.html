@@ -10,7 +10,8 @@
                         <div class="left-inner">
                             <div class="bg-area">
                                 <div class="bg-wrap">
-                                    <p class="bg" style="background-image: url('/images/content/Guide_1.jpg');">background image</p>
+                                    <p class="bg m_none" style="background-image: url('/images/content/Guide_1.jpg');">background image</p>
+                                    <p class="bg m_show" style="background-image: url('/images/Guide_1_mo.jpg');">background image</p>
                                 </div>
                             </div>
                         </div>
@@ -911,6 +912,7 @@
 jQuery(function($){
     $(window).on('load', function(){
         var guideSwiper = new Swiper(".guide-info-section .area .swiper", {
+            spaceBetween: 0,
             loop: true,
             autoHeight : true,
             navigation: {
@@ -920,7 +922,7 @@ jQuery(function($){
             on: {
                 slideChange : function() {
                     var tmp = this.realIndex;
-                    $('.guide-info-section .area .text-list-area .list-con').eq(tmp).stop().fadeIn().siblings().stop().fadeOut();
+                    $('.guide-info-section .area .text-list-area .list-con').eq(tmp).stop().fadeIn().siblings().hide();
                 },
             },
         });

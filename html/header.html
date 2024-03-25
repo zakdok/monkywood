@@ -49,10 +49,10 @@
                         <div class="hover-dep2-area">
                             <ul class="dep2-wrap">
                                 <li class="dep2-con"><a href="/shopinfo/best_sellers.html" class="dep2"><p class="text">베스트셀러</p></a></li>
-                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">식탁</p></a></li>
-                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">의자</p></a></li>
-                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">벤치</p></a></li>
-                                <li class="dep2-con"><a href="/product/list.html?cate_no=27" class="dep2"><p class="text">소품</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=187" class="dep2"><p class="text">식탁</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=188" class="dep2"><p class="text">의자</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=189" class="dep2"><p class="text">벤치</p></a></li>
+                                <li class="dep2-con"><a href="/product/list.html?cate_no=190" class="dep2"><p class="text">소품</p></a></li>
                             </ul>
                         </div>
                     </div>
@@ -434,8 +434,23 @@ jQuery(function($){
         }
     }
 
+    var hdActive = function(){
+        var windowScrollTop = $(window).scrollTop();
+        if(windowScrollTop > 10){
+            $('.hd-area .vertical-rolling').addClass('hide');
+            $('.top-fixed-nav').addClass('up');
+        } else {
+            $('.hd-area .vertical-rolling').removeClass('hide');
+            $('.top-fixed-nav').removeClass('up');
+        }
+    }
+    $(window).scroll(function(){
+        hdActive();
+    });
+
     $(document).on('ready', function(){
         gnbActive();
+        hdActive();
 
         // 헤더 띠 배너 롤링
         var swiper = new Swiper(".hd-area .vertical-rolling .slide-area", {

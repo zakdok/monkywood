@@ -19,6 +19,10 @@
     width: 20.5%;
 }
 #ft .ft-area .grid-list-area .list-inner{}
+#ft .ft-area .grid-list-area .list-con:nth-child(2) .list-inner{
+    padding-right: 20px;
+    word-break: keep-all;
+}
 #ft .ft-area .grid-list-area .grid-title-area{}
 #ft .ft-area .grid-list-area .grid-title-area.mt45{
     margin-top: 45px;
@@ -141,6 +145,9 @@
     }
     #ft .ft-area .grid-list-area .list-con:nth-child(3){
         display: none;
+    }
+    #ft .ft-area .grid-list-area .list-con:nth-child(2) .list-inner{
+        padding-right: 0;
     }
     #ft .ft-area .grid-list-area .grid-title-area.mt45{
         margin-top: 30px;
